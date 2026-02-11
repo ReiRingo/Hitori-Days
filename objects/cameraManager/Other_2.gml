@@ -1,0 +1,1 @@
+Input.Bind("fc", [ vk_f11 ]);

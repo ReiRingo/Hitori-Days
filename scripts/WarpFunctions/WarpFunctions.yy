@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"WarpFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"WarpFunctions",
+  "parent":{
+    "name":"Triggers",
+    "path":"folders/Script/Triggers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

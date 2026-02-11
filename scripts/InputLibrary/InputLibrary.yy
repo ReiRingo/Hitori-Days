@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"InputLibrary",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InputLibrary",
+  "parent":{
+    "name":"Inputs",
+    "path":"folders/Script/Inputs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

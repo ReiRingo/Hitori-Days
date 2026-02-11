@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EngineHelpers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EngineHelpers",
+  "parent":{
+    "name":"Script",
+    "path":"folders/Script.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

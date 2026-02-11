@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CPPLibraries",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CPPLibraries",
+  "parent":{
+    "name":"C++",
+    "path":"folders/C++.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

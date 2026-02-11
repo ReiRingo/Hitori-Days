@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"musIntro",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":13.348,
+  "exportDir":"",
+  "name":"musIntro",
+  "parent":{
+    "name":"MUS",
+    "path":"folders/Audio/MUS.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"musIntro.ogg",
+  "volume":1.0,
+}

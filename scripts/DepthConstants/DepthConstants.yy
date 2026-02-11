@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DepthConstants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DepthConstants",
+  "parent":{
+    "name":"Script",
+    "path":"folders/Script.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
