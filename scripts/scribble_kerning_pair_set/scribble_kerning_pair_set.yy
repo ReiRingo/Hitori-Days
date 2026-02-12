@@ -6,7 +6,7 @@
   "name":"scribble_kerning_pair_set",
   "parent":{
     "name":"Font Modification",
-    "path":"folders/Script/Scribble/Font Modification.yy",
+    "path":"folders/Script/Dialogue System/Scribble/Font Modification.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

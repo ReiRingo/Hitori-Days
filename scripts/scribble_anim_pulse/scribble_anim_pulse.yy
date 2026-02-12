@@ -6,7 +6,7 @@
   "name":"scribble_anim_pulse",
   "parent":{
     "name":"Animation",
-    "path":"folders/Script/Scribble/Animation.yy",
+    "path":"folders/Script/Dialogue System/Scribble/Animation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

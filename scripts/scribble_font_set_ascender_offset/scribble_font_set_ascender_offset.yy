@@ -6,7 +6,7 @@
   "name":"scribble_font_set_ascender_offset",
   "parent":{
     "name":"Font Modification",
-    "path":"folders/Script/Scribble/Font Modification.yy",
+    "path":"folders/Script/Dialogue System/Scribble/Font Modification.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

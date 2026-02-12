@@ -68,7 +68,7 @@ function lerpType(val1, val2, amount, easeType) {
         "back_in_out" : [2, _back],
         "bounce_in" : [1, _bounce],
         "bounce_out" : [0, _bounce],
-        // ... (you can add the rest of your map here)
+        // TODO: Finish soon (though, they're not really needed much)
     }
     
     var interp = types[$ easeType] ?? types.linear;

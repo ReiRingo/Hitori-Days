@@ -48,6 +48,16 @@ function drawTextGUI(pos, text, scale = 3, hAl = draw_get_halign(), vAl = draw_g
 	draw_text_ext_transformed(pos[0], pos[1], text, -1, -1, _sc[0], _sc[1], 0);
 }
 
+// WRITTEN by a good friend of mine
+function worldToGui(_x, _y) {
+    var _cam = view_camera[0];
+    
+    var _gui_x = (_x - camera_get_view_x(_cam)) * (display_get_gui_width() / camera_get_view_width(_cam));
+    var _gui_y = (_y - camera_get_view_y(_cam)) * (display_get_gui_height() / camera_get_view_height(_cam));
+    
+    return { x: _gui_x, y: _gui_y }; // Made it vector-ish
+}
+
 function drawPanel(x, y, w, h, panelIndex = 0, panel = sprPanel)
 {
 	draw_sprite_stretched(panel, panelIndex, x, y, w, h);

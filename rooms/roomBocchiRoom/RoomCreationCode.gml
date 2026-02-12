@@ -1,0 +1,1 @@
+dialogueStart(["I'M SO CONFUSED...", "[shake]WHAAAT????"], [0, sndBlip]);

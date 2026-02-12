@@ -22,6 +22,7 @@ _canMove = true;
 _canMoveUi = true;
 _canMoveCutscene = true;
 _canMoveWarp = true;
+_canMoveDialogue = true;
 
 // -- Debug
 _debugging = false;
