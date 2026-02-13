@@ -10,8 +10,8 @@
     "path":"folders/Object/Props.yy",
   },
   "parentObjectId":{
-    "name":"object",
-    "path":"objects/object/object.yy",
+    "name":"objectStatic",
+    "path":"objects/objectStatic/objectStatic.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

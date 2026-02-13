@@ -2,7 +2,7 @@
 var _iPanelY = display_get_gui_height() - 200;
 var _iPanelH = 200 - 40;
 
-var _speed = 9;
+var _speed = 6;
 doAnime(_iPanelY + (_iPanelH / 2), _iPanelY, _speed, "sine_in", function(a)
 {
 	_panelY = a;

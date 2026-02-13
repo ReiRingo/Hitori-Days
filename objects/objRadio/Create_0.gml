@@ -2,10 +2,10 @@ event_inherited();
 
 _onUi = false;
 dirLocked = true;
-_leftFlipX = false;
 
 event = function()
 {
+	print("Hello!");
 	with(charPlayer)
 	{
 		_canMoveUi = false;

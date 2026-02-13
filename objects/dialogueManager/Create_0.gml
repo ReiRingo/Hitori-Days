@@ -7,15 +7,17 @@ panel = sprPanelGUI;
 panelVariation = 0;
 skippable = true;
 speaker = "PlaceHolderGuy"; // Use strings
-typerSpeed = 0.5;
+typerSpeed = 0.3;
 
 // -- Technical Config
-depth = min(room_height - 800, -10000);
+depth = DepthUi.PanelDialogue;
 _ready = false;
 _animating = true;
 _panelY = 0;
 _panelH = 0;
 _typing = false;
+_pointer = sprPointerGUI;
+_drawPointer = false;
 
 // -- Pages
 _pageIndex = 0;

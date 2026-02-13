@@ -5,5 +5,7 @@ enum Depth
 
 enum DepthUi
 {
-	Fader = -10999
+	Fader = -10999,
+	PanelMenu = -10000,
+	PanelDialogue = -9999
 }

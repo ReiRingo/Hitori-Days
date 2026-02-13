@@ -78,7 +78,7 @@ if (_moveable)
 	{
 		with(_inst)
 		{
-			if (variable_instance_exists(id, "event") && is_method(event))
+			if (_interactable && variable_instance_exists(id, "event") && is_method(event))
 	        {
 	            event();
 	        }

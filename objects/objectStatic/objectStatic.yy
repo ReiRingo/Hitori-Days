@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objMirror",
+  "%Name":"objectStatic",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objMirror",
+  "name":"objectStatic",
   "overriddenProperties":[],
   "parent":{
     "name":"Props",
     "path":"folders/Object/Props.yy",
   },
   "parentObjectId":{
-    "name":"char",
-    "path":"objects/char/char.yy",
+    "name":"collision",
+    "path":"objects/collision/collision.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprObjMirror",
-    "path":"sprites/sprObjMirror/sprObjMirror.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

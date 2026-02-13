@@ -14,7 +14,7 @@ function DialogueClass(_text) constructor
 		return (self.inst);
 	};
 	
-	static Voice = function(where, snd, pitch = [1, 1], oneIndexed = true)
+	static Voice = function(where, snd, pitch = [0.8, 1.2], oneIndexed = true)
 	{
 		var _index = (oneIndexed) ? where - 1 : where;
 		var _voice = { v : snd, p : pitch };

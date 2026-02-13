@@ -3,6 +3,7 @@
   "%Name":"object",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"object",
@@ -12,8 +13,8 @@
     "path":"folders/Object/Props.yy",
   },
   "parentObjectId":{
-    "name":"collision",
-    "path":"objects/collision/collision.yy",
+    "name":"char",
+    "path":"objects/char/char.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

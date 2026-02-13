@@ -1,4 +1,4 @@
-function __save() constructor
+function __playerLib() constructor
 {
 	static SaveGame = function()
 	{
@@ -12,7 +12,7 @@ function __save() constructor
 		Save.LoadToDisk(SType.Cutscenes);
 	};
 	
-	static Warp = function(room, spawnpointId, time = 30, timeOut = 15, col = c_black)
+	static Warp = function(room, spawnpointId, time = 15, timeOut = 15, col = c_black)
 	{
 		global.warp.room = room;
 		global.warp.spawnpointId = spawnpointId;
@@ -55,4 +55,4 @@ function __save() constructor
 
 #macro Player global.playerFuncLib
 
-Player = new __save();
+Player = new __playerLib();

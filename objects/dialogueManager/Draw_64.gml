@@ -11,6 +11,10 @@ if (_ready)
 	if (sprite_exists(panel))
 	{
 		drawPanel(_marginX, _panelY, (_drawX * 2) - (_marginX * 2), _panelH, panelVariation, panel);
+		if (sprite_exists(_pointer) && _drawPointer)
+		{
+			draw_sprite_ext(_pointer, 0, (_drawX * 2) - (_marginX * 2) + (sin(current_time / 400) * 8), _panelY + _panelH - 30, 0.5, 0.5, 0, image_blend, image_alpha);
+		}
 	}
 	
 	if (!_animating)

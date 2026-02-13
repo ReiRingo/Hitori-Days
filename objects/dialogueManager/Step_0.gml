@@ -9,7 +9,7 @@ if (_ready)
 		}
 		else
 		{
-			if (_typist.get_state() == 1.0)
+			if (_typist.get_state() >= 1.0)
 			{
 				if (Input.Pressed(VKey.Confirm)
 				|| Input.Pressed(VKey.Cancel))
@@ -18,6 +18,18 @@ if (_ready)
 					_pageIndex++;
 					event_user(0);
 				}
+				
+				_drawPointer = true;
+			}
+			else
+			{
+				if (Input.Pressed(VKey.Confirm)
+				|| Input.Pressed(VKey.Cancel))
+				{
+					_typist.skip(1);
+				}
+				
+				_drawPointer = false;
 			}
 		}
 	}

@@ -63,6 +63,16 @@ function drawPanel(x, y, w, h, panelIndex = 0, panel = sprPanel)
 	draw_sprite_stretched(panel, panelIndex, x, y, w, h);
 }
 
+function objectGetBase(_obj)
+{
+	while (object_exists(object_get_parent(_obj)))
+	{
+		_obj = object_get_parent(_obj);
+	}
+	
+	return _obj;
+}
+
 function bpmBarFrame(bpm, bar = 1, beats_per_bar = 4, fps = 30)
 {
 	var _frames = (60 / bpm) * beats_per_bar * fps * bar;

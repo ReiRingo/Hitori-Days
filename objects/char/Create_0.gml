@@ -6,6 +6,7 @@ event = function()
 {
 	
 };
+_interactable = true;
 
 sprite = [];
 sprite[SpriteState.Idle] =

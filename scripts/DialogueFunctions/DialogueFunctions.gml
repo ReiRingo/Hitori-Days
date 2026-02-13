@@ -1,4 +1,4 @@
-function dialogueStart(_text, _voiceInput = -1, _pitchInput = [1, 1])
+function dialogueStart(_text, _voiceInput = [1, sndTextDefault], _pitchInput = [0.8, 1.2])
 {
     var _d = new DialogueClass(_text);
     
@@ -9,7 +9,7 @@ function dialogueStart(_text, _voiceInput = -1, _pitchInput = [1, 1])
     
     if (is_array(_voiceInput) && array_length(_voiceInput) >= 2)
 	{
-        _page = _voiceInput[0];
+        _page = _voiceInput[0] - 1;
         _sound = _voiceInput[1];
     }
 	else if (audio_exists(_voiceInput))
@@ -19,7 +19,7 @@ function dialogueStart(_text, _voiceInput = -1, _pitchInput = [1, 1])
 
     var _p = (is_array(_pitchInput) && array_length(_pitchInput) >= 2) 
              ? [_pitchInput[0], _pitchInput[1]] 
-             : [1, 1];
+             : [0.8, 1.2];
 
     if (audio_exists(_sound))
 	{

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"DawFunctions",
   "parent":{
-    "name":"PSEUDO DAW",
-    "path":"folders/PSEUDO DAW.yy",
+    "name":"Pseudo Daw",
+    "path":"folders/CONCEPT/Pseudo Daw.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
