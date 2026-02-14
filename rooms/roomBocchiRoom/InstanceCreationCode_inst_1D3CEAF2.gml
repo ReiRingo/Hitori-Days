@@ -1,11 +1,12 @@
 var _cond = Save.Get(SType.Cutscenes, "guitar", false);
 
+print($"Cond: {_cond}");
 if (!_cond)
 {
 	event = function()
 	{
 		dialogueStart([
-			"A Gibson guitar.",
+			"A custom Gibson Les Paul guitar.",
 			"Handed to you by your dad.",
 			"Old but gold."
 		]);
@@ -14,9 +15,9 @@ if (!_cond)
 		{
 			dialogueStart("[wave]Your soulmate guitar.[/wave]");
 		};
+		
+		Save.Set(SType.Cutscenes, "guitar", true);
 	};
-	
-	Save.Set(SType.Cutscenes, "guitar", true);
 }
 else
 {

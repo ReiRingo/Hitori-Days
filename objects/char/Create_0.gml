@@ -4,7 +4,7 @@ _canCollide = true;
 // INTERACT EVENT
 event = function()
 {
-	
+	// PASS
 };
 _interactable = true;
 

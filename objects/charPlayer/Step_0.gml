@@ -73,15 +73,28 @@ if (_moveable)
 	};
 	
 	_inst = collision_rectangle(_x1, _y1, _x2, _y2, char, false, true);
+	var _canInteract = false;
+	
+	/*
+	with(_inst)
+	{
+		_canInteract = _interactable;
+		// Initially, I tried to make it so if a player sees an
+		// INteractable, it displays a "Z"
+		// But the letter is bindable
+		// And I don't wanna make a look up
+		// For vk_*s
+	}
+	*/
 	
 	if (Input.Pressed(VKey.Confirm) && instance_exists(_inst))
 	{
 		with(_inst)
 		{
 			if (_interactable && variable_instance_exists(id, "event") && is_method(event))
-	        {
-	            event();
-	        }
+			{
+				event();
+			}
 		}
 	}
 }

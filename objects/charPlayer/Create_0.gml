@@ -24,6 +24,9 @@ _canMoveCutscene = true;
 _canMoveWarp = true;
 _canMoveDialogue = true;
 
+// -- System
+_displayConfirm = false;
+
 // -- Debug
 _debugging = false;
 _debugCol = { x : x, y : y, x2 : x, y2 : y };

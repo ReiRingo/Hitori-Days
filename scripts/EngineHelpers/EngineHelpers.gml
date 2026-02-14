@@ -19,10 +19,10 @@ function drawReset()
 	draw_set_valign(fa_top);
 }
 
-function drawPick(x, y, scale = 1, flip = false, col = c_white, alpha = 1)
+function drawPick(x, y, scale = 0.8, flip = false, col = c_white, alpha = 1)
 {
 	draw_sprite_ext(
-		sprPointer,
+		sprPointerGUI,
 		0,
 		x, y,
 		(flip) ? -scale : scale, scale,
@@ -58,7 +58,7 @@ function worldToGui(_x, _y) {
     return { x: _gui_x, y: _gui_y }; // Made it vector-ish
 }
 
-function drawPanel(x, y, w, h, panelIndex = 0, panel = sprPanel)
+function drawPanel(x, y, w, h, panelIndex = 0, panel = sprPanelGUI)
 {
 	draw_sprite_stretched(panel, panelIndex, x, y, w, h);
 }

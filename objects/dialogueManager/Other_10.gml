@@ -6,6 +6,8 @@ if (_pageIndex >= array_length(text))
 	// No out animation is an intention ;>
 }
 
+text[_pageIndex] = string_replace_all(text[_pageIndex], "[/scale]", "[scale, 2]");
+
 var _text = "[scale, 2]" + text[_pageIndex];
 
 var _voice = {

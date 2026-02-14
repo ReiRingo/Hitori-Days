@@ -5,7 +5,7 @@ dirLocked = true;
 
 event = function()
 {
-	print("Hello!");
+	// print("Hello!");
 	with(charPlayer)
 	{
 		_canMoveUi = false;

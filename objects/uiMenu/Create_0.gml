@@ -3,6 +3,7 @@ _index = 0;
 _options = [
 	"New Game",
 	"Continue Game",
+	"Settings",
 	"Quit"
 ];
 
@@ -15,3 +16,34 @@ _state = 0;
 
 _trRoom = -1;
 _startRoom = roomBocchiRoom;
+
+_loadIndex = 0; // < Cursor
+_load = [];
+_loadSize = 3;
+_ready = false;
+
+var _proc = 0;
+repeat(_loadSize)
+{
+	Save.SetSlot(_proc);
+	if (Player.LoadGame(1))
+	{
+		_load[_proc] = {
+			available: true,
+			room: Save.Get(SType.Snapshot, SSnapshot.Room, roomBocchiRoom),
+			time: Save.Get(SType.Snapshot, SSnapshot.Time, 0),
+			money: Save.Get(SType.Snapshot, SSnapshot.Yen, 0)
+		};
+	}
+	else
+	{
+		_load[_proc] = {
+			available: false,
+			room: -1,
+			time: -1,
+			money: -1
+		};
+	}
+	_proc++;
+}
+Save.SetSlot(0);

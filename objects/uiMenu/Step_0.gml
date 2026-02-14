@@ -1,10 +1,8 @@
-if (_locked)
-	exit;
-
+// MENU
 var _len = array_length(_options);
 var _prevInd = _index;
 
-if (_state == 0)
+if (!_locked && _state == 0 && fader._alpha == 0)
 {
 	if (Input.Pressed(VKey.Down))
 	{
@@ -24,7 +22,7 @@ if (_state == 0)
 	}
 }
 
-if (Input.Pressed(VKey.Confirm) && _state == 0)
+if (!_locked && Input.Pressed(VKey.Confirm) && _state == 0 && fader._alpha == 0)
 {
 	switch(_index)
 	{
@@ -47,32 +45,61 @@ if (Input.Pressed(VKey.Confirm) && _state == 0)
 			break;
 		
 		case 1:
-			Player.LoadGame();
-			var _targetRoom = Save.Get(SType.Snapshot, SSnapshot.Room, -1);
-			
-			if (room_exists(_targetRoom))
-			{
-				audio_sound_gain(_sound, 0, 1000);
-				faderFade(0, 1, 30, c_black);
-				
-				_trRoom = _targetRoom;
-				
-				var _goto = function()
-				{
-					audio_stop_sound(_sound);
-					room_goto(_trRoom); // TODO: Make maps soon
-					faderFade(1, 0, 15, c_black);
-				};
-				
-				call_later(
-					33, time_source_units_frames,
-					_goto
-				);
-			}
-			else
-			{
-				print("NO!");
-			}
+			_state = 1;
 			break;
 	}
+}
+
+var _prevLoadIndex = _loadIndex;
+if (!_locked && _state == 1 && !_ready)
+{
+	_ready = true;
+}
+else if (!_locked && _state == 1 && _ready)
+{
+	if (fader._alpha == 0 && Input.Pressed(VKey.Down))
+	{
+		_loadIndex = (_loadIndex < _loadSize - 1) ? _loadIndex + 1 : 0;
+	}
+	else if (fader._alpha == 0 && Input.Pressed(VKey.Up))
+	{
+		_loadIndex = (_loadIndex > 0) ? _loadIndex - 1 : _loadSize - 1;
+	}
+	else if (fader._alpha == 0 && Input.Pressed(VKey.Cancel))
+	{
+		_state = 0;
+		_loadIndex = 0;
+		_ready = false;
+	}
+	else if (fader._alpha == 0 && Input.Pressed(VKey.Confirm))
+	{
+		var _ind = _load[_loadIndex];
+		
+		if (_ind.available)
+		{
+			var _func = function()
+			{
+				room_goto(_load[_loadIndex].room);
+				faderFade(1, 0, 15, c_black);
+			};
+			
+			if (room_exists(_ind.room))
+			{
+				Save.SetSlot(_loadIndex);
+				Player.LoadGame();
+				_locked = true;
+				audio_sound_gain(_sound, 0, 1000);
+				faderFade(0, 1, 60, c_white);
+				call_later(
+					70, time_source_units_frames,
+					_func
+				);
+			}
+		}
+	}
+}
+
+if (_loadIndex != _prevLoadIndex)
+{
+	audio_play_sound(sndBlip, 1, false);
 }

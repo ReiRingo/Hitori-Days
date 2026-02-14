@@ -101,6 +101,25 @@ Cutscene =
 		cut._ready = true;
 	},
 	
+	Dialogue: function(cut, text, voice = sndTextDefault, pitch = [0.8, 1.2])
+	{
+		self.Custom(cut, {
+			tx: text,
+			v: voice,
+			pit: pitch,
+			dia: -1,
+			diaInst: noone,
+			init: function(){
+				self.dia = dialogueStart(self.tx, self.v, self.pit)
+				self.diaInst = self.dia.GetTyper();
+			},
+			update: function()
+			{
+				return (instance_exists(self.diaInst));
+			}
+		});
+	},
+	
 	Pause: function(cut)
 	{
 		Cutscene.Custom(cut, {

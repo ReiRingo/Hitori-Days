@@ -50,7 +50,11 @@ Save =
 	LoadToDisk: function(type)
 	{
 		var _path = self.GetPath(type);
-		if (!file_exists(_path)) return false;
+		if (!file_exists(_path))
+		{
+			print($"File path {_path} does not exist!");
+			return false;
+		}
 		
 	    var _buf = buffer_load(_path);
 		var _string = buffer_read(_buf, buffer_text); 
@@ -78,7 +82,7 @@ Save =
 		switch(type)
 		{
 			default:
-				_path = $"{_slotDir}{string(type)}.savf";
+				_path = $"{_slotDir}{type}.savf";
 				break;
 			
 			case SType.Snapshot:

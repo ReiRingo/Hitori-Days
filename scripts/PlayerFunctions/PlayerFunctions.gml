@@ -6,10 +6,26 @@ function __playerLib() constructor
 		Save.SaveToDisk(SType.Cutscenes);
 	};
 	
-	static LoadGame = function()
+	static LoadGame = function(check = 0)
 	{
-		Save.LoadToDisk(SType.Snapshot);
-		Save.LoadToDisk(SType.Cutscenes);
+		var _snap = Save.LoadToDisk(SType.Snapshot);
+		var _cut = Save.LoadToDisk(SType.Cutscenes);
+		
+		switch(check)
+		{
+			case 0:
+			default:
+				return (_snap && _cut);
+				break;
+			
+			case 1:
+				return _snap;
+				break;
+			
+			case 2:
+				return _cut;
+				break;
+		}
 	};
 	
 	static Warp = function(room, spawnpointId, time = 15, timeOut = 15, col = c_black)
@@ -50,6 +66,22 @@ function __playerLib() constructor
 		call_later(time + 1, time_source_units_frames, _func);
 		
 		return true;
+	};
+	
+	static MapName = function(rm = room)
+	{
+		var _out = "";
+		switch(rm)
+		{
+			default:
+				_out = room_get_name(rm);
+				break;
+			
+			case roomBocchiRoom:
+				_out = "Bocchi's Bedroom";
+				break;
+		}
+		return _out;
 	};
 }
 

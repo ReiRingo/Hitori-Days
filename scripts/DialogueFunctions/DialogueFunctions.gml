@@ -23,7 +23,7 @@ function dialogueStart(_text, _voiceInput = [1, sndTextDefault], _pitchInput = [
 
     if (audio_exists(_sound))
 	{
-		print("HEY!");
+		// print("HEY!");
         _d.Voice(_page, _sound, _p, false);
     }
     
