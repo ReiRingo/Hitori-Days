@@ -32,7 +32,7 @@ else if (_state == 1)
 		var _roomNamer = Player.MapName;
 		var _name = (
 			_ld.available
-		) ? $"{_roomNamer(_ld.room)}\nTime: {timeToFrame(_ld.time)}\nMoney: {_ld.money} Yen" : "---------";
+		) ? $"{_roomNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeToFrame(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen" : "---------";
 		
 		drawTextGUI([_margin + 20, _margin + 20 + (_proc * _space) + 40], _name, 1.5);
 		
@@ -44,7 +44,7 @@ else if (_state == 1)
 		
 		_proc++;
 	}
-	drawTextGUI([_gui.w / 2, 18], "Where Do You Wanna Load?", 3, fa_center, fa_top);
+	drawTextGUI([_gui.w / 2, 18], Lang.Get("menu_hint_load"), 3, fa_center, fa_top);
 }
 
 drawReset();

@@ -1,5 +1,6 @@
 // -- Control Bind
 
+#region BUTTONS
 // Confirm
 Input.Bind(
 	VKey.Confirm,
@@ -35,5 +36,24 @@ Input.Bind(
 	"res",
 	[vk_f2]
 );
+#endregion
 
+#region LANGS
+Lang.LoadLang("en", "en.json");
+// TODO: Finish soon
+/*
+if (file_exists("langs.json"))
+{
+	var _buf = buffer_load("langs.json");
+	var _str = buffer_read(_buf, buffer_text);
+	buffer_delete(_buf);
+	
+	var _json = json_parse(_str);
+	
+	struct_foreach(_json, );
+}
+*/
+#endregion
+
+// Start
 room_goto(roomLogo);

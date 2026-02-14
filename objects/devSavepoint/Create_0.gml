@@ -4,7 +4,7 @@ event_inherited();
 dirLocked = true;
 sprite[SpriteState.Idle].speed = 1;
 
-text = ["It's a save point!"];
+text = Lang.Get("save_point");
 _isEvent = false;
 _isSave = false;
 _saved = false;

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"MenuStates",
+  "%Name":"JsonParserSystem",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"MenuStates",
+  "name":"JsonParserSystem",
   "parent":{
-    "name":"Save & Load",
-    "path":"folders/Script/Save & Load.yy",
+    "name":"Json Parser",
+    "path":"folders/Script/Json Parser.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

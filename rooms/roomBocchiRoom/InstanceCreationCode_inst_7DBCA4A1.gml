@@ -1,8 +1,4 @@
 event = function()
 {
-	dialogueStart([
-		"...",
-		"It's you!",
-		"You look like a rockstar!"
-	]);
+	dialogueStart(Lang.Get("dialogue_mirror"));
 };

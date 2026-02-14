@@ -35,11 +35,12 @@ Save =
 		var _struct = global.saves[$ string(type)];
 		if (!is_struct(_struct)) return;
 		
-		var _string = json_stringify(_struct);
+		var _string = json_stringify(_struct, true);
 		var _path = self.GetPath(type);
 		var _dir = filename_dir(_path);
 		
-		if (!directory_exists(_dir)) directory_create(_dir);
+		if (!directory_exists(_dir))
+			directory_create(_dir);
 		
 		var _buf = buffer_create(string_byte_length(_string), buffer_fixed, 1);
 		buffer_write(_buf, buffer_text, _string); 

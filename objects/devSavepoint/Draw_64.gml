@@ -17,7 +17,7 @@ if (_isSave)
 		_ld = _load[_proc];
 		_info = (_ld.available)
 			?
-			$"{_mapNamer(_ld.room)}\nTime: {timeToFrame(_ld.time)}\nMoney: {_ld.money} Yen"
+			$"{_mapNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeToFrame(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen"
 			:
 			"---------";
 		
@@ -31,17 +31,17 @@ if (_isSave)
 	}
 	
 	drawPanel(_margin, 10, _gui.w - (_margin * 2), 100);
-	drawTextGUI([_gui.w / 2, 18], "Where Do You Wanna Save?", 3, fa_center, fa_top);
+	drawTextGUI([_gui.w / 2, 18], Lang.Get("save_hint_save"), 3, fa_center, fa_top);
 }
 
 if (_saved)
 {
 	_ld = _load[_saveIndex];
-	_info = $"{_mapNamer(_ld.room)}\nTime: {timeToFrame(_ld.time)}\nMoney: {_ld.money} Yen";
+	_info = $"{_mapNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeToFrame(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen";
 	drawPanel(_margin * 2, _margin + (_saveIndex * _space) + _topPad, _space * 3, _space - _margin);
 	drawTextGUI([(_margin * 2) + 20, _margin + 20 + (_saveIndex * _space) + _topPad], _info, 1);
 	drawPanel(_margin, 10, _gui.w - (_margin * 2), 100);
-	drawTextGUI([_gui.w / 2, 18], "Saved!", 3, fa_center, fa_top);
+	drawTextGUI([_gui.w / 2, 18], Lang.Get("save_hint_saved"), 3, fa_center, fa_top);
 }
 
 drawReset();

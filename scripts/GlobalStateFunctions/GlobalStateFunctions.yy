@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GlobalStateFunctions",
   "parent":{
-    "name":"Menu - Load - Save",
-    "path":"folders/Script/Menu - Load - Save.yy",
+    "name":"Save & Load",
+    "path":"folders/Script/Save & Load.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

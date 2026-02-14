@@ -1,10 +1,10 @@
 _index = 0;
 
 _options = [
-	"New Game",
-	"Continue Game",
-	"Settings",
-	"Quit"
+	Lang.Get("menu_ng"),
+	Lang.Get("menu_lg"),
+	Lang.Get("menu_st"),
+	Lang.Get("menu_qt")
 ];
 
 _sound = audio_play_sound(

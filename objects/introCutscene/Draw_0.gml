@@ -57,7 +57,7 @@ if (_started)
 {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_bottom);
-	draw_text_ext_transformed(room_width / 2, room_height - 10, "(C)Velvet Clover 2026\n\nPress [Z] to start!", -1, -1, 0.5, 0.5, 0);
+	draw_text_ext_transformed(room_width / 2, room_height - 10, Lang.Get("cr"), -1, -1, 0.5, 0.5, 0);
 }
 
 

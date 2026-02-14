@@ -5,15 +5,11 @@ if (!_cond)
 {
 	event = function()
 	{
-		dialogueStart([
-			"A custom Gibson Les Paul guitar.",
-			"Handed to you by your dad.",
-			"Old but gold."
-		]);
+		dialogueStart(Lang.Get("dialogue_guitar1"));
 		
 		event = function()
 		{
-			dialogueStart("[wave]Your soulmate guitar.[/wave]");
+			dialogueStart(Lang.Get("dialogue_guitar2"));
 		};
 		
 		Save.Set(SType.Cutscenes, "guitar", true);
@@ -23,6 +19,6 @@ else
 {
 	event = function()
 	{
-		dialogueStart("[wave]Your soulmate guitar.[/wave]");
+		dialogueStart(Lang.Get("dialogue_guitar2"));
 	};
 }
