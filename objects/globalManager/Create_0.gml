@@ -1,5 +1,4 @@
-// -- AUDIO
-Window.ApplyBlur(window_handle());
+// Window.ApplyBlur(window_handle());
 
 // -- OTHER SOME THING STUFF AHHSJLJSHDKJHSD
 _debug = false;
@@ -18,3 +17,6 @@ _bitcrusherEffect.factor = 10;
 _bitcrusherEffect.resolution = 14;
 _bitcrusherEffect.mix = 0.1;
 audio_bus_main.effects[1] = _bitcrusherEffect;
+
+// Game Thing
+_timeHeartbeat = 0;

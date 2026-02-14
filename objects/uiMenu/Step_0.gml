@@ -30,15 +30,17 @@ if (!_locked && Input.Pressed(VKey.Confirm) && _state == 0 && fader._alpha == 0)
 			// NEW GAME
 			_locked = true;
 			audio_sound_gain(_sound, 0, 1000);
+			global._loadSnapshots = _load;
+			
 			faderFade(0, 1, 30, c_black);
 			call_later(
 				33, time_source_units_frames,
 				function()
 				{
 					audio_stop_sound(_sound);
-					room_goto(_startRoom); // TODO: Make maps soon
-					Save.Set(SType.Snapshot, SSnapshot.Room, _startRoom);
-					Player.SaveGame();
+					Player.ClearGame();
+					States.Reset();
+					room_goto(_startRoom);
 					faderFade(1, 0, 15, c_black);
 				}
 			);
@@ -79,12 +81,15 @@ else if (!_locked && _state == 1 && _ready)
 		{
 			var _func = function()
 			{
+				States.SetTime(Save.Get(SType.Snapshot, SSnapshot.Time, 0));
 				room_goto(_load[_loadIndex].room);
 				faderFade(1, 0, 15, c_black);
 			};
 			
 			if (room_exists(_ind.room))
 			{
+				audio_play_sound(sndLongerClick, 1, false);
+				global._loadSnapshots = _load;
 				Save.SetSlot(_loadIndex);
 				Player.LoadGame();
 				_locked = true;
@@ -95,7 +100,14 @@ else if (!_locked && _state == 1 && _ready)
 					_func
 				);
 			}
+			else
+			{
+				print("-- POSSIBLE ROOM LOADING ERROR! --");
+				audio_play_sound(sndBlipNo, 1, false);
+			}
 		}
+		else
+			audio_play_sound(sndBlipNo, 1, false);
 	}
 }
 

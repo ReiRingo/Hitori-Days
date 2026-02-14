@@ -23,6 +23,7 @@ _canMoveUi = true;
 _canMoveCutscene = true;
 _canMoveWarp = true;
 _canMoveDialogue = true;
+_canMoveSaving = true;
 
 // -- System
 _displayConfirm = false;

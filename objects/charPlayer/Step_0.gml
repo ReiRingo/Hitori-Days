@@ -6,7 +6,8 @@ var _moveable = (
 	_canMoveCutscene &&
 	_canMoveUi &&
 	_canMoveWarp &&
-	_canMoveDialogue
+	_canMoveDialogue &&
+	_canMoveSaving
 );
 
 if (_moveable)

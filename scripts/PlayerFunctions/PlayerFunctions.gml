@@ -28,6 +28,22 @@ function __playerLib() constructor
 		}
 	};
 	
+	static ClearGame = function()
+	{
+		var _target = [
+			SType.Snapshot,
+			SType.Cutscenes
+		];
+		
+		var _size = array_length(_target);
+		var _proc = 0;
+		repeat(_size)
+		{
+			Save.Clear(_target[_proc]);
+			_proc++;
+		}
+	};
+	
 	static Warp = function(room, spawnpointId, time = 15, timeOut = 15, col = c_black)
 	{
 		global.warp.room = room;

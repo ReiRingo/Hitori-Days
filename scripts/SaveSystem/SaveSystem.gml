@@ -109,5 +109,11 @@ Save =
 	SetSlot: function(ind)
 	{
 		global.slotIndex = abs(ind);
+	},
+	
+	Clear: function(type)
+	{
+		global.saves[$ type] = {};
+		return true;
 	}
 };
