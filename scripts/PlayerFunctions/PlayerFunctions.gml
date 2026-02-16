@@ -94,7 +94,11 @@ function __playerLib() constructor
 				break;
 			
 			case roomBocchiRoom:
-				_out = "Bocchi's Bedroom";
+				_out = Lang.Get("save_room_bocchi");
+				break;
+			
+			case roomYoko1:
+				_out = Lang.Get("save_room_yoko1");
 				break;
 		}
 		return _out;

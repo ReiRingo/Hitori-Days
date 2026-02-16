@@ -1,5 +1,3 @@
-// -- Control Bind
-
 #region BUTTONS
 // Confirm
 Input.Bind(
@@ -39,9 +37,7 @@ Input.Bind(
 #endregion
 
 #region LANGS
-Lang.LoadLang("en", "en.json");
-// TODO: Finish soon
-/*
+_langInit = false;
 if (file_exists("langs.json"))
 {
 	var _buf = buffer_load("langs.json");
@@ -50,10 +46,34 @@ if (file_exists("langs.json"))
 	
 	var _json = json_parse(_str);
 	
-	struct_foreach(_json, );
+	struct_foreach(_json, function(i, v)
+	{
+		if (file_exists(v))
+		{
+			Lang.LoadLang(i, string(v));
+			if (!_langInit)
+			{
+				_langInit = true;
+				CurLang = string(i);
+			}
+		}
+		else
+			throw $"LANGUAGE ERROR: Language {i} with path {v} does not exist!";
+	});
 }
-*/
+else
+	throw "LANGUAGE ERROR: LANGUAGES (langs.json) NOT FOUND!\nRedownload it back at https://github.com/ReiRingo/Hitori-Days";
 #endregion
 
-// Start
+#region Exception Handler
+if (file_exists(global.crashSprite))
+{
+	global.crash.spr = sprite_add(global.crashSprite, 0, true, true, 0, 0);
+	global.crash.w = sprite_get_width(global.crash.spr);
+	global.crash.h = sprite_get_height(global.crash.spr);
+}
+#endregion
+
+#region START
 room_goto(roomLogo);
+#endregion

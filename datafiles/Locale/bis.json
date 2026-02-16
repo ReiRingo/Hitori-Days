@@ -1,0 +1,47 @@
+{
+	"cr": "Velvet Clover (C) 2026\nTusloka ang [Z] para ma sugdan!",
+	"author": "Localization by MamaMoBlu",
+
+	"menu_ng": "Bag-ong dula",
+	"menu_lg": "Balik sa Load",
+	"menu_st": "Settings",
+	"menu_qt": "Kansel",
+	"menu_load_time": "Oras",
+	"menu_load_money": "Kwarta",
+	"menu_hint_load": "Pili-a ang save point nga gusto nimo i-load.",
+
+	"save_point": ["Mao ni ang save point.", "Pwede ka mag-save diri."],
+	"save_hint_save": "Asa nimo gusto i-save?",
+	"save_hint_saved": "Saved!",
+	"save_room_bocchi": "Kwarto ni Hitori",
+	"save_room_yoko1": "Mga Silingan ni Hitori",
+
+	"dialogue_guitar1": ["Usa ka custom nga Les Paul guitar.", "Usa ka relic nga gi-hulman nimo sa imong papa", "Mao ni imong soulmate."],
+	"dialogue_guitar2": "[wave]Imong soulmate nga guitar~[/wave]",
+	"dialogue_mirror": ["Mao ni ang salamin.", "Nya ang naa sa reflection kay ikaw!", "Mura ka ug rakista!"],
+	"dialogue_trespass": "Dili maayo mo trespass ug mga balay sa imong silingan...",
+	
+	"cutscene_intro_michiyo": [
+		"Hitori!",
+		"Hitori, [delay, 650]mo-lakaw na mi!",
+		"Sure ka dili ka mo-kuyog?",
+		"...",
+		"Sige, [delay, 10]sige!",
+		"Pag-amping sa imong kaugalingon, ha?",
+		"[wave](Ug imong guitar,[delay, 400] of course!)[/wave]",
+		"Okay,[delay, 90] lakaw nami!",
+		"Bye bye!"
+	],
+	"cutscene_intro_bocchi1": [
+		"...",
+		"I'm alone..!",
+		"..."
+	],
+	"cutscene_intro_bocchi2": [
+		"[shake]Ack![/shake]",
+		"[shake]Patay![/shake]",
+		"Bati ni!",
+		"Kung gusto ko ma bubbly-sparkly-extrovert karun tuiga...",
+		"Kaylangan ko makig tabi!"
+	]
+}

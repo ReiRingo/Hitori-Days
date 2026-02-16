@@ -119,6 +119,6 @@ function AnimeClass(defVal, defLoop = false, defFunc = undefined, defData = []) 
     x2 = defVal;
     frame = 0;
     maxFrames = 1;
-    ease = "";
+    ease = undefined;
     mode = undefined;
 }

@@ -9,13 +9,12 @@ if (!_flag)
 	Cutscene.MoveCharTarget(_c, charPlayer, 144, charPlayer.y);
 	Cutscene.Wait(_c, 15);
 	Cutscene.MoveCharTarget(_c, charPlayer, 144, 144);
-	Cutscene.Dialogue(_c, [
-		"Hitori!",
-		"Dear!",
-		"We'll be going now,\nI hope you have fun alone!",
-		"(Which you probably will...)",
-		"Anywho, byebye![delay,70] Love you!"
-	]);
+	Cutscene.Dialogue(_c, Lang.Get("cutscene_intro_michiyo"));
+	// TODO: door sound effect!
+	Cutscene.Wait(_c, 30); // One second
+	Cutscene.Dialogue(_c, Lang.Get("cutscene_intro_bocchi1"));
+	Cutscene.Function(_c, function() { camShaker(10, 4); });
+	Cutscene.Dialogue(_c, Lang.Get("cutscene_intro_bocchi2"));
 	Cutscene.PlayerMoveable(_c, true);
 	
 	Cutscene.Play(_c);

@@ -1,6 +1,6 @@
 cameraManager.target = self;
 
-// Warping
+#region Warping
 if (global.warp.active)
 {
 	var _tarId = global.warp.spawnpointId;
@@ -26,3 +26,8 @@ if (global.warp.active)
 	
 	global.warp.active = false;
 }
+#endregion
+
+#region Radio
+// TODO: No
+#endregion

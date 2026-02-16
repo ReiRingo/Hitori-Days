@@ -2,7 +2,7 @@
 event_inherited();
 
 targetRoom = room;
-targetId = 0;
+targetSp = 0;
 
 _time = 15;
 _timeOut = 15;
@@ -11,5 +11,5 @@ _repeat = true;
 
 event = function()
 {
-	Player.Warp(targetRoom, targetId, _time, _timeOut, _colour);
+	Player.Warp(targetRoom, targetSp, _time, _timeOut, _colour);
 };

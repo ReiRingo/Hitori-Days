@@ -20,7 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"f7d58529-186f-4400-944a-78681ad5d125","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"f7d58529-186f-4400-944a-78681ad5d125","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"8693c7fd-1214-4c3e-aecb-59cb9c06a1ac","blendMode":0,"displayName":"default","isLocked":false,"name":"8693c7fd-1214-4c3e-aecb-59cb9c06a1ac","opacity":64.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8693c7fd-1214-4c3e-aecb-59cb9c06a1ac","blendMode":0,"displayName":"default","isLocked":false,"name":"8693c7fd-1214-4c3e-aecb-59cb9c06a1ac","opacity":32.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprDevCol",
   "nineSlice":{

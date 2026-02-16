@@ -1,2 +1,2 @@
 targetRoom = roomBocchiCloset;
-targetId = 0;
+targetSp = 0;

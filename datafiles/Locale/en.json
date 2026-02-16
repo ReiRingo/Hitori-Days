@@ -1,0 +1,47 @@
+{
+	"cr": "Velvet Clover (C) 2026\nPress [Z] to start!",
+	"author": "Localisation by Rei Taylor of Velvet Clover Team",
+
+	"menu_ng": "New Game",
+	"menu_lg": "Load Game",
+	"menu_st": "Settings",
+	"menu_qt": "Quit",
+	"menu_load_time": "Time",
+	"menu_load_money": "Cash",
+	"menu_hint_load": "Where do you wanna load?",
+
+	"save_point": ["It's a save point!", "It saves your game."],
+	"save_hint_save": "Where do you wanna save?",
+	"save_hint_saved": "Saved!",
+	"save_room_bocchi": "Hitori's Room",
+	"save_room_yoko1": "Hitori's Neighbourhood",
+
+	"dialogue_guitar1": ["It's a custom Les Paul Gibson guitar.", "A relic you borrowed from your father.", "The thing is your soulmate."],
+	"dialogue_guitar2": "[wave]Your soulmate guitar~[/wave]",
+	"dialogue_mirror": ["It's a mirror.", "And the reflection in it is you.", "You look like a rockstar!"],
+	"dialogue_trespass": "I don't think you should be entering random people's\nhouses...",
+	
+	"cutscene_intro_michiyo": [
+		"Hitori!",
+		"Hitori, [delay, 650]we're going now!",
+		"Are you sure you don't wanna come with us?",
+		"...",
+		"I'll take your silence as a \"No\"!",
+		"Take care of yourself now!",
+		"[wave](And your guitar,[delay, 400] of course!)[/wave]",
+		"Okay,[delay, 90] we're going now!",
+		"Bye bye!"
+	],
+	"cutscene_intro_bocchi1": [
+		"...",
+		"I'm alone..!",
+		"..."
+	],
+	"cutscene_intro_bocchi2": [
+		"[shake]Ack![/shake]",
+		"[shake]No![/shake]",
+		"This is bad!",
+		"If I wanna be a bubbly-sparkly-extrovert this year...",
+		"Then I have to socialise!"
+	]
+}

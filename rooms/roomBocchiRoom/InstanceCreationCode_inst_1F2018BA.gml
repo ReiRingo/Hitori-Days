@@ -1,2 +1,2 @@
 targetRoom = roomBocchiLivingRoom;
-targetId = 0;
+targetSp = 0;

@@ -1,0 +1,5 @@
+enum AudioId
+{
+	Mus,
+	Atmos
+}

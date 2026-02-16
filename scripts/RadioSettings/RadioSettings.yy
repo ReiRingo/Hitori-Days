@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"RadioSettings",
   "parent":{
-    "name":"Radio",
-    "path":"folders/Script/Radio.yy",
+    "name":"Audio Scripts",
+    "path":"folders/Script/Audio Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

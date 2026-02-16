@@ -1,14 +1,20 @@
 #macro Window global.cppWindowLib
 
-Window =
+function __winLib() constructor 
 {
-	///@param {pointer} Handle
-	ApplyBlur: function(n)
+	static ApplyBlur = function(n)
 	{
-		if (!is_ptr(n))
+		if (!is_ptr)
 			return false;
 		
 		__HandlerBlur(n);
 		return true;
 	}
-};
+	
+	static Crash = function(text, width, height, sprite)
+	{
+		return crashPrettifier(text, width, height, sprite);
+	}
+}
+
+Window = new __winLib();
