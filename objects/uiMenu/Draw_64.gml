@@ -2,6 +2,8 @@ var _gui = {
 		w : display_get_gui_width()
 };
 
+draw_set_font(GuiFont);
+
 if (_state == 0)
 {
 	var _len = array_length(_options);

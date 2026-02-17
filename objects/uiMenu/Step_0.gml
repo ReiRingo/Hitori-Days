@@ -28,6 +28,7 @@ if (!_locked && Input.Pressed(VKey.Confirm) && _state == 0 && fader._alpha == 0)
 	{
 		case 0:
 			// NEW GAME
+			audio_play_sound(sndSelect, 1, false);
 			_locked = true;
 			audio_sound_gain(_sound, 0, 1000);
 			global._loadSnapshots = _load;
@@ -48,6 +49,16 @@ if (!_locked && Input.Pressed(VKey.Confirm) && _state == 0 && fader._alpha == 0)
 		
 		case 1:
 			_state = 1;
+			audio_play_sound(sndSelect, 1, false);
+			break;
+		
+		case 2:
+			audio_play_sound(sndSelect, 1, false);
+			room_goto(roomSettings);
+			break;
+		
+		case 3:
+			game_end();
 			break;
 	}
 }

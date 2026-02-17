@@ -10,6 +10,11 @@
 	"menu_load_money": "Kwarta",
 	"menu_hint_load": "Pili-a ang save point nga gusto nimo i-load.",
 
+	"settings_lang": "Lingwahe",
+	"settings_master": "Master nga volume",
+	"settings_linear_interp": "Linear Interpolation",
+	"settings_exit": "Kansel",
+
 	"save_point": ["Mao ni ang save point.", "Pwede ka mag-save diri."],
 	"save_hint_save": "Asa nimo gusto i-save?",
 	"save_hint_saved": "Saved!",

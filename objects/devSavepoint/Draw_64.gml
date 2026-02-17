@@ -2,6 +2,8 @@ var _gui = {
 		w : display_get_gui_width()
 };
 
+draw_set_font(GuiFont);
+
 var _topPad = 40;
 var _space = 180;
 var _margin = 80;

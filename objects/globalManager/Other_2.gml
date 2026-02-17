@@ -1,3 +1,5 @@
+Save.LoadToDisk(SType.Settings);
+
 #region BUTTONS
 // Confirm
 Input.Bind(
@@ -38,6 +40,8 @@ Input.Bind(
 
 #region LANGS
 _langInit = false;
+_langSaved = Save.Get(SType.Settings, SettingsLang, undefined);
+_firstLang = {l: "en", f: false};
 if (file_exists("langs.json"))
 {
 	var _buf = buffer_load("langs.json");
@@ -48,18 +52,34 @@ if (file_exists("langs.json"))
 	
 	struct_foreach(_json, function(i, v)
 	{
+		static __jsonProc = 0;
 		if (file_exists(v))
 		{
 			Lang.LoadLang(i, string(v));
-			if (!_langInit)
+			LangChoices[__jsonProc] = i;
+			if (!_firstLang.f)
+			{
+				_firstLang.l = i;
+				_firstLang.f = true;
+			}
+			
+			if (!_langInit && !is_undefined(_langSaved) && i == _langSaved)
 			{
 				_langInit = true;
-				CurLang = string(i);
+				CurLang = i;
 			}
+			print($"LANG PROC: {__jsonProc}");
+			__jsonProc++;
 		}
 		else
 			throw $"LANGUAGE ERROR: Language {i} with path {v} does not exist!";
 	});
+	
+	if (CurLang == "nan")
+	{
+		_langInit = true;
+		CurLang = _firstLang.l;
+	}
 }
 else
 	throw "LANGUAGE ERROR: LANGUAGES (langs.json) NOT FOUND!\nRedownload it back at https://github.com/ReiRingo/Hitori-Days";
@@ -71,7 +91,13 @@ if (file_exists(global.crashSprite))
 	global.crash.spr = sprite_add(global.crashSprite, 0, true, true, 0, 0);
 	global.crash.w = sprite_get_width(global.crash.spr);
 	global.crash.h = sprite_get_height(global.crash.spr);
+	sprite_delete(global.crash.spr);
 }
+#endregion
+
+#region Settings
+Interp = Save.Get(SType.Settings, SettingsInterp, true);
+gpu_set_texfilter(Interp);
 #endregion
 
 #region START

@@ -1,6 +1,6 @@
 global.texts = {};
 #macro CurLang global.lang
-CurLang = "en";
+CurLang = "nan";
 
 function __jsLib() constructor
 {

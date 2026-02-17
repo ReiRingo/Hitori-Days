@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sndSelect",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.20079167,
+  "exportDir":"",
+  "name":"sndSelect",
+  "parent":{
+    "name":"SE",
+    "path":"folders/Audio/SE.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"sndSelect.wav",
+  "volume":1.0,
+}

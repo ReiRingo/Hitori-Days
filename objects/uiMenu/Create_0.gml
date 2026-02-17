@@ -7,6 +7,8 @@ _options = [
 	Lang.Get("menu_qt")
 ];
 
+if (audio_is_playing(musMenu))
+	audio_stop_sound(musMenu);
 _sound = audio_play_sound(
 	musMenu, 1, true
 );
@@ -47,3 +49,5 @@ repeat(_loadSize)
 	_proc++;
 }
 Save.SetSlot(0);
+
+event_user(0);

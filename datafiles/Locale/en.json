@@ -1,6 +1,6 @@
 {
 	"cr": "Velvet Clover (C) 2026\nPress [Z] to start!",
-	"author": "Localisation by Rei Taylor of Velvet Clover Team",
+	"author": "Localisation by Rei of Velvet Clover Team",
 
 	"menu_ng": "New Game",
 	"menu_lg": "Load Game",
@@ -9,6 +9,11 @@
 	"menu_load_time": "Time",
 	"menu_load_money": "Cash",
 	"menu_hint_load": "Where do you wanna load?",
+	
+	"settings_lang": "Language",
+	"settings_master": "Master Volume",
+	"settings_linear_interp": "Linear Interpolation",
+	"settings_exit": "Exit",
 
 	"save_point": ["It's a save point!", "It saves your game."],
 	"save_hint_save": "Where do you wanna save?",
