@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"EngineHelpers",
+  "%Name":"ConsoleHelpers",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"EngineHelpers",
+  "name":"ConsoleHelpers",
   "parent":{
     "name":"Helper Scripts",
     "path":"folders/Script/Helper Scripts.yy",

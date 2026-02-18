@@ -1,5 +1,5 @@
 /// @desc Takes the raw heartbeat count and returns "MM:SS"
-function timeToFrame(_raw_time)
+function timeFormatter(_raw_time)
 {
     // Convert heartbeats to total seconds
     // Since it increments every 30 frames (0.5s), 2 heartbeats = 1 second

@@ -34,7 +34,7 @@ else if (_state == 1)
 		var _roomNamer = Player.MapName;
 		var _name = (
 			_ld.available
-		) ? $"{_roomNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeToFrame(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen" : "---------";
+		) ? $"{_roomNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeFormatter(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen" : "---------";
 		
 		drawTextGUI([_margin + 20, _margin + 20 + (_proc * _space) + 40], _name, 1.5);
 		

@@ -25,6 +25,18 @@
 	"dialogue_guitar2": "[wave]Your soulmate guitar~[/wave]",
 	"dialogue_mirror": ["It's a mirror.", "And the reflection in it is you.", "You look like a rockstar!"],
 	"dialogue_trespass": "I don't think you should be entering random people's\nhouses...",
+	"dialogue_helper_talk": [
+		"Hitori-chan!",
+		"You did it!",
+		"You talked to someone!",
+		"[wave](Even if I'm just your imaginary friend, [delay, 70]\nthat's still a big deal!)[/wave]",
+		"To interact with other characters, just walk up to them and\npress [[Z]!",
+		"You can also interact with objects in the world,\n[delay, 70]like that guitar and mirror you just saw!",
+		"Try talking to the people around you, and see what they\nhave to say!"
+	],
+	"dialogue_helper_save_hint": "If you wanna save your game, just walk up to that\nsparkly blue star and press [[Z]!",
+	"dialogue_helper_balance1": ["Hello Hitori-chan!", "...", "What's that?", "Your balance?", "Right now,[delay, 20] it's...", "%y Yen!"],
+	"dialogue_helper_balance2": "Your balance is %y Yen!",
 	
 	"cutscene_intro_michiyo": [
 		"Hitori!",
@@ -48,5 +60,7 @@
 		"This is bad!",
 		"If I wanna be a bubbly-sparkly-extrovert this year...",
 		"Then I have to socialise!"
-	]
+	],
+
+	"dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Hello, it's me Ryo Yamada.[delay, 300]\nCan I borrow money?"
 }

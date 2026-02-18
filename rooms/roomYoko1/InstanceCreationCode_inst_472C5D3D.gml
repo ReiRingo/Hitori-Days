@@ -4,11 +4,11 @@ event = function()
 	
 	Cutscene.Function(_c, function() { dialogueStart(Lang.Get("dialogue_trespass")); });
 	Cutscene.PlayerMoveable(_c, false);
-	Cutscene.MoveChar(_c, charPlayer, DirStates.Up, 5, true);
+	Cutscene.MoveChar(_c, charPlayer, DirStates.Down, 5, true);
 	Cutscene.Function(_c, function()
 	{
 		with(charPlayer)
-			dir = DirStates.Down;
+			dir = DirStates.Up;
 	});
 	Cutscene.PlayerMoveable(_c, true);
 	

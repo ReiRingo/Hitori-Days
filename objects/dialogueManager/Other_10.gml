@@ -7,6 +7,8 @@ if (_pageIndex >= array_length(text))
 }
 
 text[_pageIndex] = string_replace_all(text[_pageIndex], "[/scale]", "[scale, 2]");
+text[_pageIndex] = string_replace_all(text[_pageIndex], "%y", string(States.GetYen()));
+text[_pageIndex] = string_replace_all(text[_pageIndex], "%t", timeFormatter(States.GetTime()));
 
 var _text = "[scale, 2]" + text[_pageIndex];
 

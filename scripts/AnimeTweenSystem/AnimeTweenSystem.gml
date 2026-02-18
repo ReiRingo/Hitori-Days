@@ -122,3 +122,8 @@ function AnimeClass(defVal, defLoop = false, defFunc = undefined, defData = []) 
     ease = undefined;
     mode = undefined;
 }
+
+call_later(2, time_source_units_frames, function()
+{
+	print(1=3, 1=1);
+});

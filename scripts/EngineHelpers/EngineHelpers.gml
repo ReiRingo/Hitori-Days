@@ -89,3 +89,22 @@ function mapValue(input, inputArr, outputArr)
 	
 	return _outMin + (input - _inMin) * (_outMax - _outMin) / (_inMax - _inMin);
 }
+
+function drawTextOutline(_x, _y, _text, _outlineSpace = 1, _outlineColour = c_black)
+{
+    var _textCol = draw_get_colour();
+    
+    draw_set_colour(_outlineColour);
+    
+    for (var i = 0; i < 360; i += 45) 
+    {
+        draw_text(
+            _x + lengthdir_x(_outlineSpace, i), 
+            _y + lengthdir_y(_outlineSpace, i), 
+            _text
+        );
+    }
+    
+    draw_set_colour(_textCol);
+    draw_text(_x, _y, _text);
+}

@@ -82,7 +82,10 @@ if (file_exists("langs.json"))
 	}
 }
 else
-	throw "LANGUAGE ERROR: LANGUAGES (langs.json) NOT FOUND!\nRedownload it back at https://github.com/ReiRingo/Hitori-Days";
+{
+	var _dir = "datafiles/";
+	throw $"LANGUAGE ERROR: LANGUAGES (langs.json) NOT FOUND IN {_dir}!\nRedownload it back at https://github.com/ReiRingo/Hitori-Days";
+}
 #endregion
 
 #region Exception Handler

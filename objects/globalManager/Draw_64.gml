@@ -8,3 +8,4 @@ if (_debug)
 
 draw_set_font(fontDefault);
 drawReset();
+

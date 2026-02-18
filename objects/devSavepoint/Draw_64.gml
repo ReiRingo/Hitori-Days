@@ -19,7 +19,7 @@ if (_isSave)
 		_ld = _load[_proc];
 		_info = (_ld.available)
 			?
-			$"{_mapNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeToFrame(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen"
+			$"{_mapNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeFormatter(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen"
 			:
 			"---------";
 		
@@ -39,7 +39,7 @@ if (_isSave)
 if (_saved)
 {
 	_ld = _load[_saveIndex];
-	_info = $"{_mapNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeToFrame(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen";
+	_info = $"{_mapNamer(_ld.room)}\n{Lang.Get("menu_load_time")}: {timeFormatter(_ld.time)}\n{Lang.Get("menu_load_money")}: {_ld.money} Yen";
 	drawPanel(_margin * 2, _margin + (_saveIndex * _space) + _topPad, _space * 3, _space - _margin);
 	drawTextGUI([(_margin * 2) + 20, _margin + 20 + (_saveIndex * _space) + _topPad], _info, 1);
 	drawPanel(_margin, 10, _gui.w - (_margin * 2), 100);

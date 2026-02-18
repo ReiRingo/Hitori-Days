@@ -25,6 +25,17 @@
 	"dialogue_guitar2": "[wave]Imong soulmate nga guitar~[/wave]",
 	"dialogue_mirror": ["Mao ni ang salamin.", "Nya ang naa sa reflection kay ikaw!", "Mura ka ug rakista!"],
 	"dialogue_trespass": "Dili maayo mo trespass ug mga balay sa imong silingan...",
+	"dialogue_helper_talk": [
+		"Hitori!",
+		"Nakig-istorya ka nako!",
+		"[wave](Bahala'g imaginary ko, [delay, 70]\nbig deal gihapon na!)[/wave]",
+		"Para mo interact ka ug mga karakter, atubanga sila dayun tusloka ang [[Z]!",
+		"Try pud mo interact sa mga butang, ha?"
+	],
+	"dialogue_helper_save_hint": [
+		"Pwede ka mag-save sa mga save point nga makita nimo sa mapa.",
+		"Kung gusto nimo mag-save, adto lang sa save point dayun tusloka ang [[Z]!"
+	],
 	
 	"cutscene_intro_michiyo": [
 		"Hitori!",
