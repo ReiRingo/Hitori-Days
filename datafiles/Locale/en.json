@@ -1,4 +1,6 @@
 {
+	"note_1": "This is getting messy, www",
+
 	"cr": "Velvet Clover (C) 2026\nPress [Z] to start!",
 	"author": "Localisation by Rei of Velvet Clover Team",
 
@@ -37,6 +39,7 @@
 	"dialogue_helper_save_hint": "If you wanna save your game, just walk up to that\nsparkly blue star and press [[Z]!",
 	"dialogue_helper_balance1": ["Hello Hitori-chan!", "...", "What's that?", "Your balance?", "Right now,[delay, 20] it's...", "%y Yen!"],
 	"dialogue_helper_balance2": "Your balance is %y Yen!",
+	"dialogue_cone": "(This area is blocked off.)",
 	
 	"cutscene_intro_michiyo": [
 		"Hitori!",

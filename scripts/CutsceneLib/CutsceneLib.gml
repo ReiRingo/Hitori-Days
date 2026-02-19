@@ -1,20 +1,17 @@
 #macro Cutscene global.cutFuncLib
 
-Cutscene =
-{
-	create: function()
-	{
+Cutscene = {
+	create: function() {
 		return instance_create_depth(0, 0, 0, cutsceneManager);
 	},
 	
-	custom: function(cut, struct)
-	{
+	custom: function(cut, struct) {
 		array_push(cut._queue, struct);
 	},
 	
 	action: function(cut, func)
 	{
-		Cutscene.custom(cut, {
+		self.custom(cut, {
 			init: func,
 			update: false
 		});
@@ -22,7 +19,7 @@ Cutscene =
 	
 	playerMoveable: function(cut, moveable)
 	{
-		Cutscene.custom(cut, {
+		self.custom(cut, {
 			moveBool: moveable,
 			init: function()
 			{
@@ -35,7 +32,7 @@ Cutscene =
 	
 	charMove: function(cut, targetChar, directionState, amount, wait = true)
 	{
-		Cutscene.custom(cut, {
+		self.custom(cut, {
 			_character: targetChar,
 			wait: wait,
 			dir: directionState,
@@ -103,7 +100,7 @@ Cutscene =
 	
 	sleep: function(cut, frames)
 	{
-		Cutscene.custom(cut, {
+		self.custom(cut, {
 			timer: frames,
 			init: function(){},
 			update: function()
@@ -139,7 +136,7 @@ Cutscene =
 	
 	halt: function(cut)
 	{
-		Cutscene.custom(cut, {
+		self.custom(cut, {
 			cutsceneObj: cut,
 			init: function()
 			{

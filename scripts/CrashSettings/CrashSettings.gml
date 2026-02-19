@@ -8,6 +8,8 @@ global.crash = {
 
 exception_unhandled_handler(function(_exception)
 {
+	audio_stop_all();
+	
     var _res = "Oh no, Bocchi has crashed!\nBadly!\n\n";
     var _keys = struct_get_names(_exception);
 	

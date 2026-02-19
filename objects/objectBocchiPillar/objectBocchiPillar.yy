@@ -9,8 +9,8 @@
   "name":"objectBocchiPillar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Props",
-    "path":"folders/Object/Props.yy",
+    "name":"Overworld",
+    "path":"folders/Object/Overworld.yy",
   },
   "parentObjectId":null,
   "persistent":false,

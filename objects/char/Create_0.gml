@@ -34,6 +34,7 @@ _leftFlipX = true;
 // Direction
 dir = DirStates.Down;
 dirLocked = false;
+dirCanTurn = true;
 
 // -- Movement
 // Speed

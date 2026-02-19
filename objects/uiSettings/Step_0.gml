@@ -29,7 +29,7 @@ switch(index)
 			CurLang = LangChoices[langIndex];
 			print($"Settings: New language is {CurLang}");
 			options[index].v = CurLang;
-			event_perform(ev_create, 0);
+			event_user(0);
 			SoundLib.Once(sndSelect);
 		}
 		else if (_left)
@@ -38,7 +38,7 @@ switch(index)
 			CurLang = LangChoices[langIndex];
 			print($"Settings: New language is {CurLang}");
 			options[index].v = CurLang;
-			event_perform(ev_create, 0);
+			event_user(0);
 			SoundLib.Once(sndSelect);
 		}
 		break;

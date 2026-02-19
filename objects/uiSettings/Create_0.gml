@@ -1,4 +1,5 @@
-// audio_stop_all();
+audio_stop_all();
+audio_play_sound(musShi1, 1, true);
 
 options = [
 	// M IS DEPRECATED!
@@ -27,3 +28,12 @@ for (var i = 0; i < array_length(LangChoices); ++i)
 		break;
 	}
 }
+
+_prop = call_later(
+	10,
+	time_source_units_frames,
+	function() {
+		instance_create_depth(irandom(room_width), -5, depth, propConfetti);
+	},
+	true
+);

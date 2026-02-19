@@ -6,8 +6,8 @@
   "name":"objBocchisGuitar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Props",
-    "path":"folders/Object/Props.yy",
+    "name":"Overworld",
+    "path":"folders/Object/Overworld.yy",
   },
   "parentObjectId":{
     "name":"object",

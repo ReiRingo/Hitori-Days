@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Props",
-    "path":"folders/Sprite/Props.yy",
+    "name":"Overworld",
+    "path":"folders/Sprite/Overworld.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

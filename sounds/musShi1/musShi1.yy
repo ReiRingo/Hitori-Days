@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"musShi1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":66.804016,
+  "exportDir":"",
+  "name":"musShi1",
+  "parent":{
+    "name":"MUS",
+    "path":"folders/Audio/MUS.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"musShi1.ogg",
+  "volume":1.0,
+}

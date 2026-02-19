@@ -9,8 +9,8 @@
   "name":"objectStatic",
   "overriddenProperties":[],
   "parent":{
-    "name":"Props",
-    "path":"folders/Object/Props.yy",
+    "name":"Overworld",
+    "path":"folders/Object/Overworld.yy",
   },
   "parentObjectId":{
     "name":"collision",

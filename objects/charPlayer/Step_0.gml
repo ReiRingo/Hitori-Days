@@ -88,13 +88,29 @@ if (_moveable)
 	}
 	*/
 	
-	if (Input.Pressed(VKey.Confirm) && instance_exists(_inst))
-	{
-		with(_inst)
-		{
-			if (_interactable && variable_instance_exists(id, "event") && is_method(event))
-			{
+	if (Input.Pressed(VKey.Confirm) && instance_exists(_inst)) {
+		with(_inst) {
+			if (_interactable && variable_instance_exists(id, "event") && is_method(event)) {
 				event();
+				
+				#region Turning
+				if (dirCanTurn && !dirLocked) {
+					switch(other.dir) {
+						case DirStates.Up:
+							dir = DirStates.Down;
+							break;
+						case DirStates.Down:
+							dir = DirStates.Up;
+							break;
+						case DirStates.Left:
+							dir = DirStates.Right;
+							break;
+						case DirStates.Right:
+							dir = DirStates.Left;
+							break;
+					}
+				}
+				#endregion
 			}
 		}
 	}
