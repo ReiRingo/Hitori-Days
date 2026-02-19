@@ -1,24 +1,24 @@
-var _cond = Save.Get(SType.Cutscenes, "guitar", false);
+var _cond = Save.get(SType.Cutscenes, "guitar", false);
 
 print($"Cond: {_cond}");
 if (!_cond)
 {
 	event = function()
 	{
-		dialogueStart(Lang.Get("dialogue_guitar1"));
+		dialogueStart(Lang.get("dialogue_guitar1"));
 		
 		event = function()
 		{
-			dialogueStart(Lang.Get("dialogue_guitar2"));
+			dialogueStart(Lang.get("dialogue_guitar2"));
 		};
 		
-		Save.Set(SType.Cutscenes, "guitar", true);
+		Save.set(SType.Cutscenes, "guitar", true);
 	};
 }
 else
 {
 	event = function()
 	{
-		dialogueStart(Lang.Get("dialogue_guitar2"));
+		dialogueStart(Lang.get("dialogue_guitar2"));
 	};
 }

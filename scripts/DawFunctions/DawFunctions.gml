@@ -1,16 +1,16 @@
 function songLoadFromDisk()
 {
-	Save.LoadToDisk(SType.Songs);
+	Save.loadFromDisk(SType.Songs);
 }
 
 function songSave(name, struct)
 {
-	Save.Set(SType.Songs, name, struct);
+	Save.set(SType.Songs, name, struct);
 }
 
 function songLoad(name)
 {
-	var _initial = Save.Get(SType.Songs, name);
+	var _initial = Save.get(SType.Songs, name);
 	if (is_undefined(_initial))
 		return false;
 	

@@ -59,9 +59,9 @@ switch(index)
 		if (_confirm)
 		{
 			SoundLib.Once(sndSelect);
-			Save.Set(SType.Settings, SettingsLang, CurLang);
-			Save.Set(SType.Settings, SettingsInterp, Interp);
-			Save.SaveToDisk(SType.Settings);
+			Save.set(SType.Settings, SettingsLang, CurLang);
+			Save.set(SType.Settings, SettingsInterp, Interp);
+			Save.saveToDisk(SType.Settings);
 			room_goto(roomMainMenu);
 		}
 		break;

@@ -1,10 +1,10 @@
 _index = 0;
 
 _options = [
-	Lang.Get("menu_ng"),
-	Lang.Get("menu_lg"),
-	Lang.Get("menu_st"),
-	Lang.Get("menu_qt")
+	Lang.get("menu_ng"),
+	Lang.get("menu_lg"),
+	Lang.get("menu_st"),
+	Lang.get("menu_qt")
 ];
 
 if (audio_is_playing(musMenu))
@@ -27,14 +27,14 @@ _ready = false;
 var _proc = 0;
 repeat(_loadSize)
 {
-	Save.SetSlot(_proc);
+	Save.setSlot(_proc);
 	if (Player.LoadGame(1))
 	{
 		_load[_proc] = {
 			available: true,
-			room: Save.Get(SType.Snapshot, SSnapshot.Room, roomBocchiRoom),
-			time: Save.Get(SType.Snapshot, SSnapshot.Time, 0),
-			money: Save.Get(SType.Snapshot, SSnapshot.Yen, 0)
+			room: Save.get(SType.Snapshot, SSnapshot.Room, roomBocchiRoom),
+			time: Save.get(SType.Snapshot, SSnapshot.Time, 0),
+			money: Save.get(SType.Snapshot, SSnapshot.Yen, 0)
 		};
 	}
 	else
@@ -48,6 +48,6 @@ repeat(_loadSize)
 	}
 	_proc++;
 }
-Save.SetSlot(0);
+Save.setSlot(0);
 
 event_user(0);

@@ -2,27 +2,27 @@
 
 Cutscene =
 {
-	Create: function()
+	create: function()
 	{
 		return instance_create_depth(0, 0, 0, cutsceneManager);
 	},
 	
-	Custom: function(cut, struct)
+	custom: function(cut, struct)
 	{
 		array_push(cut._queue, struct);
 	},
 	
-	Function: function(cut, func)
+	action: function(cut, func)
 	{
-		Cutscene.Custom(cut, {
+		Cutscene.custom(cut, {
 			init: func,
 			update: false
 		});
 	},
 	
-	PlayerMoveable: function(cut, moveable)
+	playerMoveable: function(cut, moveable)
 	{
-		Cutscene.Custom(cut, {
+		Cutscene.custom(cut, {
 			moveBool: moveable,
 			init: function()
 			{
@@ -33,9 +33,9 @@ Cutscene =
 		});
 	},
 	
-	MoveChar: function(cut, targetChar, directionState, amount, wait = true)
+	charMove: function(cut, targetChar, directionState, amount, wait = true)
 	{
-		Cutscene.Custom(cut, {
+		Cutscene.custom(cut, {
 			_character: targetChar,
 			wait: wait,
 			dir: directionState,
@@ -54,9 +54,9 @@ Cutscene =
 		});
 	},
 	
-	MoveCharTarget: function(cut, chars, tx, ty, wait = true)
+	charMoveTarget: function(cut, chars, tx, ty, wait = true)
 	{
-		self.Custom(
+		self.custom(
 			cut,
 			{
 				chars: chars,
@@ -84,9 +84,26 @@ Cutscene =
 		);
 	},
 	
-	Wait: function(cut, frames)
+	charTurn : function(_cut, _char, _dir) {
+		self.custom(_cut, {
+			ch: _char,
+			ready: false,
+			dir: _dir,
+			init: function() {
+				self.ready = true;
+			},
+			update: function() {
+				if (!self.ready)
+					return true;
+				self.ch.dir = self.dir;
+				return false;
+			}
+		});
+	},
+	
+	sleep: function(cut, frames)
 	{
-		Cutscene.Custom(cut, {
+		Cutscene.custom(cut, {
 			timer: frames,
 			init: function(){},
 			update: function()
@@ -96,14 +113,14 @@ Cutscene =
 		});
 	},
 	
-	Play: function(cut)
+	play: function(cut)
 	{
 		cut._ready = true;
 	},
 	
-	Dialogue: function(cut, text, voice = sndTextDefault, pitch = [0.8, 1.2])
+	startDialogue: function(cut, text, voice = sndTextDefault, pitch = [0.8, 1.2])
 	{
-		self.Custom(cut, {
+		self.custom(cut, {
 			tx: text,
 			v: voice,
 			pit: pitch,
@@ -111,7 +128,7 @@ Cutscene =
 			diaInst: noone,
 			init: function(){
 				self.dia = dialogueStart(self.tx, self.v, self.pit)
-				self.diaInst = self.dia.GetTyper();
+				self.diaInst = self.dia.getTyper();
 			},
 			update: function()
 			{
@@ -120,9 +137,9 @@ Cutscene =
 		});
 	},
 	
-	Pause: function(cut)
+	halt: function(cut)
 	{
-		Cutscene.Custom(cut, {
+		Cutscene.custom(cut, {
 			cutsceneObj: cut,
 			init: function()
 			{
@@ -132,9 +149,9 @@ Cutscene =
 		});
 	},
 	
-	Stop: function(cut)
+	endOnQueue: function(cut)
 	{
-		Cutscene.Custom(cut, {
+		Cutscene.custom(cut, {
 			_cut: cut,
 			init: function()
 			{

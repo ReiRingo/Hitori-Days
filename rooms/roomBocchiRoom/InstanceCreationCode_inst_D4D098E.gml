@@ -1,25 +1,25 @@
-var _flag = Save.Get(SType.Cutscenes, "intro", false);
+var _flag = Save.get(SType.Cutscenes, "intro", false);
 
 if (!_flag)
 {
-	var _c = Cutscene.Create();
+	var _c = Cutscene.create();
 	
-	Cutscene.PlayerMoveable(_c, false);
-	Cutscene.Wait(_c, 30);
-	Cutscene.MoveCharTarget(_c, charPlayer, 144, charPlayer.y);
-	Cutscene.Wait(_c, 15);
-	Cutscene.MoveCharTarget(_c, charPlayer, 144, 144);
-	Cutscene.Dialogue(_c, Lang.Get("cutscene_intro_michiyo"));
+	Cutscene.playerMoveable(_c, false);
+	Cutscene.sleep(_c, 30);
+	Cutscene.charMoveTarget(_c, charPlayer, 144, charPlayer.y);
+	Cutscene.sleep(_c, 15);
+	Cutscene.charMoveTarget(_c, charPlayer, 144, 144);
+	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_michiyo"));
 	// TODO: door sound effect!
-	Cutscene.Wait(_c, 30); // One second
-	Cutscene.Dialogue(_c, Lang.Get("cutscene_intro_bocchi1"));
-	Cutscene.Function(_c, function() { camShaker(10, 4); });
-	Cutscene.Dialogue(_c, Lang.Get("cutscene_intro_bocchi2"));
-	Cutscene.PlayerMoveable(_c, true);
+	Cutscene.sleep(_c, 30); // One second
+	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi1"));
+	Cutscene.action(_c, function() { camShaker(10, 4); });
+	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi2"));
+	Cutscene.playerMoveable(_c, true);
 	
-	Cutscene.Play(_c);
+	Cutscene.play(_c);
 	
-	Save.Set(SType.Cutscenes, "intro", true);
+	Save.set(SType.Cutscenes, "intro", true);
 }
 
 // 144

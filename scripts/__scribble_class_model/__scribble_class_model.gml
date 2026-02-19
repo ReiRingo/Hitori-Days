@@ -172,7 +172,7 @@ function __scribble_class_model(_element, _model_cache_name) constructor
     {
         //TODO - Optimize by returning page bounds if the number of characters revealed is the same as the whole page
         
-        if (not __allow_glyph_data_getter) __scribble_error("Getting the revealed glyph bounding box requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- Set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
+        if (not __allow_glyph_data_getter) __scribble_error("Getting the revealed glyph bounding box requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
         
         var _glyph_grid = __get_glyph_data_grid(_page);
         
@@ -237,7 +237,7 @@ function __scribble_class_model(_element, _model_cache_name) constructor
         
         if (not __allow_text_getter)
         {
-            __scribble_error("Getting element text requires either:\n- Call `.allow_text_getter()` on the element\n- Set `SCRIBBLE_FORCE_TEXT_GETTER` to `true`");
+            __scribble_error("Getting element text requires either:\n- Call `.allow_text_getter()` on the element\n- set `SCRIBBLE_FORCE_TEXT_GETTER` to `true`");
         }
         
         return __pages_array[_page].__text;
@@ -251,7 +251,7 @@ function __scribble_class_model(_element, _model_cache_name) constructor
         
         if (not __allow_line_data_getter)
         {
-            __scribble_error("Getting line data requires either:\n- Call `.allow_line_data_getter()` on the element\n- Set `SCRIBBLE_FORCE_LINE_DATA_GETTER` to `true`");
+            __scribble_error("Getting line data requires either:\n- Call `.allow_line_data_getter()` on the element\n- set `SCRIBBLE_FORCE_LINE_DATA_GETTER` to `true`");
         }
         
         return __pages_array[_page].__get_line_data(_index);
@@ -266,7 +266,7 @@ function __scribble_class_model(_element, _model_cache_name) constructor
         
         if (not __allow_glyph_data_getter)
         {
-            __scribble_error("Getting glyph data requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- Set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
+            __scribble_error("Getting glyph data requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
         }
         
         return __pages_array[_page].__get_glyph_data(_index);
@@ -301,7 +301,7 @@ function __scribble_class_model(_element, _model_cache_name) constructor
         if (_page < 0) __scribble_error("Page index ", _page, " doesn't exist. Minimum page index is 0");
         if (_page >= __pages) __scribble_error("Page index ", _page, " doesn't exist. Maximum page index is ", __pages-1);
         
-        if (not __allow_glyph_data_getter) __scribble_error("Getting glyph data requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- Set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
+        if (not __allow_glyph_data_getter) __scribble_error("Getting glyph data requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
         
         return __pages_array[_page].__glyph_grid;
     }

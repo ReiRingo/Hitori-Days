@@ -4,7 +4,7 @@ global.slotIndex = 0;
 #macro Save global.saveFuncLib
 Save =
 {
-	Set: function(type, save, value)
+	set: function(type, save, value)
 	{
 		var _typeStr = string(type);
 		if (!variable_struct_exists(global.saves, _typeStr))
@@ -15,7 +15,7 @@ Save =
 		global.saves[$ _typeStr][$ string(save)] = value;
 	},
 	
-	Get: function(type, save, def = undefined)
+	get: function(type, save, def = undefined)
 	{
 		var _typeStr = string(type);
 		var _ptr = global.saves[$ _typeStr];
@@ -30,13 +30,13 @@ Save =
 		return _val ?? def;
 	},
 	
-	SaveToDisk: function(type)
+	saveToDisk: function(type)
 	{
 		var _struct = global.saves[$ string(type)];
 		if (!is_struct(_struct)) return;
 		
 		var _string = json_stringify(_struct, true);
-		var _path = self.GetPath(type);
+		var _path = self.getSavePath(type);
 		var _dir = filename_dir(_path);
 		
 		if (!directory_exists(_dir))
@@ -48,9 +48,9 @@ Save =
 		buffer_delete(_buf);
 	},
 
-	LoadToDisk: function(type)
+	loadFromDisk: function(type)
 	{
-		var _path = self.GetPath(type);
+		var _path = self.getSavePath(type);
 		if (!file_exists(_path))
 		{
 			print($"File path {_path} does not exist!");
@@ -73,11 +73,11 @@ Save =
 		return true;
 	},
 		
-	GetPath: function(type)
+	getSavePath: function(type)
 	{
 		var _path;
 		var _defDir = working_directory;
-		var _slot = $"Slot {self.GetSlot()}";
+		var _slot = $"Slot {self.getSlot()}";
 		var _slotDir = $"{_defDir}{_slot}/";
 		
 		switch(type)
@@ -102,17 +102,17 @@ Save =
 		return _path;
 	},
 	
-	GetSlot: function()
+	getSlot: function()
 	{
 		return global.slotIndex;
 	},
 	
-	SetSlot: function(ind)
+	setSlot: function(ind)
 	{
 		global.slotIndex = abs(ind);
 	},
 	
-	Clear: function(type)
+	clear: function(type)
 	{
 		global.saves[$ type] = {};
 		return true;

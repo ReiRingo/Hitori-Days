@@ -18,7 +18,7 @@ function __jsLib() constructor
 		global.texts[$ name] = {};
 	}
 	
-	static Get = function(index, name = CurLang, def = "")
+	static get = function(index, name = CurLang, def = "")
 	{
 		var _lang = global.texts[$ name];
 		if (!is_struct(_lang))

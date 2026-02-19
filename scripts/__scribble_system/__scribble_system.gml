@@ -20,7 +20,7 @@ function __scribble_system(_calledFromInitialize = false)
     {
         if (not _calledFromInitialize)
         {
-            __scribble_error("Scribble is not initialized. You must either:\n- Call `scribble_initialize()` first\n- Set `SCRIBBLE_INITIALIZE_ON_BOOT` to `true`");
+            __scribble_error("Scribble is not initialized. You must either:\n- Call `scribble_initialize()` first\n- set `SCRIBBLE_INITIALIZE_ON_BOOT` to `true`");
             return;
         }
     }

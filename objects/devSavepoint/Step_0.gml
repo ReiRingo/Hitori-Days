@@ -23,17 +23,17 @@ else if (_isSave)
 	
 	if (Input.Pressed(VKey.Confirm))
 	{
-		Save.Set(SType.Snapshot, SSnapshot.Room, States.GetRoom());
-		Save.Set(SType.Snapshot, SSnapshot.Time, States.GetTime());
-		Save.Set(SType.Snapshot, SSnapshot.Yen, States.GetYen());
-		Save.SetSlot(_saveIndex);
+		Save.set(SType.Snapshot, SSnapshot.Room, States.GetRoom());
+		Save.set(SType.Snapshot, SSnapshot.Time, States.getTime());
+		Save.set(SType.Snapshot, SSnapshot.Yen, States.getYen());
+		Save.setSlot(_saveIndex);
 		Player.SaveGame();
 		_saved = true;
 		_isSave = false;
 		_load[_saveIndex].available = true;
 		_load[_saveIndex].room = room;
-		_load[_saveIndex].time = Save.Get(SType.Snapshot, SSnapshot.Time, 0);
-		_load[_saveIndex].money = Save.Get(SType.Snapshot, SSnapshot.Yen, 0);
+		_load[_saveIndex].time = Save.get(SType.Snapshot, SSnapshot.Time, 0);
+		_load[_saveIndex].money = Save.get(SType.Snapshot, SSnapshot.Yen, 0);
 		global._loadSnapshots = _load;
 		audio_play_sound(sndLongerClick, 1, false);
 	}

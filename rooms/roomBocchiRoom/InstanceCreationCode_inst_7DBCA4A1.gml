@@ -1,4 +1,4 @@
 event = function()
 {
-	dialogueStart(Lang.Get("dialogue_mirror"));
+	dialogueStart(Lang.get("dialogue_mirror"));
 };

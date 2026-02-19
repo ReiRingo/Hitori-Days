@@ -4,7 +4,7 @@ function __audLib() constructor
 {
 	static IndexedAudio = undefined;
 	
-	static Play = function(audioId, audio, loop = true, priority = 1, gain = 1, pitch = 1, offset = undefined)
+	static play = function(audioId, audio, loop = true, priority = 1, gain = 1, pitch = 1, offset = undefined)
 	{
 		if (!audio_exists(audio) || audio_is_playing(audio))
 			return;
@@ -14,7 +14,7 @@ function __audLib() constructor
 		return global.__Audio[$ audioId] ?? undefined;
 	}
 	
-	static Stop = function(audioId, fadeTime = 0)
+	static stop = function(audioId, fadeTime = 0)
 	{
 		IndexedAudio = global.__Audio[$ audioId] ?? undefined;
 		

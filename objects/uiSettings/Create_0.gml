@@ -3,17 +3,17 @@
 options = [
 	// M IS DEPRECATED!
     { 
-        n: Lang.Get("settings_lang"), 
+        n: Lang.get("settings_lang"), 
         m: "lang", 
         v: CurLang
     }, 
     { 
-        n: Lang.Get("settings_linear_interp"), 
+        n: Lang.get("settings_linear_interp"), 
         m: SettingsInterp, 
         v: $"<{Interp ? "ON" : "OFF"}>"
     },
 	
-    { n: Lang.Get("settings_exit"), v: "" }
+    { n: Lang.get("settings_exit"), v: "" }
 ];
 
 index = 0;

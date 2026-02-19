@@ -10,9 +10,9 @@ function __GameStatesInit(includeSnapshot = false)
 	
 	if (includeSnapshot)
 	{
-		Save.Set(SType.Snapshot, SSnapshot.Room, GameStates.rm);
-		Save.Set(SType.Snapshot, SSnapshot.Time, 0);
-		Save.Set(SType.Snapshot, SSnapshot.Yen, 0);
+		Save.set(SType.Snapshot, SSnapshot.Room, GameStates.rm);
+		Save.set(SType.Snapshot, SSnapshot.Time, 0);
+		Save.set(SType.Snapshot, SSnapshot.Yen, 0);
 	}
 }
 

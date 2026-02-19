@@ -2,7 +2,7 @@ function dialogueStart(_text, _voiceInput = [1, sndTextDefault], _pitchInput = [
 {
     var _d = new DialogueClass(_text);
     
-    _d.Start();
+    _d.start();
 	
     var _page = 0;
     var _sound = -1;
@@ -24,7 +24,7 @@ function dialogueStart(_text, _voiceInput = [1, sndTextDefault], _pitchInput = [
     if (audio_exists(_sound))
 	{
 		// print("HEY!");
-        _d.Voice(_page, _sound, _p, false);
+        _d.voice(_page, _sound, _p, false);
     }
     
     return _d;

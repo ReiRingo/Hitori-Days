@@ -15,8 +15,8 @@ call_later(1, time_source_units_frames, function()
 	if (audio_exists(bgm))
 	{
 		if (!stop)
-			_bgmPtr = Bgm.Play(bgmId, bgm, loop);
+			_bgmPtr = Bgm.play(bgmId, bgm, loop);
 		else
-			Bgm.Stop(bgmId, time);
+			Bgm.stop(bgmId, time);
 	}
 });

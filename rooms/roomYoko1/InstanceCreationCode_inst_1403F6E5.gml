@@ -1,18 +1,18 @@
 event = function()
 {
-	var _c = Cutscene.Create();
+	var _c = Cutscene.create();
 	
-	Cutscene.Function(_c, function() { dialogueStart(Lang.Get("dialogue_trespass")); });
-	Cutscene.PlayerMoveable(_c, false);
-	Cutscene.MoveChar(_c, charPlayer, DirStates.Up, 5, true);
-	Cutscene.Function(_c, function()
+	Cutscene.action(_c, function() { dialogueStart(Lang.get("dialogue_trespass")); });
+	Cutscene.playerMoveable(_c, false);
+	Cutscene.charMove(_c, charPlayer, DirStates.Up, 5, true);
+	Cutscene.action(_c, function()
 	{
 		with(charPlayer)
 			dir = DirStates.Down;
 	});
-	Cutscene.PlayerMoveable(_c, true);
+	Cutscene.playerMoveable(_c, true);
 	
-	Cutscene.Play(_c);
+	Cutscene.play(_c);
 }
 
 _repeat = true;

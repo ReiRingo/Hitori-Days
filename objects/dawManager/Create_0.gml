@@ -5,7 +5,7 @@
 // --- State Machine ---
 state = DawState.Editing;
 menuIndex = 0;
-menuOptions = ["Save Song", "Load Song", "Clear Grid", "Exit"];
+menuOptions = ["Save Song", "Load Song", "clear Grid", "Exit"];
 
 // --- Navigation & View ---
 cursorX = 0; // Time (Grid Index)

@@ -1,6 +1,6 @@
-function _internal__ConsoleLib__()
+function _internal__ConsoleLib__() constructor
 {
-	static Out = function(str)//-> void
+	static out = function(str)//-> void
 	{
 		for (var i = 1; i < argument_count; ++i)
 		{
@@ -14,3 +14,5 @@ function _internal__ConsoleLib__()
 #macro Console global._internal_consoleLibHold
 
 Console = new _internal__ConsoleLib__();
+
+Console.out("HELLO YEA");

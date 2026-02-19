@@ -4,7 +4,7 @@ if (Input.Pressed("res"))
 }
 
 if (_timeHeartbeat == 0)
-	States.SetTime(States.GetTime() + 1);
+	States.setTime(States.getTime() + 1);
 
 _timeHeartbeat++;
 _timeHeartbeat %= 30;

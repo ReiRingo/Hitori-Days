@@ -92,7 +92,7 @@ else if (!_locked && _state == 1 && _ready)
 		{
 			var _func = function()
 			{
-				States.SetTime(Save.Get(SType.Snapshot, SSnapshot.Time, 0));
+				States.setTime(Save.get(SType.Snapshot, SSnapshot.Time, 0));
 				room_goto(_load[_loadIndex].room);
 				faderFade(1, 0, 15, c_black);
 			};
@@ -101,7 +101,7 @@ else if (!_locked && _state == 1 && _ready)
 			{
 				audio_play_sound(sndLongerClick, 1, false);
 				global._loadSnapshots = _load;
-				Save.SetSlot(_loadIndex);
+				Save.setSlot(_loadIndex);
 				Player.LoadGame();
 				_locked = true;
 				audio_sound_gain(_sound, 0, 1000);

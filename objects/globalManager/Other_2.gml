@@ -1,4 +1,4 @@
-Save.LoadToDisk(SType.Settings);
+Save.loadFromDisk(SType.Settings);
 
 #region BUTTONS
 // Confirm
@@ -40,7 +40,7 @@ Input.Bind(
 
 #region LANGS
 _langInit = false;
-_langSaved = Save.Get(SType.Settings, SettingsLang, undefined);
+_langSaved = Save.get(SType.Settings, SettingsLang, undefined);
 _firstLang = {l: "en", f: false};
 if (file_exists("langs.json"))
 {
@@ -99,7 +99,7 @@ if (file_exists(global.crashSprite))
 #endregion
 
 #region Settings
-Interp = Save.Get(SType.Settings, SettingsInterp, true);
+Interp = Save.get(SType.Settings, SettingsInterp, true);
 gpu_set_texfilter(Interp);
 #endregion
 

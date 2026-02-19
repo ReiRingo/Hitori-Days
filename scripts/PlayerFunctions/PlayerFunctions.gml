@@ -2,14 +2,14 @@ function __playerLib() constructor
 {
 	static SaveGame = function()
 	{
-		Save.SaveToDisk(SType.Snapshot);
-		Save.SaveToDisk(SType.Cutscenes);
+		Save.saveToDisk(SType.Snapshot);
+		Save.saveToDisk(SType.Cutscenes);
 	};
 	
 	static LoadGame = function(check = 0)
 	{
-		var _snap = Save.LoadToDisk(SType.Snapshot);
-		var _cut = Save.LoadToDisk(SType.Cutscenes);
+		var _snap = Save.loadFromDisk(SType.Snapshot);
+		var _cut = Save.loadFromDisk(SType.Cutscenes);
 		
 		switch(check)
 		{
@@ -39,7 +39,7 @@ function __playerLib() constructor
 		var _proc = 0;
 		repeat(_size)
 		{
-			Save.Clear(_target[_proc]);
+			Save.clear(_target[_proc]);
 			_proc++;
 		}
 	};
@@ -94,11 +94,11 @@ function __playerLib() constructor
 				break;
 			
 			case roomBocchiRoom:
-				_out = Lang.Get("save_room_bocchi");
+				_out = Lang.get("save_room_bocchi");
 				break;
 			
 			case roomYoko1:
-				_out = Lang.Get("save_room_yoko1");
+				_out = Lang.get("save_room_yoko1");
 				break;
 		}
 		return _out;

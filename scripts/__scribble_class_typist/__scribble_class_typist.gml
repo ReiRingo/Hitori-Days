@@ -810,7 +810,7 @@ function __scribble_class_typist(_per_line) constructor
                         {
                             if (not _glyph_data_getter)
                             {
-                                __scribble_error("Per-character delay requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- Set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
+                                __scribble_error("Per-character delay requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
                             }
                             
                             if ((__last_character >= 1) //Don't check character delay until we're on the first character (index=1)

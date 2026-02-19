@@ -1,21 +1,21 @@
 function __glbStLib() constructor
 {
-	static GetTime = function()
+	static getTime = function()
 	{
 		return GameStates.time;
 	}
 	
-	static SetTime = function(val)
+	static setTime = function(val)
 	{
 		GameStates.time = val;
 	}
 	
-	static GetYen = function()
+	static getYen = function()
 	{
 		return GameStates.yen;
 	}
 	
-	static SetYen = function(val)
+	static setYen = function(val)
 	{
 		GameStates.yen = val;
 	}
