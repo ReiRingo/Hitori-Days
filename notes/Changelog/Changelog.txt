@@ -1,0 +1,7 @@
+# Changelog #
+> ** 2/20/2026 **
+- Fixed: Settings audio lap with main menu and further sounds.
+- Added: Cherry NPC
+- Fixed: "ON" and "OFF" are now localised.
+- Added: More road blockage.
+- Fixed: Neighbour house not having a collision

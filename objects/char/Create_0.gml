@@ -4,10 +4,14 @@ _canCollide = true;
 // INTERACT EVENT
 event = function()
 {
-	// PASS
+	
 };
+
+eventStep = [];
+
 _interactable = true;
 
+#region Default Sprites
 sprite = [];
 sprite[SpriteState.Idle] =
 {
@@ -27,6 +31,7 @@ sprite[SpriteState.Move] =
 	speed: 1,
 	frame: 1
 };
+#endregion
 
 _autoAnimate = true;
 _leftFlipX = true;
@@ -38,7 +43,7 @@ dirCanTurn = true;
 
 // -- Movement
 // Speed
-moveSpeed = 3; // This is running on 30 FPS, after all
+moveSpeed = 5;
 
 // Movement Handler
 _move = [ 0, 0, 0, 0 ];
@@ -46,3 +51,4 @@ _move = [ 0, 0, 0, 0 ];
 // -- Do not touch
 _wasMoving = false;
 _wasIdle = false;
+_interacted = false;

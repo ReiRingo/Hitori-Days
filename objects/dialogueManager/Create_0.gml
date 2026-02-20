@@ -7,7 +7,7 @@ panel = sprPanelGUI;
 panelVariation = 0;
 skippable = true;
 speaker = "PlaceHolderGuy"; // Use strings
-typerSpeed = 0.3;
+typerSpeed = 0.4;
 
 // -- Technical Config
 depth = DepthUi.PanelDialogue;

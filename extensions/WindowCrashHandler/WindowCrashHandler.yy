@@ -21,7 +21,7 @@
       ],"init":"","kind":1,"name":"","origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
   ],
   "gradleinject":null,
-  "hasConvertedCodeInjection":false,
+  "hasConvertedCodeInjection":true,
   "helpfile":"",
   "HTML5CodeInjection":"",
   "html5Props":false,
@@ -45,7 +45,7 @@
   "packageId":"",
   "parent":{
     "name":"C++",
-    "path":"folders/C++.yy",
+    "path":"folders/DLLs/C++.yy",
   },
   "productId":"",
   "resourceType":"GMExtension",

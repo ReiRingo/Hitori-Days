@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"CPPLibraries",
   "parent":{
-    "name":"C++",
-    "path":"folders/C++.yy",
+    "name":"Script",
+    "path":"folders/Script.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

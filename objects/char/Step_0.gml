@@ -1,3 +1,4 @@
+#region Logic
 // -- Prevs
 var _prevDir = dir;
 var _prevPos = { x: x, y: y };
@@ -90,3 +91,14 @@ if (_autoAnimate)
         _wasMoving = false;
     }
 }
+#endregion
+
+#region Step events
+for (var i = 0; i < array_length(eventStep); ++i) {
+	var _i = eventStep[i];
+	
+	if (is_callable(_i)) {
+		_i();
+	}
+}
+#endregion

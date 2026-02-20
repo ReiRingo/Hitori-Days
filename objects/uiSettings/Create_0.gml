@@ -1,5 +1,5 @@
 audio_stop_all();
-audio_play_sound(musShi1, 1, true);
+_mus = audio_play_sound(musShi1, 1, true);
 
 options = [
 	// M IS DEPRECATED!
@@ -11,7 +11,7 @@ options = [
     { 
         n: Lang.get("settings_linear_interp"), 
         m: SettingsInterp, 
-        v: $"<{Interp ? "ON" : "OFF"}>"
+        v: $"<{Interp ? Lang.get("is_on") : Lang.get("is_off")}>"
     },
 	
     { n: Lang.get("settings_exit"), v: "" }

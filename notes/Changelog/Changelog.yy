@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"Changelog",
+  "name":"Changelog",
+  "parent":{
+    "name":"Changes",
+    "path":"folders/Changes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

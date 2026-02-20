@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Helpers",
-    "path":"folders/Sprite/Characters/Helpers.yy",
+    "path":"folders/Sprite/Characters/NPCs/Helpers.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

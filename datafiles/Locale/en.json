@@ -1,69 +1,78 @@
 {
-	"note_1": "This is getting messy, www",
+    "note_1": "Scribble By JujuAdams",
+	"note_2": "This is a fan game based on the anime \"Bocchi the Rock!\". It is not affiliated with the original creators in any way.",
+    
+    "cr": "Velvet Clover (C) 2026\nPress [Z] to start!",
+    "author": "Localisation by Rei of the Velvet Clover Team",
 
-	"cr": "Velvet Clover (C) 2026\nPress [Z] to start!",
-	"author": "Localisation by Rei of Velvet Clover Team",
+    "choice_yes": "Yes",
+    "choice_no": "No",
 
-	"menu_ng": "New Game",
-	"menu_lg": "Load Game",
-	"menu_st": "Settings",
-	"menu_qt": "Quit",
-	"menu_load_time": "Time",
-	"menu_load_money": "Cash",
-	"menu_hint_load": "Where do you wanna load?",
-	
-	"settings_lang": "Language",
-	"settings_master": "Master Volume",
-	"settings_linear_interp": "Linear Interpolation",
-	"settings_exit": "Exit",
+    "is_on": "ON",
+    "is_off": "OFF",
+    
+    "menu_ng": "New Game",
+    "menu_lg": "Load Game",
+    "menu_st": "Settings",
+    "menu_qt": "Quit",
+    "menu_load_time": "Time",
+    "menu_load_money": "Cash",
+    "menu_hint_load": "Where do you want to load?",
+    
+    "settings_lang": "Language",
+    "settings_master": "Master Volume",
+    "settings_linear_interp": "Linear Interpolation",
+    "settings_exit": "Exit",
 
-	"save_point": ["It's a save point!", "It saves your game."],
-	"save_hint_save": "Where do you wanna save?",
-	"save_hint_saved": "Saved!",
-	"save_room_bocchi": "Hitori's Room",
-	"save_room_yoko1": "Hitori's Neighbourhood",
+    "save_point": ["It's a save point!", "It saves your game."],
+    "save_hint_save": "Where do you want to save?",
+    "save_hint_saved": "Saved!",
+    "save_room_bocchi": "Hitori's Room",
+    "save_room_yoko1": "Hitori's Neighbourhood",
 
-	"dialogue_guitar1": ["It's a custom Les Paul Gibson guitar.", "A relic you borrowed from your father.", "The thing is your soulmate."],
-	"dialogue_guitar2": "[wave]Your soulmate guitar~[/wave]",
-	"dialogue_mirror": ["It's a mirror.", "And the reflection in it is you.", "You look like a rockstar!"],
-	"dialogue_trespass": "I don't think you should be entering random people's\nhouses...",
-	"dialogue_helper_talk": [
-		"Hitori-chan!",
-		"You did it!",
-		"You talked to someone!",
-		"[wave](Even if I'm just your imaginary friend, [delay, 70]\nthat's still a big deal!)[/wave]",
-		"To interact with other characters, just walk up to them and\npress [[Z]!",
-		"You can also interact with objects in the world,\n[delay, 70]like that guitar and mirror you just saw!",
-		"Try talking to the people around you, and see what they\nhave to say!"
-	],
-	"dialogue_helper_save_hint": "If you wanna save your game, just walk up to that\nsparkly blue star and press [[Z]!",
-	"dialogue_helper_balance1": ["Hello Hitori-chan!", "...", "What's that?", "Your balance?", "Right now,[delay, 20] it's...", "%y Yen!"],
-	"dialogue_helper_balance2": "Your balance is %y Yen!",
-	"dialogue_cone": "(This area is blocked off.)",
-	
-	"cutscene_intro_michiyo": [
-		"Hitori!",
-		"Hitori, [delay, 650]we're going now!",
-		"Are you sure you don't wanna come with us?",
-		"...",
-		"I'll take your silence as a \"No\"!",
-		"Take care of yourself now!",
-		"[wave](And your guitar,[delay, 400] of course!)[/wave]",
-		"Okay,[delay, 90] we're going now!",
-		"Bye bye!"
-	],
-	"cutscene_intro_bocchi1": [
-		"...",
-		"I'm alone..!",
-		"..."
-	],
-	"cutscene_intro_bocchi2": [
-		"[shake]Ack![/shake]",
-		"[shake]No![/shake]",
-		"This is bad!",
-		"If I wanna be a bubbly-sparkly-extrovert this year...",
+    "dialogue_guitar1": ["It's a custom Gibson Les Paul guitar.", "A relic you borrowed from your father.", "The thing is your soulmate."],
+    "dialogue_guitar2": "[wave]Your soulmate guitar~[/wave]",
+    "dialogue_mirror": ["It's a mirror.", "And the reflection in it is you.", "You look like a rock star!"],
+    "dialogue_trespass": "I don't think you should be entering random people's\nhouses...",
+    "dialogue_helper_talk": [
+        "Hitori-chan!",
+        "You did it!",
+        "You talked to someone!",
+        "[wave](Even if I'm just your imaginary friend, [delay, 70]\nthat's still a big deal!)[/wave]",
+        "To interact with other characters, just walk up to them and\npress [[Z]!",
+        "You can also interact with objects in the world,\n[delay, 70]like that guitar and mirror you just saw!",
+        "Try talking to the people around you and see what they\nhave to say!"
+    ],
+    "dialogue_helper_save_hint": ["If you want to save your game, just walk up to that\nsparkly blue star and press [[Z]!", "Watch out for pedestrian crossings too!", "They help you cross the city road!"],
+    "dialogue_helper_balance1": ["Hello Hitori-chan!", "...", "What's that?", "Your balance?", "Right now,[delay, 20] it's...", "%y Yen!"],
+    "dialogue_helper_balance2": "Your balance is %y Yen!",
+    "dialogue_cone": "(This area is blocked off.)",
+    "dialogue_cherry1": ["Oh my, you actually talk?", "I thought you were just a mute weirdo.", "Well, I guess that's a relief!", "I'm Cherry, by the way.", "Nice to meet you...", "Uh...[delay, 200] Hitori,[delay, 90] was it?"],
+    "dialogue_cherry2": "Lovely weather we're having, isn't it?",
+    
+    "cutscene_intro_michiyo": [
+        "Hitori!",
+        "Hitori, [delay, 650]we're going now!",
+        "Are you sure you don't want to come with us?",
+        "...",
+        "I'll take your silence as a \"No\"!",
+        "Take care of yourself now!",
+        "[wave](And your guitar,[delay, 400] of course!)[/wave]",
+        "Okay,[delay, 90] we're going now!",
+        "Bye-bye!"
+    ],
+    "cutscene_intro_bocchi1": [
+        "...",
+        "I'm alone!",
+        "..."
+    ],
+    "cutscene_intro_bocchi2": [
+        "[shake]Ack![/shake]",
+        "[shake]No![/shake]",
+        "This is bad!",
+        "If I want to be a bubbly, sparkly extrovert this year...",
 		"Then I have to socialise!"
-	],
+    ],
 
-	"dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Hello, it's me Ryo Yamada.[delay, 300]\nCan I borrow money?"
+    "dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Hello, it's me, Ryo Yamada.[delay, 300]\nCan I borrow some money?"
 }

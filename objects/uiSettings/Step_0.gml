@@ -58,6 +58,7 @@ switch(index)
 		// EXIT
 		if (_confirm)
 		{
+			audio_stop_sound(_mus);
 			SoundLib.Once(sndSelect);
 			Save.set(SType.Settings, SettingsLang, CurLang);
 			Save.set(SType.Settings, SettingsInterp, Interp);

@@ -18,5 +18,3 @@ function __StringHelpersLib() constructor {
 
 #macro String global.__stringHelpersLib
 String = new __StringHelpersLib();
-
-String.charAt("HELLO", 0); // 'H'

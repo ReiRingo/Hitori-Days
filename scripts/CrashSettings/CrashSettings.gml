@@ -6,8 +6,7 @@ global.crash = {
 	// This is how bad I am at math!
 };
 
-exception_unhandled_handler(function(_exception)
-{
+exception_unhandled_handler(function(_exception) {
 	audio_stop_all();
 	
     var _res = "Oh no, Bocchi has crashed!\nBadly!\n\n";
@@ -18,8 +17,6 @@ exception_unhandled_handler(function(_exception)
 	_res += $"\nStacktrace: {_exception.stacktrace[0]}";
 	if (array_length(_exception.stacktrace) >= 2)
 		_res += $", {_exception.stacktrace[1]}";
-	// Never pass "unset" or "undefined"
-	// To C++, it'll give you a Microsoft Visual C++ crash!
 	
 	_res += "\n\nWant to report an issue / bug?\nFile an issue at\nhttps://github.com/ReiRingo/Hitori-Days";
 	
