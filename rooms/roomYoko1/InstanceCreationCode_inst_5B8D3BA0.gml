@@ -11,4 +11,4 @@ event = function() {
 };
 
 // My allman days have passed.
-// I may now embrace you, Java.
+// I may now embrace you, Java K&R.

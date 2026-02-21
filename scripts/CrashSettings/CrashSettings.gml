@@ -15,8 +15,7 @@ exception_unhandled_handler(function(_exception) {
 	_res += string_replace_all(_exception.longMessage, ",", "\n");
 	
 	_res += $"\nStacktrace: {_exception.stacktrace[0]}";
-	if (array_length(_exception.stacktrace) >= 2)
-		_res += $", {_exception.stacktrace[1]}";
+	if (array_length(_exception.stacktrace) >= 2) _res += $", {_exception.stacktrace[1]}";
 	
 	_res += "\n\nWant to report an issue / bug?\nFile an issue at\nhttps://github.com/ReiRingo/Hitori-Days";
 	

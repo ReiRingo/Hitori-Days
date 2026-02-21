@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"AnimeConstants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AnimeConstants",
+  "parent":{
+    "name":"Anime",
+    "path":"folders/Script/Anime.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

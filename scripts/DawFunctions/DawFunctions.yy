@@ -6,7 +6,7 @@
   "name":"DawFunctions",
   "parent":{
     "name":"Pseudo Daw",
-    "path":"folders/CONCEPT/Pseudo Daw.yy",
+    "path":"folders/Concepts/Pseudo Daw.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

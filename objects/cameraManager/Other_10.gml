@@ -11,7 +11,7 @@ target = noone;
 roomBound = true;
 
 // -- Shake
-shakeOffset = new vec2(0, 0);
+shakeOffset = new Vector2(0, 0);
 _shake = 0;
 _intensity = 0;
 
@@ -19,7 +19,7 @@ _intensity = 0;
 view_enabled = true;
 view_visible[0] = true;
 
-_port = new vec2(baseWidth * 3 + offsetWidth, baseHeight * 3);
+_port = new Vector2(baseWidth * 3 + offsetWidth, baseHeight * 3);
 
 camera_set_view_size(view_camera[0], baseWidth, baseHeight);
 

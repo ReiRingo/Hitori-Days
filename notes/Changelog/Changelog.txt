@@ -1,7 +1,14 @@
-# Changelog #
+# Changelog
 > ** 2/20/2026 **
 - Fixed: Settings audio lap with main menu and further sounds.
 - Added: Cherry NPC
 - Fixed: "ON" and "OFF" are now localised.
 - Added: More road blockage.
 - Fixed: Neighbour house not having a collision
+
+> ** 2/21/2026 **
+- Added: Audio Emitters (3D audio) for some aspects like passing cars
+- Added: Tree overworld objects
+- Added: Cars with audios
+- Started: roomYoko2 has officially deployed partially finished!
+- Fixed: Cherry's call_later() AI global persistence and overlapping.

@@ -37,10 +37,8 @@ Cutscene = {
 			wait: wait,
 			dir: directionState,
 			amt: amount,
-			init: function()
-			{
+			init: function() {
 				_character._move[dir] = amt;
-				print($"MOVING :: YES");
 			},
 			update: function()
 			{

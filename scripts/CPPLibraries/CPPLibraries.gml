@@ -1,5 +1,4 @@
-#macro Window global.cppWindowLib
-
+#region -- Window-level stuff
 function __winLib() constructor 
 {
 	static ApplyBlur = function(n)
@@ -15,6 +14,10 @@ function __winLib() constructor
 	{
 		return crashPrettifier(text, width, height, sprite);
 	}
+	
+	// static PrettyCrash = crash;
 }
 
+#macro Window global.__cppWindowLib
 Window = new __winLib();
+#endregion

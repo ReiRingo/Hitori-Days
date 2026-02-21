@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Pseudo Daw",
-    "path":"folders/CONCEPT/Pseudo Daw.yy",
+    "path":"folders/Concepts/Pseudo Daw.yy",
   },
   "parentObjectId":null,
   "persistent":false,

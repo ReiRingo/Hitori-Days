@@ -199,7 +199,7 @@
 // Ellipsis            … U+2026   ->   Three full stops . U+002E
 // En dash             – U+2013   ->   Hyphen           - U+002D
 // Em dash             — U+2014   ->   Hyphen           - U+002D
-// Horizontal bar      ― U+2015   ->   Hyphen           - U+002D
+// Horizontal bar      ― U+2015  ->   Hyphen           - U+002D
 // Start single quote  ‘ U+2018   ->   Single quote     ' U+0027
 // End single quote    ’ U+2018   ->   Single quote     ' U+0027
 // Start double quote  “ U+201C   ->   Double quote     " U+0022

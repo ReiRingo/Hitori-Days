@@ -1,4 +1,5 @@
 var _flag = Save.get(SType.Cutscenes, "intro", false);
+_shakeSource = undefined;
 
 if (!_flag)
 {
@@ -13,9 +14,22 @@ if (!_flag)
 	// TODO: door sound effect!
 	Cutscene.sleep(_c, 30); // One second
 	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi1"), sndTextBocchi);
-	Cutscene.action(_c, function() { camShaker(10, 4); });
+	Cutscene.action(_c, function() {
+		camShaker(10, 4);
+		charPlayer._shakeSource = call_later(8 + irandom(7), time_source_units_frames, function() {
+			with(charPlayer) {
+				dir = irandom(3);
+			}
+		}, true);
+	});
 	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi2"), sndTextBocchi);
 	Cutscene.playerMoveable(_c, true);
+	Cutscene.action(_c, function() {
+		with(charPlayer) {
+			call_cancel(_shakeSource);
+			dir = DirStates.Down;
+		}
+	});
 	
 	Cutscene.play(_c);
 	

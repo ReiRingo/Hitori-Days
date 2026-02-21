@@ -1,4 +1,4 @@
-function vec2(x, y) constructor
+function Vector2(x, y) constructor
 {
 	self.x = x;
 	self.y = y;
