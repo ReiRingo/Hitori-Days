@@ -1,4 +1,4 @@
-cameraManager.target = self;
+cameraManager.target = _camTarget;
 
 #region Warping
 if (global.warp.active)

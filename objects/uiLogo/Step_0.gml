@@ -13,7 +13,7 @@ else
 		_timer++;
 }
 
-if (Input.Pressed(VKey.Confirm))
+if (Input.isPressed(VKey.Confirm))
 {
 	if (!_skipping)
 	{

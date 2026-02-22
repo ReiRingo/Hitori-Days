@@ -12,3 +12,8 @@
 - Added: Cars with audios
 - Started: roomYoko2 has officially deployed partially finished!
 - Fixed: Cherry's call_later() AI global persistence and overlapping.
+
+** 2/22/2026 **
+- Fixed: Audio overlapping in maps
+- Added: Ryo
+- Started: roomYoko3

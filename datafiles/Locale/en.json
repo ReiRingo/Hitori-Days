@@ -49,6 +49,7 @@
     "dialogue_cone": "(This area is blocked off.)",
     "dialogue_cherry1": ["Oh my, you actually talk?", "I thought you were just a mute weirdo.", "Well, I guess that's a relief!", "I'm Cherry, by the way.", "Nice to meet you...", "Uh...[delay, 200] Hitori,[delay, 90] was it?"],
     "dialogue_cherry2": "Lovely weather we're having, isn't it?",
+    "dialogue_gate": ["(The gate is locked.)", "Besides,[delay, 100] why would you want to go in there?"],
     
     "cutscene_intro_michiyo": [
         "Hitori!",

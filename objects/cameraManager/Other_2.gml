@@ -1,1 +1,1 @@
-Input.Bind("fc", [ vk_f11 ]);
+Input.bind("fc", [ vk_f11 ]);

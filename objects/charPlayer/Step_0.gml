@@ -12,19 +12,19 @@ var _moveable = (
 
 if (_moveable)
 {
-	if (Input.Held(VKey.Down))
+	if (Input.isHeld(VKey.Down))
 	{
 		_move[DirStates.Down] = 2;
 	}
-	if (Input.Held(VKey.Up))
+	if (Input.isHeld(VKey.Up))
 	{
 		_move[DirStates.Up] = 2;
 	}
-	if (Input.Held(VKey.Left))
+	if (Input.isHeld(VKey.Left))
 	{
 		_move[DirStates.Left] = 2;
 	}
-	if (Input.Held(VKey.Right))
+	if (Input.isHeld(VKey.Right))
 	{
 		_move[DirStates.Right] = 2;
 	}
@@ -88,7 +88,7 @@ if (_moveable)
 	}
 	*/
 	
-	if (Input.Pressed(VKey.Confirm) && instance_exists(_inst)) {
+	if (Input.isPressed(VKey.Confirm) && instance_exists(_inst)) {
 		with(_inst) {
 			if (_interactable && variable_instance_exists(id, "event") && is_method(event)) {
 				event();

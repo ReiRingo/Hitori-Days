@@ -2,37 +2,37 @@ Save.loadFromDisk(SType.Settings);
 
 #region BUTTONS
 // Confirm
-Input.Bind(
+Input.bind(
 	VKey.Confirm,
 	[ord("Z"), vk_enter, vk_space]
 );
 
 // Cancel
-Input.Bind(
+Input.bind(
 	VKey.Cancel,
 	[ord("X"), vk_shift]
 );
 
 // Arrow keys
-Input.Bind(
+Input.bind(
 	VKey.Up,
 	[vk_up]
 );
-Input.Bind(
+Input.bind(
 	VKey.Down,
 	[vk_down]
 );
-Input.Bind(
+Input.bind(
 	VKey.Right,
 	[vk_right]
 );
-Input.Bind(
+Input.bind(
 	VKey.Left,
 	[vk_left]
 );
 
 // Misc:
-Input.Bind(
+Input.bind(
 	"res",
 	[vk_f2]
 );

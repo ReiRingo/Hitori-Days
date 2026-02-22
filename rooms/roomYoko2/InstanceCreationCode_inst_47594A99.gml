@@ -1,0 +1,1 @@
+text = Lang.get("dialogue_gate");

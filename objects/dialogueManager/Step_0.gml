@@ -11,8 +11,8 @@ if (_ready)
 		{
 			if (_typist.get_state() >= 1.0)
 			{
-				if (Input.Pressed(VKey.Confirm)
-				|| Input.Pressed(VKey.Cancel))
+				if (Input.isPressed(VKey.Confirm)
+				|| Input.isPressed(VKey.Cancel))
 				{
 					_typist.reset();
 					_pageIndex++;
@@ -23,8 +23,8 @@ if (_ready)
 			}
 			else
 			{
-				if (Input.Pressed(VKey.Confirm)
-				|| Input.Pressed(VKey.Cancel))
+				if (Input.isPressed(VKey.Confirm)
+				|| Input.isPressed(VKey.Cancel))
 				{
 					_typist.skip(1);
 				}

@@ -8,7 +8,7 @@ if (_started)
 	
 	_offsetYSin = sin(current_time / 600) * 8;
 	
-	if (Input.Pressed(VKey.Confirm) && !_starting && fader._alpha == 0)
+	if (Input.isPressed(VKey.Confirm) && !_starting && fader._alpha == 0)
 	{
 		audio_play_sound(sndLongerClick, 1, false);
 		_starting = true;

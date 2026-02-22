@@ -13,15 +13,15 @@ else if (_isSave)
 {
 	var _lastInd = _saveIndex;
 	
-	if (Input.Pressed(VKey.Down))
+	if (Input.isPressed(VKey.Down))
 		_saveIndex = (_saveIndex < _saveSize - 1) ? _saveIndex + 1 : 0;
-	else if (Input.Pressed(VKey.Up))
+	else if (Input.isPressed(VKey.Up))
 		_saveIndex = (_saveIndex > 0) ? _saveIndex - 1 : _saveSize - 1;
 	
 	if (_lastInd != _saveIndex)
 		audio_play_sound(sndBlip, 1, false);
 	
-	if (Input.Pressed(VKey.Confirm))
+	if (Input.isPressed(VKey.Confirm))
 	{
 		Save.set(SType.Snapshot, SSnapshot.Room, States.GetRoom());
 		Save.set(SType.Snapshot, SSnapshot.Time, States.getTime());
@@ -37,7 +37,7 @@ else if (_isSave)
 		global._loadSnapshots = _load;
 		audio_play_sound(sndLongerClick, 1, false);
 	}
-	else if (Input.Pressed(VKey.Cancel))
+	else if (Input.isPressed(VKey.Cancel))
 	{
 		_isEvent = false;
 		_isSave = false;
@@ -48,7 +48,7 @@ else if (_isSave)
 }
 else if (_saved)
 {
-	if (Input.Pressed(VKey.Confirm) || Input.Pressed(VKey.Cancel))
+	if (Input.isPressed(VKey.Confirm) || Input.isPressed(VKey.Cancel))
 	{
 		_isEvent = false;
 		_isSave = false;

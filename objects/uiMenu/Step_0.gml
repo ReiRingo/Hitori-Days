@@ -4,11 +4,11 @@ var _prevInd = _index;
 
 if (!_locked && _state == 0 && fader._alpha == 0)
 {
-	if (Input.Pressed(VKey.Down))
+	if (Input.isPressed(VKey.Down))
 	{
 		_index = clamp(_index + 1, 0, _len - 1);
 	}
-	else if (Input.Pressed(VKey.Up))
+	else if (Input.isPressed(VKey.Up))
 	{
 		_index = clamp(_index - 1, 0, _len - 1);
 	}
@@ -22,7 +22,7 @@ if (!_locked && _state == 0 && fader._alpha == 0)
 	}
 }
 
-if (!_locked && Input.Pressed(VKey.Confirm) && _state == 0 && fader._alpha == 0)
+if (!_locked && Input.isPressed(VKey.Confirm) && _state == 0 && fader._alpha == 0)
 {
 	switch(_index)
 	{
@@ -70,21 +70,21 @@ if (!_locked && _state == 1 && !_ready)
 }
 else if (!_locked && _state == 1 && _ready)
 {
-	if (fader._alpha == 0 && Input.Pressed(VKey.Down))
+	if (fader._alpha == 0 && Input.isPressed(VKey.Down))
 	{
 		_loadIndex = (_loadIndex < _loadSize - 1) ? _loadIndex + 1 : 0;
 	}
-	else if (fader._alpha == 0 && Input.Pressed(VKey.Up))
+	else if (fader._alpha == 0 && Input.isPressed(VKey.Up))
 	{
 		_loadIndex = (_loadIndex > 0) ? _loadIndex - 1 : _loadSize - 1;
 	}
-	else if (fader._alpha == 0 && Input.Pressed(VKey.Cancel))
+	else if (fader._alpha == 0 && Input.isPressed(VKey.Cancel))
 	{
 		_state = 0;
 		_loadIndex = 0;
 		_ready = false;
 	}
-	else if (fader._alpha == 0 && Input.Pressed(VKey.Confirm))
+	else if (fader._alpha == 0 && Input.isPressed(VKey.Confirm))
 	{
 		var _ind = _load[_loadIndex];
 		

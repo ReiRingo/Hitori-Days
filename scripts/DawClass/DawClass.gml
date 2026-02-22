@@ -1,5 +1,5 @@
-function SongClass(_name, _bpm, _timeSig) constructor
-{
+///@deprecated
+function SongClass(_name, _bpm, _timeSig) constructor {
 	self.name = string(_name);
 	self.bpm = real(_bpm);
 	self.timeSig = real(_timeSig);

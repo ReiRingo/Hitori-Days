@@ -30,7 +30,7 @@ _camY += shakeOffset.y;
 
 camera_set_view_pos(view_camera[0], _camX, _camY);
 
-if (Input.Pressed("fc"))
+if (Input.isPressed("fc"))
 {
 	window_set_fullscreen(!window_get_fullscreen());
 }

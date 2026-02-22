@@ -1,9 +1,9 @@
-var _up = Input.Pressed(VKey.Up);
-var _down = Input.Pressed(VKey.Down);
-var _left = Input.Pressed(VKey.Left);
-var _right = Input.Pressed(VKey.Right);
+var _up = Input.isPressed(VKey.Up);
+var _down = Input.isPressed(VKey.Down);
+var _left = Input.isPressed(VKey.Left);
+var _right = Input.isPressed(VKey.Right);
 
-var _confirm = Input.Pressed(VKey.Confirm);
+var _confirm = Input.isPressed(VKey.Confirm);
 
 // -- Selection
 var _prevIndex = index;

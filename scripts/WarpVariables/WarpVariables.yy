@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"InputInit",
+  "%Name":"WarpVariables",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"InputInit",
+  "name":"WarpVariables",
   "parent":{
-    "name":"Inputs",
-    "path":"folders/Script/Inputs.yy",
+    "name":"Triggers",
+    "path":"folders/Script/Triggers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

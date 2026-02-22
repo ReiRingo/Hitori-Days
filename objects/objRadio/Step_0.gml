@@ -14,8 +14,8 @@ var _len = array_length(_songs);
 
 // -- Inputs
 var _up, _down;
-_up = Input.Pressed(VKey.Up);
-_down = Input.Pressed(VKey.Down);
+_up = Input.isPressed(VKey.Up);
+_down = Input.isPressed(VKey.Down);
 
 // -- Logic!
 if (_up)
@@ -57,7 +57,7 @@ if (global.radio.index != _prev.index)
 	}
 }
 
-if (Input.Pressed(VKey.Cancel))
+if (Input.isPressed(VKey.Cancel))
 {
 	_onUi = false;
 	with(charPlayer)

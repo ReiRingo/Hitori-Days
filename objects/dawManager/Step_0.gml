@@ -3,22 +3,22 @@ switch (state)
 {
     case DawState.Editing:
         // --- Cursor Movement ---
-        if (Input.Pressed(VKey.Right)) {
+        if (Input.isPressed(VKey.Right)) {
             cursorX++;
             // Scroll view if cursor goes off screen
             if (cursorX >= viewX + GRID_W) viewX = cursorX - GRID_W + 1;
         }
         
-        if (Input.Pressed(VKey.Left)) {
+        if (Input.isPressed(VKey.Left)) {
             cursorX = max(0, cursorX - 1);
             if (cursorX < viewX) viewX = cursorX;
         }
         
-        if (Input.Pressed(VKey.Up))   cursorY = min(24, cursorY + 1);
-        if (Input.Pressed(VKey.Down)) cursorY = max(0, cursorY - 1);
+        if (Input.isPressed(VKey.Up))   cursorY = min(24, cursorY + 1);
+        if (Input.isPressed(VKey.Down)) cursorY = max(0, cursorY - 1);
         
         // --- Note Placement ---
-        if (Input.Pressed(VKey.Confirm))
+        if (Input.isPressed(VKey.Confirm))
         {
             // Pitch Math: 12 is "Reference", every +12 is an octave up
             var _pitch = power(2, (cursorY - 12) / 12);
@@ -33,7 +33,7 @@ switch (state)
         // Or specific context:
         
         // --- Menu Access ---
-        if (Input.Pressed(VKey.Cancel)) {
+        if (Input.isPressed(VKey.Cancel)) {
             state = DawState.Menu;
             isPlaying = false; // Stop music when opening menu
         }
@@ -47,10 +47,10 @@ switch (state)
     break;
 
     case DawState.Menu:
-        if (Input.Pressed(VKey.Up))   menuIndex = max(0, menuIndex - 1);
-        if (Input.Pressed(VKey.Down)) menuIndex = min(array_length(menuOptions) - 1, menuIndex + 1);
+        if (Input.isPressed(VKey.Up))   menuIndex = max(0, menuIndex - 1);
+        if (Input.isPressed(VKey.Down)) menuIndex = min(array_length(menuOptions) - 1, menuIndex + 1);
         
-        if (Input.Pressed(VKey.Confirm))
+        if (Input.isPressed(VKey.Confirm))
         {
             switch(menuIndex) {
                 case 0: songSave(currentSong.name, currentSong); break;
@@ -61,7 +61,7 @@ switch (state)
             state = DawState.Editing; // Return to editing after action
         }
         
-        if (Input.Pressed(VKey.Cancel)) state = DawState.Editing;
+        if (Input.isPressed(VKey.Cancel)) state = DawState.Editing;
     break;
 }
 

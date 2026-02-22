@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"-Meta-",
-    "path":"folders/Sprite/-Meta-.yy",
+    "name":"Meta",
+    "path":"folders/Sprite/Meta.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

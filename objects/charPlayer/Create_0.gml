@@ -1,6 +1,10 @@
 // Inherit the parent event
 event_inherited();
 
+// Camera
+_camTarget = self;
+
+// Properties
 charId = 0;
 
 sprite[SpriteState.Idle].down = sprPlayerFront;

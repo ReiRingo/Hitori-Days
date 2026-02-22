@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"musRainyDay",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":43.385353,
+  "exportDir":"",
+  "name":"musRainyDay",
+  "parent":{
+    "name":"MUS",
+    "path":"folders/Audio/MUS.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"musRainyDay.ogg",
+  "volume":1.0,
+}

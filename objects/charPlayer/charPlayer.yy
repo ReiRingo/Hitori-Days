@@ -12,8 +12,8 @@
   "name":"charPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Characters",
-    "path":"folders/Object/Characters.yy",
+    "name":"Kessoku",
+    "path":"folders/Object/Characters/Kessoku.yy",
   },
   "parentObjectId":{
     "name":"char",

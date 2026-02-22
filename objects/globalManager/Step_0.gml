@@ -1,4 +1,4 @@
-if (Input.Pressed("res"))
+if (Input.isPressed("res"))
 {
 	game_restart();
 }

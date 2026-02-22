@@ -1,0 +1,3 @@
+for i, v in pairs(Human:Nooby:Classmates) do
+	v.kill()
+end

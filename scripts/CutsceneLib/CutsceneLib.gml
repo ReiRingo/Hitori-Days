@@ -17,6 +17,35 @@ Cutscene = {
 		});
 	},
 	
+	cameraMoveTween: function(_cut, to, time = 10, tween = TweenLinear, from = new Vector2(cameraManager.x, cameraManager.y)) {
+		// Throw
+		if (!is_struct(to) || !is_array(to)) return false;
+		
+		// Vector
+		var _t = is_array(to) ? new Vector2(to[0], to[1]) : to;
+		
+		// Logic
+		self.custom(_cut, {
+			f: from,
+			t: _t,
+			tm: time,
+			tn: tween,
+			init: function() {
+				doAnime(self.f.x, self.t.x, self.tm, tn, function(a) { cameraManager.x = a });
+				doAnime(self.f.y, self.t.y, self.tm, tn, function(a) { cameraManager.y = a });
+			},
+			update: function() {
+				return !(self.f.x == self.t.x && self.f.y == self.t.y);
+			}
+		});
+		
+		if (is_struct(to)) delete to;
+		delete _t;
+		delete from;
+		
+		return true;
+	},
+	
 	playerMoveable: function(cut, moveable)
 	{
 		self.custom(cut, {

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"WarpFunctions",
+  "%Name":"SaveLibrary",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"WarpFunctions",
+  "name":"SaveLibrary",
   "parent":{
-    "name":"Triggers",
-    "path":"folders/Script/Triggers.yy",
+    "name":"Save System",
+    "path":"folders/Script/Save System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
