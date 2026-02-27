@@ -1,5 +1,0 @@
-# Todo List #
-- Make menu soundtrack : Unfinished
-- Make settings soundtrack : Unfinished
-- Prototype Yokohama2 : Finished Partially
-- Overworld props : Finished Partially

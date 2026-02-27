@@ -3,14 +3,13 @@ _canCollide = true;
 
 // INTERACT EVENT
 event = function() {}; // -> void
-
 eventStep = [];
-
 eventCleanUp = [];
 
 _interactable = true;
 
 #region Default Sprites
+
 sprite = [];
 sprite[SpriteState.Idle] =
 {
@@ -30,7 +29,8 @@ sprite[SpriteState.Move] =
 	speed: 1,
 	frame: 1
 };
-#endregion
+
+#endregion End of Sprites
 
 _autoAnimate = true;
 _leftFlipX = true;

@@ -44,13 +44,14 @@ switch(index)
 		break;
 	
 	case 1:
-		// LINEAR INTERP
+		// CRT
 		if (_confirm)
 		{
-			Interp = !Interp;
-			gpu_set_texfilter(Interp);
-			options[index].v = $"<{Interp ? "ON" : "OFF"}>";
+			CRT = !CRT;
+			// gpu_set_texfilter(Interp);
+			options[index].v = $"<{CRT ? "ON" : "OFF"}>";
 			SoundLib.Once(sndSelect);
+			with(globalManager) event_user(0);
 		}
 		break;
 	
@@ -61,7 +62,7 @@ switch(index)
 			audio_stop_sound(_mus);
 			SoundLib.Once(sndSelect);
 			Save.set(SType.Settings, SettingsLang, CurLang);
-			Save.set(SType.Settings, SettingsInterp, Interp);
+			Save.set(SType.Settings, SettingsCrt, CRT);
 			Save.saveToDisk(SType.Settings);
 			room_goto(roomMainMenu);
 		}

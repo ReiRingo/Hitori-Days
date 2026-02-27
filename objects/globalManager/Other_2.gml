@@ -10,28 +10,29 @@ Input.bind(
 // Cancel
 Input.bind(
 	VKey.Cancel,
-	[ord("X"), vk_shift]
+	[ord("X"), vk_shift, vk_escape]
 );
 
 // Arrow keys
 Input.bind(
 	VKey.Up,
-	[vk_up]
+	[vk_up, ord("W")]
 );
 Input.bind(
 	VKey.Down,
-	[vk_down]
+	[vk_down, ord("S")]
 );
 Input.bind(
 	VKey.Right,
-	[vk_right]
+	[vk_right, ord("D")]
 );
 Input.bind(
 	VKey.Left,
-	[vk_left]
+	[vk_left, ord("A")]
 );
 
 // Misc:
+// Debug
 Input.bind(
 	"res",
 	[vk_f2]
@@ -99,8 +100,9 @@ if (file_exists(global.crashSprite))
 #endregion
 
 #region Settings
-Interp = Save.get(SType.Settings, SettingsInterp, true);
-gpu_set_texfilter(Interp);
+CRT = Save.get(SType.Settings, SettingsCrt, true);
+// gpu_set_texfilter(Interp);
+event_user(0);
 #endregion
 
 #region START

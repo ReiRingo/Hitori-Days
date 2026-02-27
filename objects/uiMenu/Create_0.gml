@@ -51,3 +51,6 @@ repeat(_loadSize)
 Save.setSlot(0);
 
 event_user(0);
+
+// Wave
+timer = 0;

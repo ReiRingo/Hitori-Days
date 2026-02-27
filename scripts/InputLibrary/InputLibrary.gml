@@ -1,7 +1,7 @@
 function __InputLibInternal() constructor {
 	// -- Internal Stuff
 	static __keys = {};
-	static __slot = 0;
+	static __slot = 0; // Consoles
 	// *********************************
 	//
 	//

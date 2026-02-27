@@ -7,9 +7,9 @@ options = [
         v: CurLang
     }, 
     { 
-        n: Lang.get("settings_linear_interp"), 
-        m: SettingsInterp, 
-        v: $"<{Interp ? "ON" : "OFF"}>"
+        n: Lang.get("settings_crt"), 
+        m: SettingsCrt, 
+        v: $"<{CRT ? "ON" : "OFF"}>"
     },
 	
     { n: Lang.get("settings_exit"), v: "" }

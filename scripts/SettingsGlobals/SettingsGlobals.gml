@@ -1,6 +1,6 @@
-#macro Interp global.__interp
-#macro SettingsInterp "interp"
-Interp = Save.get(SType.Settings, SettingsInterp, true);
+#macro CRT global.__interp
+#macro SettingsCrt "interp"
+CRT = Save.get(SType.Settings, SettingsCrt, true);
 
 #macro GuiFont global.__guiFont
 GuiFont = fontDefaultBlur;

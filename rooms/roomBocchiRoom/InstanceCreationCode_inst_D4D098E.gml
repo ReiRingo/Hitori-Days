@@ -10,10 +10,10 @@ if (!_flag)
 	Cutscene.charMoveTarget(_c, charPlayer, 144, charPlayer.y);
 	Cutscene.sleep(_c, 15);
 	Cutscene.charMoveTarget(_c, charPlayer, 144, 144);
-	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_michiyo"), sndTextMichiyo);
+	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_michiyo"));
 	// TODO: door sound effect!
 	Cutscene.sleep(_c, 30); // One second
-	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi1"), sndTextBocchi);
+	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi1"));
 	Cutscene.action(_c, function() {
 		camShaker(10, 4);
 		charPlayer._shakeSource = call_later(8 + irandom(7), time_source_units_frames, function() {
@@ -22,7 +22,7 @@ if (!_flag)
 			}
 		}, true);
 	});
-	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi2"), sndTextBocchi);
+	Cutscene.startDialogue(_c, Lang.get("cutscene_intro_bocchi2"));
 	Cutscene.playerMoveable(_c, true);
 	Cutscene.action(_c, function() {
 		with(charPlayer) {

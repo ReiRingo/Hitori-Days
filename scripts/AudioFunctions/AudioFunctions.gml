@@ -9,6 +9,8 @@ function __audLib() constructor
 		if (!audio_exists(audio) || audio_is_playing(audio))
 			return;
 		
+		if (global.__Audio[$ audioId] != audio && audio_is_playing(global.__Audio[$ audioId] ?? audio)) self.stop(audioId)
+		
 		global.__Audio[$ audioId] = audio_play_sound(audio, priority, loop, gain, offset, pitch);
 		
 		return global.__Audio[$ audioId] ?? undefined;

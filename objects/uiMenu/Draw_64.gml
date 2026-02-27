@@ -1,5 +1,6 @@
 var _gui = {
-		w : display_get_gui_width()
+	w : display_get_gui_width(),
+	h : display_get_gui_height()
 };
 
 draw_set_font(GuiFont);
@@ -49,4 +50,13 @@ else if (_state == 1)
 	drawTextGUI([_gui.w / 2, 18], Lang.get("menu_hint_load"), 3, fa_center, fa_top);
 }
 
+// -- Tutorial-ish?
+draw_set_colour(c_grey);
+draw_set_halign(fa_left);
+draw_set_valign(fa_bottom);
+drawTextGUI([30, _gui.h - 30], Lang.get("menu_hint_controls_pc"), 1.5);
+draw_set_halign(fa_right);
+drawTextGUI([_gui.w - 30, _gui.h - 30], Lang.get("menu_hint_creator"), 1.5);
+
+// -- Reset
 drawReset();

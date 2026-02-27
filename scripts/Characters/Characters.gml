@@ -1,9 +1,7 @@
-/// Helper subroutine by BlueBones
 function charWalk(chars, tx, ty) {
-	chars._move[DirStates.Up]    = 0;
-	chars._move[DirStates.Down]  = 0;
-	chars._move[DirStates.Left]  = 0;
-	chars._move[DirStates.Right] = 0;
+	for (var i = 0; i < 4; ++i) {
+		chars.move[i] = 0;
+	}
 	
 	var dx = tx - chars.x;
 	var dy = ty - chars.y;
@@ -12,14 +10,13 @@ function charWalk(chars, tx, ty) {
 	
 	var _stepSpeed = chars.moveSpeed / 2;
 	
-	if (dx > 0) chars._move[DirStates.Right] = abs(dx) / _stepSpeed;
-	if (dx < 0) chars._move[DirStates.Left]  = abs(dx) / _stepSpeed;
+	// Integer-fy hehe
+	if (dx > 0) chars._move[DirStates.Right] = ceil(abs(dx) / _stepSpeed);
+	if (dx < 0) chars._move[DirStates.Left]  = ceil(abs(dx) / _stepSpeed);
 	
-	if (dy > 0)
-		chars._move[DirStates.Down]  = abs(dy) / _stepSpeed;
+	if (dy > 0) chars._move[DirStates.Down] = ceil(abs(dy) / _stepSpeed);
 	
-	if (dy < 0)
-		chars._move[DirStates.Up]    = abs(dy) / _stepSpeed;
+	if (dy < 0) chars._move[DirStates.Up] = ceil(abs(dy) / _stepSpeed);
 	
 	return true;
 }

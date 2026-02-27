@@ -25,10 +25,10 @@ event = function() {
 	_move = [0, 0, 0, 0];
 	
 	if (!_f) {
-		dialogueStart(Lang.get("dialogue_cherry1"), sndTextCherry);
+		dialogueStart(Lang.get("dialogue_cherry1"));
 		Save.set(SType.Cutscenes, "cherry_cutie", true);
 	} else {
-		dialogueStart(Lang.get("dialogue_cherry2"), sndTextCherry);
+		dialogueStart(Lang.get("dialogue_cherry2"));
 	}
 	
 	_interacted = true;

@@ -13,8 +13,16 @@ else
 }
 
 // --- Apply to Camera ---
-var _targetX = (target != noone) ? target.x : x;
-var _targetY = (target != noone) ? target.y : y;
+var _targetX, _targetY;
+if (target != noone || instance_exists(target)) {
+	_targetX = target.x;
+	_targetY = target.y;
+	x = _targetX;
+	y = _targetY;
+} else {
+	_targetX = x;
+	_targetY = y;
+}
 
 var _camX = _targetX - (baseWidth / 2);
 var _camY = _targetY - (baseHeight / 2);

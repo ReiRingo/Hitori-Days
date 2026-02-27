@@ -15,7 +15,6 @@ call_later(1, time_source_units_frames, function()
 	if (audio_exists(bgm))
 	{
 		if (!stop) {
-			Bgm.stop(bgmId);
 			_bgmPtr = Bgm.play(bgmId, bgm, loop);
 		}
 		else

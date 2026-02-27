@@ -126,3 +126,6 @@ if (_loadIndex != _prevLoadIndex)
 {
 	audio_play_sound(sndBlip, 1, false);
 }
+
+timer += 0.1;
+if (timer >= pi * 2) timer = 0;

@@ -5,7 +5,7 @@ var _c = SpriteState.Idle; // copy paste www
 sprite[_c].down = sprCharRyoFront;
 sprite[_c].up = sprCharRyoBack;
 sprite[_c].left = sprCharRyoSide;
-sprite[_c].right = sprCharRyoFront;
+sprite[_c].right = sprCharRyoSide;
 
 // ****
 _c = SpriteState.Move;
@@ -14,4 +14,4 @@ _c = SpriteState.Move;
 sprite[_c].down = sprCharRyoFront;
 sprite[_c].up = sprCharRyoBack;
 sprite[_c].left = sprCharRyoSide;
-sprite[_c].right = sprCharRyoFront;
+sprite[_c].right = sprCharRyoSide;

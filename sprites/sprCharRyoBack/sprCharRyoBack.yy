@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Kessoku",
-    "path":"folders/Sprite/Characters/Kessoku.yy",
+    "name":"Ryo",
+    "path":"folders/Sprite/Characters/Kessoku/Ryo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

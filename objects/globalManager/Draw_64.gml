@@ -1,3 +1,5 @@
+depth = -1000;
+
 if (_debug)
 {
 	drawReset();
@@ -8,4 +10,3 @@ if (_debug)
 
 draw_set_font(fontDefault);
 drawReset();
-

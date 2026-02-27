@@ -9,4 +9,6 @@ var _drawH = _port.y * _aspectScale;
 var _drawX = (_winW - _drawW) / 2;
 var _drawY = (_winH - _drawH) / 2;
 
+if (CRT) horrifi_set();
 draw_surface_ext(application_surface, _drawX, _drawY, _aspectScale, _aspectScale, 0, c_white, 1);
+if (CRT) horrifi_reset();

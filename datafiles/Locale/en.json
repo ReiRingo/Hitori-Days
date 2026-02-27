@@ -18,10 +18,12 @@
     "menu_load_time": "Time",
     "menu_load_money": "Cash",
     "menu_hint_load": "Where do you want to load?",
+    "menu_hint_creator": "Game by Velvet Clover\nMade in GameMaker v2024.14",
+    "menu_hint_controls_pc": "Use [Z] or [Space] or [Enter] to Confirm / Select\nUse [X] or [Shift] or [ESC] to Cancel\nUse the arrow keys or WASD to navigate.",
     
     "settings_lang": "Language",
     "settings_master": "Master Volume",
-    "settings_linear_interp": "Linear Interpolation",
+    "settings_crt": "CRT Effect",
     "settings_exit": "Exit",
 
     "save_point": ["It's a save point!", "It saves your game."],
@@ -74,6 +76,11 @@
         "If I want to be a bubbly, sparkly extrovert this year...",
 		"Then I have to socialise!"
     ],
+    "cutscene_kessoku1": ["Oh, hey Bocchi-Chan!", "You're just in time!"],
+    "cutscene_kessoku2": ["Me and Ryo-senpai were just about to head over\nto STARRY club to grab Nijika-chan!"],
+    "cutscene_kessoku3": ["Come, come!", "Let's not waste any more time!"],
 
-    "dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Hello, it's me, Ryo Yamada.[delay, 300]\nCan I borrow some money?"
+    "notif_join_kessoky": ["Ryo and Kita joined you!", "Time to get going!"],
+
+    "dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Hello, it's me, [delay, 200]Ryo Yamada.[delay, 300]\nCan I borrow some money?"
 }

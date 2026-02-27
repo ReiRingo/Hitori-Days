@@ -43,9 +43,6 @@ if (_ready)
 	}
 	catch(_exception)
 	{
-		struct_foreach(_exception, function(i, v)
-		{
-			print($"Cutscene Manager :: ERROR ({i}, {v})");
-		});
+		Console.out("SOMETHING BAD HAPPENED!!!");
 	}
 }
