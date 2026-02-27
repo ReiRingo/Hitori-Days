@@ -18,10 +18,11 @@
 - Added: Ryo
 - Started: roomYoko3
 
-** 2/27/2027 **
+** 2/27/2026 **
 - Fixed: Audio overrlapping
 - Changed: Menu effect
 - Changed: Interp to CRT (Credits to gizmo199)
 - Added: Expression Bubbles
 - Fixed major bugs
 - Added Minor stuff
+- Fixed: Changelog header being 2/27/2027
