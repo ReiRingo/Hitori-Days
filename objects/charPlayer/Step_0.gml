@@ -119,5 +119,6 @@ if (_moveable)
 }
 
 if (whateverThisIs && keyboard_check_pressed(vk_f1)) {
-	instance_create_depth(x, y - 16, depth, propGUNHOLY);
+	if (!instance_exists(propGUNHOLY)) instance_create_depth(x, y - 16, depth, propGUNHOLY);
+	else instance_destroy(propGUNHOLY);
 }

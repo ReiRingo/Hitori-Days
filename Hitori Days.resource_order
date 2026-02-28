@@ -80,7 +80,6 @@
     {"name":"Tilesets","order":9,"path":"folders/Tilesets.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"borderless","order":2,"path":"extensions/borderless/borderless.yy",},
     {"name":"WindowCrashHandler","order":1,"path":"extensions/WindowCrashHandler/WindowCrashHandler.yy",},
     {"name":"fontDefaultBlur","order":1,"path":"fonts/fontDefaultBlur/fontDefaultBlur.yy",},
     {"name":"scribble_fallback_font","order":24,"path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},

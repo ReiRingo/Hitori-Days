@@ -30,4 +30,4 @@ ntscTimer = 0;
 guiSurface = -1;
 
 // Window Blur
-Window.ApplyBlur(window_handle());
+// Window.ApplyBlur(window_handle());

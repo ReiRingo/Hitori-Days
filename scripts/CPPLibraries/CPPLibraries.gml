@@ -3,17 +3,14 @@ function __winLib() constructor
 {
 	static ApplyBlur = function(n)
 	{
-		if (!is_ptr)
+		if (!is_ptr(n))
 			return false;
 		
-		__HandlerBlur(n);
+		// __HandlerBlur(n);
 		return true;
 	}
 	
-	static Crash = function(text, width, height, sprite)
-	{
-		return crashPrettifier(text, width, height, sprite);
-	}
+	static Crash = crashPrettifier;
 	
 	// static PrettyCrash = crash;
 }

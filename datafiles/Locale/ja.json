@@ -1,0 +1,87 @@
+{
+    "note_1": "Scribble By JujuAdams",
+    "note_2": "この さくひんは あにめ「ぼっち・ざ・ろっく!」を だいざいとした ふぁんげーむです。げんさくしゃ および こうしき かんけいしゃとは いっさい かんけい ありません。",
+    
+    "cr": "Velvet Clover (C) 2026\n[Z] キーで すたーと!",
+    "author": "にほんごやく:Velvet Clover ちーむ Rei",
+
+    "choice_yes": "はい",
+    "choice_no": "いいえ",
+
+    "is_on": "ON",
+    "is_off": "OFF",
+    
+    "menu_ng": "はじめから",
+    "menu_lg": "つづきから",
+    "menu_st": "せってい",
+    "menu_qt": "しゅうりょう",
+    "menu_load_time": "ぷれい じかん",
+    "menu_load_money": "しょじきん",
+    "menu_hint_load": "どの でーたを ろーど しますか？",
+    "menu_hint_creator": "Game by Velvet Clover\nMade in GameMaker v2024.14",
+    "menu_hint_controls_pc": "[Z] [Space] [Enter]:けってい・せんたく\n[X] [Shift] [ESC]:きゃんせる\nやじるしきー または WASD:いどう",
+    
+    "settings_lang": "げんご",
+    "settings_master": "ますたー おんりょう",
+    "settings_crt": "NTSC Blargg えふぇくと",
+    "settings_exit": "もどる",
+
+    "save_point": ["せーぶぽいんとだ!", "ぼうけんの きろくを つけることが できる。"],
+    "save_hint_save": "どこに せーぶ しますか？",
+    "save_hint_saved": "せーぶ しました!",
+    "save_room_bocchi": "ひとりの へや",
+    "save_room_yoko1": "ひとりの きんじょ",
+
+    "dialogue_guitar1": ["とくちゅうの ぎぶそん・れすぽーるだ。", "おとうさんから かりた たいせつな かたみ(のようなもの)。", "こいつは わたしの そうるめいとだ。"],
+    "dialogue_guitar2": "[wave]わたしの そうるめいと〜[/wave]",
+    "dialogue_mirror": ["かがみだ。", "うつっているのは じぶんじしん。", "まるで ろっくすたーみたいだ!"],
+    "dialogue_trespass": "かってに ひとの いえに はいっちゃ だめだと おもうな……",
+    "dialogue_helper_talk": [
+        "ひとりちゃん!",
+        "やったね!",
+        "だれかと はなせたじゃん!",
+        "[wave](たとえ わたしが きみの そうぞうじょうの ともだちだとしても、[delay, 70]\nこれは すごい しんぽだよ!)[/wave]",
+        "ほかの きゃらくたーと はなすときは、ちかづいて\n[Z]きーを おしてみてね!",
+        "きゃらだけじゃなくて、さっきの ぎたーや かがみみたいに\n[delay, 70]いろんな おぶじぇくとも しらべられるよ!",
+        "まわりの ひとに はなしかけて、\nなにを いわれるか ためしてみよう!"
+    ],
+    "dialogue_helper_save_hint": ["げーむを せーぶしたいときは、あの あおく ひかる ほしに\nちかづいて[Z]きーを おすんだよ!", "おうだんほどうにも きをつけてね!", "あんぜんに みちを わたるための だいじな めじるしだから!"],
+    "dialogue_helper_balance1": ["やっほー、ひとりちゃん!", "……", "え、なに？", "しょじきん？", "えーっと、いまは……[delay, 20] %yえんだね!"],
+    "dialogue_helper_balance2": "しょじきんは %yえんだよ!",
+    "dialogue_cone": "(このさきは つうこうどめだ。)",
+    "dialogue_cherry1": ["あら、あなた しゃべれるの？", "てっきり むくちな へんなこと おもってたわ。", "まあ、あんしんしたわ!", "わたしは ちぇりー。よろしくね。", "ええと……[delay, 200] ひとり、[delay, 90]さんだったかしら？"],
+    "dialogue_cherry2": "いい おてんきねぇ。",
+    "dialogue_gate": ["(もんが しまっている。)", "そもそも、[delay, 100]どうして なかに はいりたいんだろう？"],
+    
+    "cutscene_intro_michiyo": [
+        "ひとり!",
+        "ひとり、[delay, 650]もう いくわよー!",
+        "ほんとうに いっしょに いかないの？",
+        "……",
+        "だまってるってことは「いかない」ってことね!",
+        "おるすばん、よろしくね!",
+        "[wave](ぎたーの めんどうも[delay, 400]ちゃんと みるのよ!)[/wave]",
+        "よし、[delay, 90]それじゃあ いってきます!",
+        "ばいばーい!"
+    ],
+    "cutscene_intro_bocchi1": [
+        "……",
+        "ひとりきりだ!",
+        "……"
+    ],
+    "cutscene_intro_bocchi2": [
+        "[shake]ひぃっ![/shake]",
+        "[shake]だ、だめだ![/shake]",
+        "これじゃ だめだ!",
+        "ことしこそは あかるくて きらきらした ようきゃに なりたいなら……",
+        "こみゅにけーしょんを とらなきゃ!"
+    ],
+    "cutscene_kessoku1": ["あ、ぼっちちゃん!", "ちょうどいいところに!"],
+    "cutscene_kessoku2": ["いまから りょうせんぱいと いっしょに、\nSTARRYへ にじかちゃんを むかえに いくところなんだ!"],
+    "cutscene_kessoku3": ["おいでよ!", "ぐずぐず してられないよ!"],
+
+    "notif_join_kessoku": ["りょうと きたが なかまに くわわった!", "さあ、しゅっぱつだ!"],
+    "notif_join_nijika": ["にじかが なかまに くわわった!", "けっそくばんど、ぜんいん しゅうごう!"],
+    
+    "dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "やあ。ぼくだよ。[delay, 200]やまだ りょうだ。[delay, 300]\nおかね かしてくれない？"
+}

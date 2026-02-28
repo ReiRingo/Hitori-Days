@@ -1,3 +1,4 @@
 {
-    "en": "locale/en.json"
+    "en": "locale/en.json",
+    "jp": "locale/ja.json"
 }

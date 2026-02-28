@@ -8,5 +8,5 @@ if (_debug)
 	drawTextGUI([ 10, 10 ], $"{room_get_name(room)}");
 }
 
-draw_set_font(fontDefault);
+draw_set_font(GuiFont);
 drawReset();

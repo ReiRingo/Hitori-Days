@@ -2,6 +2,8 @@
 // By Velvet Clover, 2026
 // This DLL creates a custom crash window with a specified message and background image.
 
+// Decided to use this one instead.
+
 #include <windows.h>
 #include <gdiplus.h>
 #include <string>

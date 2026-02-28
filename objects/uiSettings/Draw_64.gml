@@ -13,7 +13,7 @@ repeat(_size)
 {
 	// Options
 	drawTextGUI([_margin, _margin + (_space * _proc)], options[_proc].n);
-	drawTextGUI([display_get_gui_width() / 2 - _margin, _margin + (_space * _proc)], options[_proc].v);
+	drawTextGUI([display_get_gui_width() / 1.5 - _margin, _margin + (_space * _proc)], options[_proc].v);
 	
 	// Pointer
 	if (_proc == index)

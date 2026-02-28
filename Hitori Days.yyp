@@ -109,6 +109,7 @@
     {"$GMIncludedFile":"","%Name":"raylib.dll","CopyToMask":-1,"filePath":"datafiles/lib","name":"raylib.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"bis.json","CopyToMask":-1,"filePath":"datafiles/Locale","name":"bis.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"en.json","CopyToMask":-1,"filePath":"datafiles/Locale","name":"en.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"ja.json","CopyToMask":-1,"filePath":"datafiles/Locale","name":"ja.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Not Surprising From my friend.png","CopyToMask":-1,"filePath":"datafiles/Random","name":"Not Surprising From my friend.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"scribble_license.txt","CopyToMask":-1,"filePath":"datafiles/Scribble","name":"scribble_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
@@ -119,10 +120,7 @@
   },
   "name":"Hitori Days",
   "resources":[
-    {"id":{"name":"borderless","path":"extensions/borderless/borderless.yy",},},
     {"id":{"name":"WindowCrashHandler","path":"extensions/WindowCrashHandler/WindowCrashHandler.yy",},},
-    {"id":{"name":"WindowHandlerBlur","path":"extensions/WindowHandlerBlur/WindowHandlerBlur.yy",},},
-    {"id":{"name":"fontDefault","path":"fonts/fontDefault/fontDefault.yy",},},
     {"id":{"name":"fontDefaultBlur","path":"fonts/fontDefaultBlur/fontDefaultBlur.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
     {"id":{"name":"Changelog","path":"notes/Changelog/Changelog.yy",},},
