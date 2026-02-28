@@ -25,9 +25,13 @@
 - Added: Expression Bubbles
 - Fixed major bugs
 - Added Minor stuff
+<<<<<<< HEAD
 - Fixed: Header having 2/27/2027 instead of 2026
 
 ** 2/28/2026
 - Removed: CRT by gizmo199
 - Replaced: CRT with NTSC Blargg written purely by me :3
 - Refactor: Save UI now isn't ugly.
+=======
+- Fixed: Changelog header being 2/27/2027
+>>>>>>> 37c0c91533ee83c5555311f46892856a7f5a748f
