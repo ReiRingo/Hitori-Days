@@ -11,7 +11,7 @@ target = noone;
 roomBound = true;
 
 // -- Shake
-shakeOffset = new Vector2(0, 0);
+shakeOffset = vec2(0.0, 0.0);
 _shake = 0;
 _intensity = 0;
 

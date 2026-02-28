@@ -23,7 +23,7 @@
     
     "settings_lang": "Language",
     "settings_master": "Master Volume",
-    "settings_crt": "CRT Effect",
+    "settings_crt": "NTSC Blargg Effect",
     "settings_exit": "Exit",
 
     "save_point": ["It's a save point!", "It saves your game."],
@@ -80,7 +80,8 @@
     "cutscene_kessoku2": ["Me and Ryo-senpai were just about to head over\nto STARRY club to grab Nijika-chan!"],
     "cutscene_kessoku3": ["Come, come!", "Let's not waste any more time!"],
 
-    "notif_join_kessoky": ["Ryo and Kita joined you!", "Time to get going!"],
-
+    "notif_join_kessoku": ["Ryo and Kita joined you!", "Time to get going!"],
+    "notif_join_nijika": ["Nijika joined you!", "The band is complete!"],
+    
     "dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Hello, it's me, [delay, 200]Ryo Yamada.[delay, 300]\nCan I borrow some money?"
 }

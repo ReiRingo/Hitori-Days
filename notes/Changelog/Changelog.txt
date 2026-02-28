@@ -18,10 +18,16 @@
 - Added: Ryo
 - Started: roomYoko3
 
-** 2/27/2027 **
+** 2/27/2026 **
 - Fixed: Audio overrlapping
 - Changed: Menu effect
 - Changed: Interp to CRT (Credits to gizmo199)
 - Added: Expression Bubbles
 - Fixed major bugs
 - Added Minor stuff
+- Fixed: Header having 2/27/2027 instead of 2026
+
+** 2/28/2026
+- Removed: CRT by gizmo199
+- Replaced: CRT with NTSC Blargg written purely by me :3
+- Refactor: Save UI now isn't ugly.

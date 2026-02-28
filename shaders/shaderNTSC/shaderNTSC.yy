@@ -1,7 +1,7 @@
 {
   "$GMShader":"",
-  "%Name":"shaderCRT",
-  "name":"shaderCRT",
+  "%Name":"shaderNTSC",
+  "name":"shaderNTSC",
   "parent":{
     "name":"Shaders",
     "path":"folders/Shaders.yy",

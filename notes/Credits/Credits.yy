@@ -4,7 +4,7 @@
   "name":"Credits",
   "parent":{
     "name":"Credits",
-    "path":"folders/Credits.yy",
+    "path":"folders/Notes/Credits.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",
