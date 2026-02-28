@@ -23,7 +23,7 @@ var _drawTitle = function(sinAnim, alpha)
 	draw_sprite(sprIntroLetters, 7, _marg + (3 * _space), _offsetY[1] + sinAnim);
 }
 // The title screen bg
-draw_sprite_stretched_ext(sprBGTitle, 0, 0, 0, room_width, room_height, make_colour_rgb(14 + 30, 22 + 30, 78 + 30), 1);
+draw_sprite_stretched_ext(sprBGTitle, 0, 0, 0, room_width, room_height, make_colour_rgb(14 + 30 - 20, 22 + 30 - 20, 78 + 30 - 20), 1);
 
 // Black Cover
 draw_sprite_stretched_ext(sprStretchy, 0, 0, 0, room_width, room_height, _blackCol, _blackAlpha);

@@ -54,9 +54,10 @@ else if (_state == 1)
 draw_set_colour(c_grey);
 draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
-drawTextGUI([30, _gui.h - 30], Lang.get("menu_hint_controls_pc"), 1.5);
+drawTextGUI([30, _gui.h - 30], Lang.get("menu_hint_controls_pc"), 1.3);
 draw_set_halign(fa_right);
-drawTextGUI([_gui.w - 30, _gui.h - 30], Lang.get("menu_hint_creator"), 1.5);
+draw_set_valign(fa_bottom);
+if (_state != 1) drawTextGUI([_gui.w + 40, _gui.h + 30], Lang.get("menu_hint_creator"), 1.3);
 
 // -- Reset
 drawReset();

@@ -31,21 +31,15 @@ function drawPick(x, y, scale = 0.8, flip = false, col = c_white, alpha = 1)
 	);
 }
 
-function drawTextGUI(pos, text, scale = 3, hAl = draw_get_halign(), vAl = draw_get_valign())
-{
-	var _sc;
-	if (is_array(scale))
-	{
-		_sc = scale;
-	}
-	else
-	{
-		_sc = [ scale, scale ];
-	}
+function drawTextGUI(pos, text, scale = 3, hAl = draw_get_halign(), vAl = draw_get_valign()) {
+	var xOffset = 0.25, ogPixel = 16, newPixel = font_get_size(draw_get_font());
+	var fontCorrection = ogPixel / newPixel;
+	
+	var _sc = is_array(scale) ? scale : [ scale, scale ];
 	
 	draw_set_halign(hAl);
 	draw_set_valign(vAl);
-	draw_text_ext_transformed(pos[0], pos[1], text, -1, -1, _sc[0], _sc[1], 0);
+	draw_text_ext_transformed(pos[0], pos[1], text, 30, -1, xOffset + (_sc[0] * fontCorrection), _sc[1] * fontCorrection, 0);
 }
 
 // WRITTEN by a good friend of mine

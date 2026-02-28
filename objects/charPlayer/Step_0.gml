@@ -117,3 +117,7 @@ if (_moveable)
 		}
 	}
 }
+
+if (whateverThisIs && keyboard_check_pressed(vk_f1)) {
+	instance_create_depth(x, y - 16, depth, propGUNHOLY);
+}

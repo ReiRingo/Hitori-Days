@@ -18,6 +18,7 @@
     {"name":"inst_34FE935B","path":"rooms/roomYoko2/roomYoko2.yy",},
     {"name":"inst_48513CEB","path":"rooms/roomYoko2/roomYoko2.yy",},
     {"name":"inst_40FDF0FE","path":"rooms/roomYoko2/roomYoko2.yy",},
+    {"name":"inst_94585D7","path":"rooms/roomYoko2/roomYoko2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -34,6 +35,7 @@
         {"$GMRInstance":"v4","%Name":"inst_34FE935B","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34FE935B","objectId":{"name":"objTree","path":"objects/objTree/objTree.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":648.0,"y":384.0,},
         {"$GMRInstance":"v4","%Name":"inst_48513CEB","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_48513CEB","objectId":{"name":"triggerWarp","path":"objects/triggerWarp/triggerWarp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":768.0,"y":416.0,},
         {"$GMRInstance":"v4","%Name":"inst_40FDF0FE","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40FDF0FE","objectId":{"name":"devSpawnpoint","path":"objects/devSpawnpoint/devSpawnpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":752.0,"y":432.0,},
+        {"$GMRInstance":"v4","%Name":"inst_94585D7","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_94585D7","objectId":{"name":"devBgm","path":"objects/devBgm/devBgm.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":232.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"HouseTiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"HouseTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":48,"TileCompressedData":[
           -722,-2147483648,1,80,-9,81,1,82,-37,-2147483648,1,100,-9,101,1,102,-37,-2147483648,1,120,-9,121,1,122,

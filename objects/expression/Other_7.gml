@@ -1,6 +1,10 @@
-if (_ending) instance_destroy();
+if (_ending) {
+	instance_destroy();
+	exit;
+}
 
 _displayIcon = true;
+if (audio_exists(audio)) audio_play_sound(audio, 1, false);
 
 image_speed = 0;
 image_index = sprite_get_number(sprite_index) - 1;

@@ -42,3 +42,7 @@ if (Input.isPressed("fc"))
 {
 	window_set_fullscreen(!window_get_fullscreen());
 }
+
+++ntscTimer;
+ntscTimer %= 5;
+if (ntscTimer == 0) ntscNoiseValue = ntscNoiseValue == 0 ? 1 : 0;

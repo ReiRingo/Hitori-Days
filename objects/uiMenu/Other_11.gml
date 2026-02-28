@@ -25,7 +25,8 @@ for (var i = 0; i < room_height; i += segmentHeight) {
     draw_rectangle(x1, y1, x2, y2, false);
 	draw_set_alpha(1);
 	
-	// TODO: Guitar Shilouette
+	// Bocchi
+	draw_self();
 }
 
 drawReset();

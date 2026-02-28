@@ -1,4 +1,4 @@
-/// RESET
+/// @desc Parse
 if (_pageIndex >= array_length(text))
 {
 	instance_destroy();
@@ -6,11 +6,12 @@ if (_pageIndex >= array_length(text))
 	// No out animation is an intention ;>
 }
 
-text[_pageIndex] = string_replace_all(text[_pageIndex], "[/scale]", "[scale, 2]");
+// text[_pageIndex] = string_replace_all(text[_pageIndex], "[/scale]", "[scale, 2]");
 text[_pageIndex] = string_replace_all(text[_pageIndex], "%y", string(States.getYen()));
 text[_pageIndex] = string_replace_all(text[_pageIndex], "%t", timeFormatter(States.getTime()));
 
-var _text = "[scale, 2]" + text[_pageIndex];
+// var _text = "[scale, 2]" + text[_pageIndex];
+var _text = text[_pageIndex];
 
 var _voice = {
 	v : -1,

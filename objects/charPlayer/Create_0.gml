@@ -35,3 +35,5 @@ _displayConfirm = false;
 // -- Debug
 _debugging = false;
 _debugCol = { x : x, y : y, x2 : x, y2 : y };
+
+whateverThisIs = true;

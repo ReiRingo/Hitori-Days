@@ -4,6 +4,7 @@ iconIndex = 0;
 endTimer = 34;
 target = noone;
 targetOffset = vec2(0, -36);
+audio = -1;
 
 // Internal logic
 _ready = false;

@@ -18,6 +18,16 @@ call_later(
 ntsc = shaderNTSC;
 ntscResolution = shader_get_uniform(ntsc, "resolution");	// vector2 (floats)
 ntscTime = shader_get_uniform(ntsc, "time");
+ntscNoise = shader_get_uniform(ntsc, "noiseAngle");
+ntscNoiseI = shader_get_uniform(ntsc, "noiseIntensity");
+
+ntscNoiseIValue = 0.7;
+ntscNoiseValue = 0;
+
+ntscTimer = 0;
 
 // Initial
 guiSurface = -1;
+
+// Window Blur
+Window.ApplyBlur(window_handle());
