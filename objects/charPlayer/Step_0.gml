@@ -1,6 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
+#region Player Logic
+
 var _moveable = (
 	_canMove &&
 	_canMoveCutscene &&
@@ -117,6 +119,23 @@ if (_moveable)
 		}
 	}
 }
+
+#endregion End of Player Logic
+
+#region Follower History
+if (x != xprevious || y != yprevious) {
+    array_insert(posHistory, 0, { x: x, y: y, dir: dir });
+}
+
+var _maxBuffer = (followerMax * followerDelay) + 5;
+if (array_length(posHistory) > _maxBuffer) array_pop(posHistory);
+#endregion
+
+followerDelay = 5; 
+
+var _maxHistory = (followerMax * followerDelay) + 1;
+if (array_length(posHistory) > _maxHistory) array_pop(posHistory);
+#endregion
 
 if (whateverThisIs && keyboard_check_pressed(vk_f1)) {
 	if (!instance_exists(propGUNHOLY)) instance_create_depth(x, y - 16, depth, propGUNHOLY);

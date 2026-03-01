@@ -1,7 +1,15 @@
 // Inherit the parent event
 event_inherited();
 
-// Camera
+// -- Followers
+followerDelay = 10;
+followerMax = 3;
+posHistory = [];
+array_insert(posHistory, 0, { x: x, y: y, dir: dir });
+
+folPos = vec2(x, y);
+
+// Camera	
 _camTarget = self;
 
 // Properties
@@ -36,4 +44,5 @@ _displayConfirm = false;
 _debugging = false;
 _debugCol = { x : x, y : y, x2 : x, y2 : y };
 
+// -- Dev Sanity Check
 whateverThisIs = true;

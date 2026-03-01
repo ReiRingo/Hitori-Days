@@ -1,4 +1,5 @@
 # Changelog
+
 > ** 2/20/2026 **
 - Fixed: Settings audio lap with main menu and further sounds.
 - Added: Cherry NPC
@@ -31,3 +32,8 @@
 - Replaced: CRT with NTSC Blargg written purely by me :3
 - Refactor: Save UI now isn't ugly.
 - Changed: Global Font is now Silver (Poppy Works)
+
+** 3/1/2026 **
+- Added: Follower System
+- Added: Japanese font range test
+- Fixed: Dev Holy Gun being an overhead.

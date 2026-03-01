@@ -1,5 +1,7 @@
 function __playerLib() constructor
 {
+	static posHistory = [];
+	
 	static SaveGame = function()
 	{
 		Save.saveToDisk(SType.Snapshot);
@@ -44,44 +46,41 @@ function __playerLib() constructor
 		}
 	};
 	
-	static Warp = function(room, spawnpointId, time = 15, timeOut = 15, col = c_black)
+	static Warp = function(targetRoom, spawnpointId, time = 15, timeOut = 15, col = c_black)
 	{
-		global.warp.room = room;
-		global.warp.spawnpointId = spawnpointId;
-		
-		faderFade(fader._alpha, 1, time, col);
-		
-		if (instance_exists(charPlayer))
-		{
-			with(charPlayer)
-			{
-				_canMoveWarp = false;
-				global.warp.active = true;
-			}
-		}
-		else
-		{
-			return false;
-		}
-		global.warp._t = timeOut;
-		global.warp._c = col;
-		
-		var _func = function()
-		{
-			room_goto(global.warp.room);
-			faderFade(fader._alpha, 0, global.warp._t, global.warp._c);
-			if (instance_exists(charPlayer))
-			{
-				with(charPlayer)
-				{
-					_canMoveWarp = true;
-				}
-			}
-		};
-		
-		call_later(time + 1, time_source_units_frames, _func);
-		
-		return true;
+	    global.warp.room = targetRoom;
+	    global.warp.spawnpointId = spawnpointId;
+	    
+	    faderFade(fader._alpha, 1, time, col);
+	    
+	    if (instance_exists(charPlayer))
+	    {
+	        with(charPlayer)
+	        {
+	            _canMoveWarp = false;
+	            global.warp.active = true;
+	        }
+	    }
+	    else return false;
+	
+	    global.warp._t = timeOut;
+	    global.warp._c = col;
+
+	    var _lib = self; 
+	    
+	    var _func = function()
+	    {
+	        if (instance_exists(charPlayer)) {
+	            global.playerFuncLib.posHistory = charPlayer.posHistory;
+	        }
+	
+	        room_goto(global.warp.room);
+	        
+	        faderFade(fader._alpha, 0, global.warp._t, global.warp._c);
+	    };
+	    
+	    call_later(time + 1, time_source_units_frames, _func);
+	    return true;
 	};
 	
 	static MapName = function(rm = room)

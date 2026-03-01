@@ -5,6 +5,8 @@ if (instance_exists(char))
 {
 	with(char)
 	{
+		charId = (!variable_instance_exists(self, "charId") || charId == undefined) ? -1 : charId;
+		
 		if (charId == _tar)
 		{
 			if (place_meeting(x, y, other))

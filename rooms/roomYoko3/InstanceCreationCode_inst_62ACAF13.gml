@@ -25,7 +25,7 @@ Cutscene.action(_c, function() {
 });
 Cutscene.sleep(_c, 68);
 Cutscene.action(_c, function() {
-	expressionCreate(charKita, sprExHappy);
+	expressionCreate(followerKita, sprExHappy);
 });
 Cutscene.sleep(_c, 22);
 Cutscene.action(_c, function() {

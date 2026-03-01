@@ -7,3 +7,5 @@ _repeat = false;
 _offTrigger = false;
 
 image_alpha = 0;
+
+dirLocked = true;

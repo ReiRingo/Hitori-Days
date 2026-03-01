@@ -9,8 +9,7 @@ var _gui = {
 
 var _proc = 0;
 var _size = array_length(options);
-repeat(_size)
-{
+repeat(_size) {
 	// Options
 	drawTextGUI([_margin, _margin + (_space * _proc)], options[_proc].n);
 	drawTextGUI([display_get_gui_width() / 1.5 - _margin, _margin + (_space * _proc)], options[_proc].v);

@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"charPlayer",
+  "%Name":"triggerInteract",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"charPlayer",
+  "name":"triggerInteract",
   "overriddenProperties":[],
   "parent":{
-    "name":"Kessoku",
-    "path":"folders/Object/Characters/Kessoku.yy",
+    "name":"Triggers",
+    "path":"folders/Object/Triggers.yy",
   },
   "parentObjectId":{
     "name":"char",
@@ -36,12 +34,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlayerFront",
-    "path":"sprites/sprPlayerFront/sprPlayerFront.yy",
+    "name":"sprDevTrigger",
+    "path":"sprites/sprDevTrigger/sprDevTrigger.yy",
   },
-  "spriteMaskId":{
-    "name":"sprPlayerFront",
-    "path":"sprites/sprPlayerFront/sprPlayerFront.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
