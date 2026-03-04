@@ -1,3 +1,10 @@
+var flag = (Save.get(SType.Cutscenes, KitaFollow, false) && Save.get(SType.Cutscenes, RyoFollow, false));
+
+if (flag) {
+	instance_destroy();
+	exit;
+}
+
 _canCollide = true;
 
 event = function() {
@@ -69,6 +76,8 @@ event = function() {
 		followerKita.following = true;
 		followerRyo.following = true;
 		faderFade(1, 0, 15, c_black);
+		Save.set(SType.Cutscenes, KitaFollow, true);
+		Save.set(SType.Cutscenes, RyoFollow, true);
 	});
 	Cutscene.sleep(c, 30);
 	Cutscene.action(c, audio_pause_all);

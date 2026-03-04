@@ -14,12 +14,12 @@
 - Started: roomYoko2 has officially deployed partially finished!
 - Fixed: Cherry's call_later() AI global persistence and overlapping.
 
-** 2/22/2026 **
+> ** 2/22/2026 **
 - Fixed: Audio overlapping in maps
 - Added: Ryo
 - Started: roomYoko3
 
-** 2/27/2026 **
+> ** 2/27/2026 **
 - Fixed: Audio overrlapping
 - Changed: Menu effect
 - Changed: Interp to CRT (Credits to gizmo199)
@@ -27,13 +27,17 @@
 - Fixed major bugs
 - Added Minor stuff
 
-** 2/28/2026 **
+> ** 2/28/2026 **
 - Removed: CRT by gizmo199
 - Replaced: CRT with NTSC Blargg written purely by me :3
 - Refactor: Save UI now isn't ugly.
 - Changed: Global Font is now Silver (Poppy Works)
 
-** 3/1/2026 **
+> ** 3/1/2026 **
 - Added: Follower System
 - Added: Japanese font range test
 - Fixed: Dev Holy Gun being an overhead.
+
+> ** 3/4/2026 **
+- Added: Cutscene (Yoko3)
+- Changed: Bocchi Living Room (Unfinished)

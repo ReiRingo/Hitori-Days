@@ -1,4 +1,4 @@
-function __InternalCutsceneLibrary() constructor {
+function __InternalCutsceneLibrary__() constructor {
     
     // --- Helper for adding tasks to the queue ---
     static custom = function(_cut, _struct) {
@@ -148,5 +148,5 @@ function __InternalCutsceneLibrary() constructor {
 }
 
 // Initialisation
-#macro Cutscene global.__externalCutsceneLib
-Cutscene = new __InternalCutsceneLibrary();
+#macro Cutscene global.__externalCutsceneLib__
+Cutscene = new __InternalCutsceneLibrary__();

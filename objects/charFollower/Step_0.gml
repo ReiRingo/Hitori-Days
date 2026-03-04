@@ -1,3 +1,5 @@
+var prevState = isMoving;
+
 var previousPos = { x: x, y: y };
 if (following) behaviour();
 isMoving = !(previousPos.x == x && previousPos.y == y);
@@ -15,5 +17,7 @@ if (automaticSprites) {
 	
 	image_xscale = dir == DirStates.Left ? -abs(image_xscale) : abs(image_xscale);
 	
-	if (isMoving && image_index == 0 && targetState == SpriteState.Move) image_index = data.frame;
+	if (isMoving != prevState) {
+		image_index = data.frame;
+	}
 }

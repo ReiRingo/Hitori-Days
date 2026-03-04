@@ -1,3 +1,7 @@
+if (Save.get(SType.Cutscenes, "woa", false)) exit;
+
+Save.set(SType.Cutscenes, "woa", true);
+
 var _c = Cutscene.create();
 
 Cutscene.playerMoveable(_c, false);

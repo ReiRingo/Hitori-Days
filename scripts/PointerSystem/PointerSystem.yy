@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PointerSystem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PointerSystem",
+  "parent":{
+    "name":"Script",
+    "path":"folders/Script.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
