@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0505,
+  "duration":0.045708332,
   "exportDir":"",
   "name":"sndTextDefault",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"sndTextDefault.wav",
-  "volume":1.0,
+  "volume":0.47,
 }

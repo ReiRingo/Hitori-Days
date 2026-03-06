@@ -54,6 +54,7 @@ if (!_locked && Input.isPressed(VKey.Confirm) && _state == 0 && fader._alpha == 
 		
 		case 2:
 			audio_play_sound(sndSelect, 1, false);
+			audio_stop_sound(_sound);
 			room_goto(roomSettings);
 			break;
 		

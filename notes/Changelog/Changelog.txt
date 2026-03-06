@@ -1,4 +1,22 @@
-# Changelog
+# Changelog (Informal)
+
+## Before Recorded:
+
+> _Things that were before this log existed._
+
+- Started game
+- Started menu implementation
+- Started character parent implementation
+- Started making namespaces for good candidates
+- Started cutscene system
+- Made Extern C++ dll for crashes
+- Added: Audio system with IDs for BGs
+- Added: Settings
+- Finished: Bocchi's bedroom
+- Added: VSync
+- Added: Linear Interp
+
+## Recorded:
 
 > ** 2/20/2026 **
 - Fixed: Settings audio lap with main menu and further sounds.
@@ -15,6 +33,7 @@
 - Fixed: Cherry's call_later() AI global persistence and overlapping.
 
 > ** 2/22/2026 **
+- Removed: 3D Audio (too futuristic for my intentionally old-school-designed game)
 - Fixed: Audio overlapping in maps
 - Added: Ryo
 - Started: roomYoko3
@@ -22,7 +41,7 @@
 > ** 2/27/2026 **
 - Fixed: Audio overrlapping
 - Changed: Menu effect
-- Changed: Interp to CRT (Credits to gizmo199)
+- Changed: Linear Interp to CRT (Credits to gizmo199)
 - Added: Expression Bubbles
 - Fixed major bugs
 - Added Minor stuff
@@ -41,3 +60,10 @@
 > ** 3/4/2026 **
 - Added: Cutscene (Yoko3)
 - Changed: Bocchi Living Room (Unfinished)
+
+### 3/6/2026
+- starting from here, format will be more informative.
+- changed blip, select, long select, and default text typing sound effects.
+- changed the C++ extern DLL of PrettyCrasher and added more crash exception content while also making it super reusable
+- changed the unhandled exception handler to handle crashes cleanly and write a log.
+- and that's everything for today. Toodles.

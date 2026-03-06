@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.17229167,
+  "duration":0.1028125,
   "exportDir":"",
   "name":"sndBlipNo",
   "parent":{

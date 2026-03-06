@@ -16,8 +16,9 @@
   "exportToGame":true,
   "extensionVersion":"0.0.1",
   "files":[
-    {"$GMExtensionFile":"v1","%Name":"","constants":[],"copyToTargets":-1,"filename":"PC.dll","final":"","functions":[
-        {"$GMExtensionFunction":"","%Name":"crashPrettifier","argCount":0,"args":[1,2,2,1,],"documentation":"///@desc Handles crashes cutely!\r\n///@param {string} Text\r\n///@param {real} Window Width\r\n///@param {real} Window Height\r\n///@param {string} Sprite Path\r\n///@return {bool}","externalName":"crashPrettifier","help":"","hidden":false,"kind":1,"name":"crashPrettifier","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+    {"$GMExtensionFile":"v1","%Name":"","constants":[],"copyToTargets":-1,"filename":"prettycrash.dll","final":"","functions":[
+        {"$GMExtensionFunction":"","%Name":"showPrettyCrash","argCount":0,"args":[1,2,2,1,],"documentation":"///@desc Handles crashes cutely!\r\n///@param {string} Text\r\n///@param {real} Window Width\r\n///@param {real} Window Height\r\n///@param {string} Sprite Path\r\n///@return {bool}","externalName":"showPrettyCrash","help":"","hidden":false,"kind":1,"name":"showPrettyCrash","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
+        {"$GMExtensionFunction":"","%Name":"setCrashColour","argCount":0,"args":[],"documentation":"","externalName":"","help":"","hidden":false,"kind":1,"name":"setCrashColour","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
       ],"init":"","kind":1,"name":"","origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
   ],
   "gradleinject":null,

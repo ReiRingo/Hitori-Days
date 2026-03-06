@@ -37,7 +37,7 @@
     "dialogue_mirror": ["It's a mirror.", "And the reflection in it is you.", "You look like a rock star!"],
     "dialogue_trespass": "I don't think you should be entering random people's\nhouses...",
     "dialogue_helper_talk": [
-        "Hitori-chan!",
+        "Guitar-Man: Hitori-chan!",
         "You did it!",
         "You talked to someone!",
         "[wave](Even if I'm just your imaginary friend, [delay, 70]\nthat's still a big deal!)[/wave]",
@@ -45,17 +45,17 @@
         "You can also interact with objects in the world,\n[delay, 70]like that guitar and mirror you just saw!",
         "Try talking to the people around you and see what they\nhave to say!"
     ],
-    "dialogue_helper_save_hint": ["If you want to save your game, just walk up to that\nsparkly blue star and press [[Z]!", "Watch out for pedestrian crossings too!", "They help you cross the city road!"],
-    "dialogue_helper_balance1": ["Hello Hitori-chan!", "...", "What's that?", "Your balance?", "Right now,[delay, 20] it's...", "%y Yen!"],
-    "dialogue_helper_balance2": "Your balance is %y Yen!",
+    "dialogue_helper_save_hint": ["Guitar-Man: If you want to save your game, just walk up to that\nsparkly blue star and press [[Z]!", "Watch out for pedestrian crossings too!", "They help you cross the city road!"],
+    "dialogue_helper_balance1": ["Guitar-Man: Hello Hitori-chan!", "...", "What's that?", "Your balance?", "Right now,[delay, 20] it's...", "%y Yen!"],
+    "dialogue_helper_balance2": "Guitar-Man: Your balance is %y Yen!",
     "dialogue_cone": "(This area is blocked off.)",
-    "dialogue_cherry1": ["Oh my, you actually talk?", "I thought you were just a mute weirdo.", "Well, I guess that's a relief!", "I'm Cherry, by the way.", "Nice to meet you...", "Uh...[delay, 200] Hitori,[delay, 90] was it?"],
-    "dialogue_cherry2": "Lovely weather we're having, isn't it?",
+    "dialogue_cherry1": ["Cherry: Oh my, you actually talk?", "I thought you were just a mute weirdo.", "Well, I guess that's a relief!", "I'm Cherry, by the way.", "Nice to meet you...", "Uh...[delay, 200] Hitori,[delay, 90] was it?"],
+    "dialogue_cherry2": "Cherry: Lovely weather we're having, isn't it?",
     "dialogue_gate": ["(The gate is locked.)", "(Besides,[delay, 100] why would you want to go in there?)"],
     "dialogue_dont_go_home_yet": ["You can't go home yet!", "You have to get Nijika-chan first!"],
     
     "cutscene_intro_michiyo": [
-        "Hitori!",
+        "Michiyo: Hitori!",
         "Hitori, [delay, 650]we're going now!",
         "Are you sure you don't want to come with us?",
         "...",
@@ -66,23 +66,23 @@
         "Bye-bye!"
     ],
     "cutscene_intro_bocchi1": [
-        "...",
+        "Hitori: ...",
         "I'm alone!",
         "..."
     ],
     "cutscene_intro_bocchi2": [
-        "[shake]Ack![/shake]",
+        "hitori: [shake]Ack![/shake]",
         "[shake]No![/shake]",
         "This is bad!",
         "If I want to be a bubbly, sparkly extrovert this year...",
 		"Then I have to socialise!"
     ],
-    "cutscene_kessoku1": ["Oh, hey Bocchi-Chan!", "You're just in time!"],
-    "cutscene_kessoku2": ["Me and Ryo-senpai were just about to head over\nto STARRY club to grab Nijika-chan!"],
-    "cutscene_kessoku3": ["Come, come!", "Let's not waste any more time!"],
+    "cutscene_kessoku1": ["Kita: Oh, hey Bocchi-Chan!", "You're just in time!"],
+    "cutscene_kessoku2": ["Kita: Me and Ryo-senpai were just about to head over\nto STARRY club to grab Nijika-chan!"],
+    "cutscene_kessoku3": ["Kita: Come, come!", "Let's not waste any more time!"],
 
     "notif_join_kessoku": ["Ryo and Kita joined you!", "Time to get going!"],
     "notif_join_nijika": ["Nijika joined you!", "The band is complete!"],
     
-    "dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Hello, it's me, [delay, 200]Ryo Yamada.[delay, 300]\nCan I borrow some money?"
+    "dialogue_super_secret_dialogue_that_wont_show_up_in_the_game": "Ryo: Hello, it's me, [delay, 200]Ryo Yamada.[delay, 300]\nCan I borrow some money?"
 }

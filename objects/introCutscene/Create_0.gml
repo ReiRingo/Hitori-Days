@@ -57,3 +57,11 @@ _blackCol = c_black;
 // I just snatched an old code of mine!
 trail_history = [0, 0, 0, 0, 0, 0];
 _heartbeat = 0;
+
+// CRASH_TEST = whateverThisIs666; // This is an unknown identifier
+
+try{
+	
+} finally {
+	
+	{

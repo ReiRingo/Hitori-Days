@@ -1,0 +1,63 @@
+# - Welcome to Rei Taylor's optimisation guide for GameMaker! -
+
+> This _opinionated_ guide will help you through the dark ages of GameMaker coding,
+where everything is on pure hopium and "it works" code.
+
+> **Before we get started**: Know that I will not be teaching you CS O-notations here nor
+coding in general. This is an optimisation article, not a how-to-101.
+
+## "Why?"
+
+As we all know: GameMaker is slow... and simutanously fast at the same time.
+I won't be tackling why profoundly -- but to summarise:
+
+GameMaker has significantly improved its performance over the years.
+Some tricks you see online from maybe 7 years ago could either be good... bad... or just
+a myth.
+
+# GameMaker has two ways of compiling:
+
+## Virtual Machine (VM)
+
+- This will run your code in an intermediate form ("Bytecode") which the loader, linker, and the
+build (runner) will then execute when you launch your game.
+
+- Slow... in comparison to YYC. (But still very fast)
+
+## Yoyo Compiler (YYC)
+
+- This transpiles GameMaker Language code into C++, then as the name suggests: compiles / builds
+that C++ programme.
+
+- Faster than VM, but slower than self-written native code.
+
+** NOTE(s): **
+
+> Usually, you'd wanna stick to VM unless you got some heavy stuff.
+Please don't mess with C++ if you're unsure.
+
+> And another reason is maybe it'll bloat your storage (Visual Studio + C++). Which is redundant for a game that's just a 
+square running around the screen.
+
+# Optimisation #1
+
+## O(n2)
+
+> Again, I won't teach you what this is... but I'll briefly explain!
+
+_O(n^2)_ is something you should avoid if possible.
+
+> It doesn't hurt to ask people online / look it up / even AI. Though, becareful of AIs like ChatGPT, which sometimes hallucinate
+
+**Let's start off by not exploding your brains.**
+
+The time complexity of an O-Notation algorithim describes how much steps it takes to complete for different input sizes.
+
+### To understand it better, we'll be making a silly humanification of it.
+
+**O(1)** - Get that person directly
+**O(n)** - Find that thing by checking that one section's boxes one by one
+**O(n^2)** - Find that thing by checking the every section, and every 
+
+
+UNFINISHED

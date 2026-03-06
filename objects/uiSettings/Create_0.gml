@@ -1,4 +1,3 @@
-audio_stop_all();
 _mus = audio_play_sound(musShi1, 1, true);
 
 options = [
