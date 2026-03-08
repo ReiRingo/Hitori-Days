@@ -17,7 +17,7 @@ image_speed = 0;
 image_alpha = 0;
 
 // Running
-call_later(2, time_source_units_frames, function() {
+timeSource = call_later(2, time_source_units_frames, function() {
 	_ready = true;
 	image_speed = 1;
 	image_alpha = 1;

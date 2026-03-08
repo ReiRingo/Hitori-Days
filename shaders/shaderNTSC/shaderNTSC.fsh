@@ -14,7 +14,7 @@ float hash(vec2 seed) {
 
 void main() {
     float ntscOffset = 2.0 / resolution.x;
-    float noiseScale = 2.0;
+    float noiseScale = 3.0;
 
     vec2 texelSize = 1.0 / resolution;
     vec4 centerSample = texture2D(gm_BaseTexture, v_vTexcoord);

@@ -62,8 +62,28 @@
 - Changed: Bocchi Living Room (Unfinished)
 
 ### 3/6/2026
+
 - starting from here, format will be more informative.
 - changed blip, select, long select, and default text typing sound effects.
 - changed the C++ extern DLL of PrettyCrasher and added more crash exception content while also making it super reusable
 - changed the unhandled exception handler to handle crashes cleanly and write a log.
 - and that's everything for today. Toodles.
+
+### 3/7/2026
+
+- changed the entire menu
+- goodbye old school rom aesthetic (now it looks modern)
+- added a new intro sound
+- changed the entire intro UI
+- changed the settings ui as well
+
+### 3/8/2026
+
+- made the intro menu's colours pop!
+- made it so the audio from menu carries to settings instead of having
+two tracks!
+
+**fuck it, i'm back to old-school aesthetics. (but this time it's the saturn / ps1 era)**
+
+- menu is now in like... conceptual phase.
+- texts now have outlines.

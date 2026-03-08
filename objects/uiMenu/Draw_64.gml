@@ -1,63 +1,65 @@
-var _gui = {
-	w : display_get_gui_width(),
-	h : display_get_gui_height()
-};
-
+var guiW = display_get_gui_width();
+var guiH = display_get_gui_height();
 draw_set_font(GuiFont);
 
-if (_state == 0)
+if (_state == 0) 
 {
-	var _len = array_length(_options);
-	var _space = 40;
+	var count = array_length(_options);
+	var spacing = 50;
+	var startY = guiH * 0.35;
+	startY += 30;
 	
-	draw_set_halign(fa_left);
+	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	for (var i = 0; i < _len; ++i)
+	for (var i = 0; i < count; ++i)
 	{
-		drawTextGUI([30, 50 + (i * _space)], _options[i]);
+		var isSelected = (_index == i);
+		var col = c_white;
+		draw_set_color(col);
+		drawTextGui([guiW / 2, startY + (i * spacing)], _options[i], 3.2);
 		
-		if (_index == i && !_locked && fader._alpha == 0)
-			drawPick(650, 50 + (i * _space), 1, true);
+		if (isSelected && !_locked && fader._alpha == 0 && (timer % 30 < 15)) 
+		{
+			drawPick((guiW / 4) + 40, startY + (i * spacing));
+		}
 	}
-}
-else if (_state == 1)
+} 
+else if (_state == 1) 
 {
-	var _space = 150;
-	var _margin = 80;
+	var slotH = 140;
+	var marginX = 100;
+	var startY = 120;
 	
-	var _proc = 0;
-	repeat(_loadSize)
+	for (var i = 0; i < _loadSize; ++i) 
 	{
-		drawPanel(_margin, _margin + (_proc * _space) + 40, _space * 3, _space - 20);
+		var isSelected = (_loadIndex == i);
+		var slotY = startY + (i * (slotH + 20));
+		draw_set_alpha(isSelected ? 1.0 : 0.7);
+		drawPanel(marginX, slotY, guiW - (marginX * 2), slotH);
 		
-		var _ld = _load[_proc];
-		var _roomNamer = Player.MapName;
-		var _name = (
-			_ld.available
-		) ? $"{_roomNamer(_ld.room)}\n{Lang.get("menu_load_time")}: {timeFormatter(_ld.time)}\n{Lang.get("menu_load_money")}: {_ld.money} Yen" : "---------";
+		var ld = _load[i];
+		var roomNamer = Player.MapName;
+		var infoText = (ld.available) 
+			? $"{roomNamer(ld.room)}\n{Lang.get("menu_load_time")}: {timeFormatter(ld.time)}\n{Lang.get("menu_load_money")}: {ld.money} Yen" 
+			: "--- " + Lang.get("menu_empty_slot") + " ---";
 		
-		drawTextGUI([_margin + 20, _margin + 20 + (_proc * _space) + 40], _name, 1.5);
+		draw_set_alpha(1);
+		drawTextGui([marginX + 30, slotY + (slotH / 2)], infoText, 1.4, fa_left, fa_middle);
 		
-		// DEBUGING
-		//drawTextGUI([_margin, _margin + (_proc * _space)], $"{_proc} :: {_ld.available}");
-		
-		if (_loadIndex == _proc && !_locked && fader._alpha == 0)
-			drawPick(600, _margin + (_margin / 2) + (_proc * _space) + 40, 1, true);
-		
-		_proc++;
+		if (isSelected && (timer % 20 < 10))
+		{
+			draw_set_color(c_white);
+			draw_rectangle(marginX - 5, slotY - 5, guiW - marginX + 5, slotY + slotH + 5, true);
+		}
 	}
-	drawTextGUI([_gui.w / 2, 18], Lang.get("menu_hint_load"), 3, fa_center, fa_top);
+	drawTextGui([guiW / 2, 40], Lang.get("menu_hint_load"), 2, fa_center, fa_top);
 }
+var hintScale = 1.2
 
-// -- Tutorial-ish?
-draw_set_colour(c_grey);
-draw_set_halign(fa_left);
-draw_set_valign(fa_bottom);
-drawTextGUI([30, _gui.h - 30], Lang.get("menu_hint_controls_pc"), 1.3);
-draw_set_halign(fa_right);
-draw_set_valign(fa_bottom);
-if (_state != 1) drawTextGUI([_gui.w + 40, _gui.h + 30], Lang.get("menu_hint_creator"), 1.3);
+draw_set_colour(c_white);
 
-// -- Reset
+if (_state != 1) drawTextGui([30, guiH - 30], Lang.get("menu_hint_controls_pc"), hintScale, fa_left, fa_bottom);
+if (_state != 1) drawTextGui([guiW - 30, guiH - 30], Lang.get("menu_hint_creator"), 1.2, fa_right, fa_bottom);
+
 drawReset();

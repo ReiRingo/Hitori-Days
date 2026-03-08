@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":13.348,
+  "duration":16.86,
   "exportDir":"",
   "name":"musIntro",
   "parent":{

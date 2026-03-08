@@ -1,6 +1,5 @@
 var _cond = Save.get(SType.Cutscenes, "guitar", false);
 
-print($"Cond: {_cond}");
 if (!_cond)
 {
 	event = function()

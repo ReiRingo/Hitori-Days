@@ -6,3 +6,4 @@ delete Save;
 delete Player;
 */
 
+gc_collect();

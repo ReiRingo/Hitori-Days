@@ -30,7 +30,7 @@ switch(index)
 			print($"Settings: New language is {CurLang}");
 			options[index].v = CurLang;
 			event_user(0);
-			SoundLib.Once(sndSelect);
+			SoundLib.once(sndSelect);
 		}
 		else if (_left)
 		{
@@ -39,7 +39,7 @@ switch(index)
 			print($"Settings: New language is {CurLang}");
 			options[index].v = CurLang;
 			event_user(0);
-			SoundLib.Once(sndSelect);
+			SoundLib.once(sndSelect);
 		}
 		break;
 	
@@ -50,7 +50,7 @@ switch(index)
 			CRT = !CRT;
 			// gpu_set_texfilter(Interp);
 			options[index].v = $"<{CRT ? "ON" : "OFF"}>";
-			SoundLib.Once(sndSelect);
+			SoundLib.once(sndSelect);
 			with(globalManager) event_user(0);
 		}
 		break;
@@ -59,8 +59,8 @@ switch(index)
 		// EXIT
 		if (_confirm)
 		{
-			audio_stop_sound(_mus);
-			SoundLib.Once(sndSelect);
+			// audio_stop_sound(_mus);
+			SoundLib.once(sndSelect);
 			Save.set(SType.Settings, SettingsLang, CurLang);
 			Save.set(SType.Settings, SettingsCrt, CRT);
 			Save.saveToDisk(SType.Settings);
@@ -68,3 +68,13 @@ switch(index)
 		}
 		break;
 }
+
+if (Input.isPressed(VKey.Cancel)) {
+	SoundLib.once(sndSelect);
+	Save.set(SType.Settings, SettingsLang, CurLang);
+	Save.set(SType.Settings, SettingsCrt, CRT);
+	Save.saveToDisk(SType.Settings);
+	room_goto(roomMainMenu);
+}
+
+pickLerp = lerp(pickLerp, index, 0.5);

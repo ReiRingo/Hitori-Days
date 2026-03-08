@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sndError",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":74.563126,
+  "exportDir":"",
+  "name":"sndError",
+  "parent":{
+    "name":"SE",
+    "path":"folders/Audio/SE.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndError.wav",
+  "volume":1.0,
+}

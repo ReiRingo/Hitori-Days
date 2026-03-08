@@ -22,8 +22,14 @@ var _drawTitle = function(sinAnim, alpha)
 	draw_sprite(sprIntroLetters, 6, _marg + (2 * _space), _offsetY[1] + sinAnim);
 	draw_sprite(sprIntroLetters, 7, _marg + (3 * _space), _offsetY[1] + sinAnim);
 }
+
+var pinkOffset = 20;
+var pink = make_colour_rgb(70 + pinkOffset, 24 + pinkOffset, 38 + pinkOffset);			// Well, this used to be pink...!
+var deepRed = make_colour_rgb(43, 15, 24);		// Deep red for contrast
+
+
 // The title screen bg
-draw_sprite_stretched_ext(sprBGTitle, 0, 0, 0, room_width, room_height, make_colour_rgb(14 + 30 - 20, 22 + 30 - 20, 78 + 30 - 20), 1);
+draw_rectangle_colour(0, 0, room_width, room_height, deepRed, pink, deepRed, pink, false);
 
 // Black Cover
 draw_sprite_stretched_ext(sprStretchy, 0, 0, 0, room_width, room_height, _blackCol, _blackAlpha);

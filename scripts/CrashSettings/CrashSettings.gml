@@ -12,6 +12,13 @@ exception_unhandled_handler(function(_exception)
 {
 	// No audios cus yeaa
     audio_stop_all();
+	
+	// Buuut, we do have an error audio!
+	// audio_play_sound(sndError, 1, false);
+	// Nevermind, it's silly
+	
+	// Stop fullscreen
+	window_set_fullscreen(false);
 
     var res = "--- CRITICAL ERROR ---\n";
     res += "Bocchi has glitched... badly!\n\n";
@@ -87,7 +94,10 @@ exception_unhandled_handler(function(_exception)
 	
 	res += $"\n(Error text copied to clipboard and saved to logs at {working_directory}!)";
 	
-    Window.Crash(res, global.crash.w, global.crash.h, fpath);
+	show_debug_message(res);
+	show_debug_message("\n\n-- CHECK LOGS FOR WHY THE GAME CRASHED --\n\n");
+	
+    Window.crash(res, global.crash.w, global.crash.h, fpath);
 	
 	// WAS gonna make it so it opens the link, but GameMaker is dead at this point.
 	// And will resort to a Visual Runtime C++ crash instead!

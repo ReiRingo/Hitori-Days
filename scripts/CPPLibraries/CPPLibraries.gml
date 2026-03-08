@@ -2,7 +2,7 @@
 
 function __winLib() constructor 
 {
-	static Crash = showPrettyCrash;
+	static crash = showPrettyCrash;
 	
 	// static PrettyCrash = crash;
 };

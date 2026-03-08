@@ -7,11 +7,10 @@ _options = [
 	Lang.get("menu_qt")
 ];
 
-if (audio_is_playing(musMenu))
-	audio_stop_sound(musMenu);
-_sound = audio_play_sound(
-	musMenu, 1, true
-);
+if (is_undefined(MENU_MUS_ID)) {
+	show_debug_message("MENU_MUS_ID is undefined!");
+	MENU_MUS_ID = audio_play_sound(musMenu, 1, true);
+}
 
 _locked = false;
 _state = 0;
@@ -50,7 +49,9 @@ repeat(_loadSize)
 }
 Save.setSlot(0);
 
-event_user(0);
-
 // Wave
 timer = 0;
+
+// New Menu
+uiVisualIndex = 0;
+zoomLerp = 1;

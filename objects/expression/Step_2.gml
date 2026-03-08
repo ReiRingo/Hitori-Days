@@ -1,5 +1,1 @@
-if (instance_exists(target)) {
-	depth = target.depth - 1;
-} else {
-	depth = Depth.World - y;
-}
+depth = instance_exists(target) ? target.depth - 1 : Depth.World - y;

@@ -51,7 +51,7 @@ if (_isSave) {
         // Text Placement
         var tx = px + textXOffset;
         var ty = drawY + (panelH / textYOffset);
-        drawTextGUI([tx, ty], info, textScale, fa_left, fa_middle);
+        drawTextGui([tx, ty], info, textScale, fa_left, fa_middle);
         
         // Selection Indicator
         if (isSelected) {
@@ -73,14 +73,14 @@ if (_isSave) {
 	
 	var tx = px + textXOffset;
     var ty = drawY + (panelH / textYOffset);
-    drawTextGUI([tx, ty], info, textScale, fa_left, fa_middle);
+    drawTextGui([tx, ty], info, textScale, fa_left, fa_middle);
 }
 
 // --- Draw Header (Always on top) ---
 if (_isSave || _saved) {
 	var headerText = _saved ? Lang.get("save_hint_saved") : Lang.get("save_hint_save");
 	drawPanel(guiW * 0.1, headerY, guiW * 0.8, headerH, 1);
-	drawTextGUI([centerX, headerY + (headerH / 2)], headerText, 2, fa_center, fa_middle);
+	drawTextGui([centerX, headerY + (headerH / 2)], headerText, 2, fa_center, fa_middle);
 }
 
 drawReset();

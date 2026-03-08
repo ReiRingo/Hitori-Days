@@ -1,4 +1,4 @@
-_mus = audio_play_sound(musShi1, 1, true);
+// _mus = audio_play_sound(musShi1, 1, true);
 
 options = [
 	// M IS DEPRECATED!
@@ -36,3 +36,5 @@ _prop = call_later(
 	},
 	true
 );
+
+pickLerp = 0;

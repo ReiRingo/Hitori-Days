@@ -31,19 +31,37 @@ function drawPick(x, y, scale = 0.8, flip = false, col = c_white, alpha = 1)
 	);
 }
 
-function drawTextGUI(pos, text, scale = 3, hAl = draw_get_halign(), vAl = draw_get_valign()) {
+function drawTextGui(pos, text, scale = 3, hAl = draw_get_halign(), vAl = draw_get_valign(), outlineColour = c_black, outlineWidth = 2) {
 	var xOffset = 0.25, ogPixel = 16, newPixel = font_get_size(draw_get_font());
 	var fontCorrection = ogPixel / newPixel;
 	
 	var _sc = is_array(scale) ? scale : [ scale, scale ];
+	var _finalScX = xOffset + (_sc[0] * fontCorrection);
+	var _finalScY = _sc[1] * fontCorrection;
 	
 	draw_set_halign(hAl);
 	draw_set_valign(vAl);
-	draw_text_ext_transformed(pos[0], pos[1], text, 30, -1, xOffset + (_sc[0] * fontCorrection), _sc[1] * fontCorrection, 0);
+	
+	if (outlineWidth > 0) {
+		var _tempCol = draw_get_colour();
+		draw_set_colour(outlineColour);
+		
+		for (var i = 0; i < 360; i += 45) {
+			draw_text_ext_transformed(
+				pos[0] + lengthdir_x(outlineWidth, i), 
+				pos[1] + lengthdir_y(outlineWidth, i), 
+				text, 30, -1, _finalScX, _finalScY, 0
+			);
+		}
+		
+		draw_set_colour(_tempCol);
+	}
+	
+	draw_text_ext_transformed(pos[0], pos[1], text, 30, -1, _finalScX, _finalScY, 0);
 }
 
 // WRITTEN by a good friend of mine
-function worldToGui(_x, _y) {
+function worldToGui(_x, _y) { // hehe, rip to your snake_case bleh
     var _cam = view_camera[0];
     
     var _gui_x = (_x - camera_get_view_x(_cam)) * (display_get_gui_width() / camera_get_view_width(_cam));
@@ -84,8 +102,14 @@ function mapValue(input, inputArr, outputArr)
 	return _outMin + (input - _inMin) * (_outMax - _outMin) / (_inMax - _inMin);
 }
 
+function drawSetTextlineSize(size) {
+	static_get(drawTextOutline).size = size;
+	return true;
+}
+
 function drawTextOutline(_x, _y, _text, _outlineSpace = 1, _outlineColour = c_black)
 {
+	static size = 1;
     var _textCol = draw_get_colour();
     
     draw_set_colour(_outlineColour);

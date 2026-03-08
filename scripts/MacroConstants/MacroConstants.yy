@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MacroConstants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MacroConstants",
+  "parent":{
+    "name":"Script",
+    "path":"folders/Script.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

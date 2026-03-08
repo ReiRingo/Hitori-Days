@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"musMenu.ogg",
-  "volume":0.68,
+  "volume":0.56,
 }
