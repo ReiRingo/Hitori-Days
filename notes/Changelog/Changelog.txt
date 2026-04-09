@@ -87,3 +87,9 @@ two tracks!
 
 - menu is now in like... conceptual phase.
 - texts now have outlines.
+
+### 3/14/2026
+
+- added traffic lights
+- added kitchen (bocchi's living room)
+- added tv (bocchi's living room)

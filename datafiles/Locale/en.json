@@ -53,6 +53,8 @@
     "dialogue_cherry2": "Cherry: Lovely weather we're having, isn't it?",
     "dialogue_gate": ["(The gate is locked.)", "(Besides,[delay, 100] why would you want to go in there?)"],
     "dialogue_dont_go_home_yet": ["You can't go home yet!", "You have to get Nijika-chan first!"],
+    "dialogue_traffic_light_red": ["(The traffic light is red.)", "(...)", "(I don't think you should cross the road right now...)"],
+    "dialogue_traffic_light_green": ["(The traffic light is green.)", "(You can cross the road now!)"],
     
     "cutscene_intro_michiyo": [
         "Michiyo: Hitori!",

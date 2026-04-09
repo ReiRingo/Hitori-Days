@@ -46,7 +46,7 @@
   "packageId":"",
   "parent":{
     "name":"C++",
-    "path":"folders/DLLs/C++.yy",
+    "path":"folders/External/C++.yy",
   },
   "productId":"",
   "resourceType":"GMExtension",

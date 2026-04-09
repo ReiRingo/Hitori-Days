@@ -5,7 +5,7 @@ draw_set_font(GuiFont);
 if (_state == 0) 
 {
 	var count = array_length(_options);
-	var spacing = 50;
+	var spacing = 90.0;
 	var startY = guiH * 0.35;
 	startY += 30;
 	

@@ -5,6 +5,7 @@ followTarget = charPlayer;
 followerIndex = 2;
 
 following = false;
+
 var _c;
 _c = SpriteState.Idle;
 repeat(2) {

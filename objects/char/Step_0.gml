@@ -47,7 +47,8 @@ if (_vy != 0)
     if (instance_exists(_colY) && _colY._canCollide)
     {
         // Pixel-perfect snap to wall
-        while (!place_meeting(x, y + sign(_vy), collision)) {
+        while (!place_meeting(x, y + sign(_vy), collision))
+		{
             y += sign(_vy);
         }
         _vy = 0;
@@ -58,11 +59,13 @@ if (_vy != 0)
 
 var _moving = (
 	(
-		_move[DirStates.Down] != 0 ||
-		_move[DirStates.Up] != 0 ||
-		_move[DirStates.Left] != 0 ||
-		_move[DirStates.Right] != 0
-	) && (x != _prevPos.x || y != _prevPos.y)
+		_move[DirStates.Down] 	!= 0 	||
+		_move[DirStates.Up]		!= 0 	||
+		_move[DirStates.Left] 	!= 0 	||
+		_move[DirStates.Right]	!= 0
+	)
+	
+	&& (x != _prevPos.x || y != _prevPos.y)
 );
 
 if (_autoAnimate)
